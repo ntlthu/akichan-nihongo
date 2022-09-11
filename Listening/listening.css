@@ -1,0 +1,76 @@
+/* GLOBAL CSS */
+* {
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  scroll-behavior: smooth;
+  background: none !important;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+:root {
+  --pink: #dc4f72;
+  --secondary: #0d5fa8;
+  --title-color: #2c3038;
+  --text-color: #5a5a5a;
+}
+
+/* breadcrumbs */
+.breadcrumbs {
+  /* margin-top: 90px; */
+  padding: 20px 0;
+}
+
+nav#breadcrumbs {
+  padding: 15px 20px;
+  background: #f7f9fc;
+}
+
+.page-wrapper {
+  color: var(--title-color);
+  font-size: 14px;
+}
+
+nav#breadcrumbs a {
+  color: var(--pink);
+  margin: 0 5px 0 0;
+  font-size: 14px;
+}
+
+nav#breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1040px) {
+  nav#breadcrumbs {
+    padding: 10px 0px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .breadcrumbs {
+    margin-top: 30px;
+  }
+}
+
+.tabcontent {
+  padding: 10px 12px;
+}
+.tabcontent p {
+  margin: 10px 20px;
+  font-family: "Times New Roman", Times, serif;
+}
+.audio {
+  width: 100%;
+}

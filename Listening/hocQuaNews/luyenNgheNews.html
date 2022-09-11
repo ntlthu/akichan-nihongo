@@ -1,0 +1,2215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luyện Nghe News</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../hocQuaPhim/hocQuaPhim.css" />
+  </head>
+
+  <body>
+    <header class="container pt-3 pb-3">
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="/TuVung/Tuvungtonghop/tuvungtonghop.html"
+            >Từ vựng</a
+          >
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            data-bs-toggle="dropdown"
+            href="#"
+            role="button"
+            aria-expanded="false"
+            >ベトナムについて</a
+          >
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="/DulichVietNam/VNtabemono.html"
+                >ベトナム料理</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="/DulichVietNam/BetonamuOmiyage.html"
+                >ベトナムお土産</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="/DulichVietNam/Kaimono.html"
+                >ベトナム買い物</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="/DulichVietNam/Tuvung.html"
+                >Từ Vựng</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle active"
+            data-bs-toggle="dropdown"
+            href="#"
+            role="button"
+            aria-expanded="false"
+            >Luyện Nghe</a
+          >
+          <ul class="dropdown-menu">
+            <li>
+              <a
+                class="dropdown-item"
+                href="/Listening/hocQuaPhim/hocQuaPhim.html"
+                >Học Tiếng Nhật Qua Phim</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="/Listening/hocQuaNews/luyenNgheNews.html"
+                >Học Tiếng Nhật Qua News</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="/Listening/HoiThoaiHangNgay/HoiThoaiHangNgay.html"
+                >日常会話</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="/JPforIT/ITgyoumuhen.html"
+                >IT業務編</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="/TruyenCuoi/TruyenCuoi.html"
+                >Truyện cười</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            data-bs-toggle="dropdown"
+            href="#"
+            role="button"
+            aria-expanded="false"
+            >Luyện Đọc</a
+          >
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="/LuyenDoc/baiDocSuuTam.html"
+                >Các bài đọc sưu tầm</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            data-bs-toggle="dropdown"
+            href="#"
+            role="button"
+            aria-expanded="false"
+            >Ngữ pháp</a
+          >
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="/NguPhap/nguPhap.html">Tổng hợp</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </header>
+    <!-- blog breadcrumbs -->
+    <nav id="breadcrumbs" class="breadcrumbs">
+      <div class="container page-wrapper">
+        <a href="/index.html">Home</a> »
+        <a href="#" class="breadcrumb_last" aria-current="page">Luyện nghe</a>
+        »
+        <a href="#" class="breadcrumb_last" aria-current="page"
+          >Luyện nghe News</a
+        >
+      </div>
+    </nav>
+    <!-- Content -->
+    <section class="container">
+      <div
+        class="nav nav-pills me-3"
+        id="v-pills-tab"
+        role="tablist"
+        aria-orientation="vertical"
+      >
+        <button
+          class="nav-link active"
+          data-bs-target="#luyenNews03"
+          data-bs-toggle="pill"
+        >
+          03
+        </button>
+        <button
+          class="nav-link"
+          data-bs-target="#luyenNews02"
+          data-bs-toggle="pill"
+        >
+          02
+        </button>
+        <button
+          class="nav-link"
+          data-bs-target="#luyenNews01"
+          data-bs-toggle="pill"
+        >
+          01
+        </button>
+      </div>
+      <div class="tab-content mt-2" id="v-pills-tabContent">
+        <div class="tab-pane fade show active" id="luyenNews03">
+          <audio
+            class="audio"
+            controls
+            loop
+            src="./fileAmThanh/News03/News03.mp3"
+          ></audio>
+          <div class="content">
+            <p>
+              　<ruby>
+                <a
+                  href="#神戸"
+                  data-bs-toggle="tooltip"
+                  title="Kobe là một thành phố cấp quốc gia của Nhật Bản ở vùng Kansai nằm trên đảo Honshu. Kobe là trung tâm hành chính của tỉnh Hyogo và là một trong những cảng biển chính ở Nhật, cùng với Yokohama, Osaka, Nagoya, Fukuoka và Tokyo. Tỉnh nằm kế Osaka "
+                  id="神戸"
+                  >神戸</a
+                >
+                <rt> こうべ </rt> </ruby
+              ><ruby>
+                <a
+                  href="#海上"
+                  data-bs-toggle="tooltip"
+                  title="かいじょう「HẢI THƯỢNG」 "
+                  id="海上"
+                  >海上</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%8B%E3%81%84%E3%81%98%E3%82%87%E3%81%86&kanji=%E6%B5%B7%E4%B8%8A"
+                  ></i>
+                </rt>
+              </ruby>
+              <ruby>
+                <a
+                  href="#保安部"
+                  data-bs-toggle="tooltip"
+                  title="ほあんぶ「BẢO AN BỘ」: Safety department, security department"
+                  id="保安部"
+                  >保安部</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="https://data.mazii.net/audios/ja-JP/019bf74b1ee2b0006959c75ac47c4865.mp3"
+                  ></i>
+                </rt>
+              </ruby>
+              <span
+                ><a
+                  href="#によりますと"
+                  data-bs-toggle="tooltip"
+                  title="N + ～によると／～によりますと／～によれば : Theo (thông tin trích dẫn từ một nguồn nào đó)"
+                  id="によりますと"
+                  >によりますと</a
+                ></span
+              >、
+              <ruby>
+                <a
+                  href="#事故"
+                  data-bs-toggle="tooltip"
+                  title="じこ 「SỰ CỐ」: sự cố/ tai nạn/ tai nạn giao thông "
+                  id="事故"
+                  >事故</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%98%E3%81%93&kanji=%E4%BA%8B%E6%95%85"
+                  ></i>
+                </rt> </ruby
+              >を
+              <ruby>
+                <a
+                  href="#起こした"
+                  data-bs-toggle="tooltip"
+                  title="おこす「KHỞI」: Từ này có nhiều nghĩa nhưng với 事故を起こす = gây ra tai nạn"
+                  id="起こした"
+                  >起こした</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%8A%E3%81%93%E3%81%99&kanji=%E8%B5%B7%E3%81%93%E3%81%99"
+                  ></i>
+                </rt> </ruby
+              >のは
+              <ruby
+                >大型
+                <rt
+                  ><i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%8A%E3%81%8A%E3%81%8C%E3%81%9F&kanji=%E5%A4%A7%E5%9E%8B"
+                  ></i
+                ></rt>
+              </ruby>
+              <ruby>
+                <a
+                  href="#船"
+                  data-bs-toggle="tooltip"
+                  title="ふね「THUYỀN」: tàu/ thuyền "
+                  id="船"
+                  >船</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%B5%E3%81%AD&kanji=%E8%88%B9"
+                  ></i>
+                </rt> </ruby
+              >を
+              <ruby>
+                <a
+                  href="#誘導"
+                  data-bs-toggle="tooltip"
+                  title="ゆうどう「DỤ ĐẠO」: Sự hướng dẫn; sự dìu dắt; sự chỉ đạo "
+                  id="誘導"
+                  >誘導</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%82%86%E3%81%86%E3%81%A9%E3%81%86&kanji=%E8%AA%98%E5%B0%8E"
+                  ></i>
+                </rt> </ruby
+              >するための「<ruby>
+                <a
+                  href="#パイロットボート"
+                  data-bs-toggle="tooltip"
+                  title="Pilot boat: Thuyền hoa tiêu là loại thuyền dùng để đưa đón hoa tiêu hàng hải giữa đất liền với tàu biển đến, tàu biển mà họ đang lái.  "
+                  id="パイロットボート"
+                  >パイロットボート</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%83%91%E3%82%A4%E3%83%AD%E3%83%83%E3%83%88%E3%83%9C%E3%83%BC%E3%83%88&kanji=%E3%83%91%E3%82%A4%E3%83%AD%E3%83%83%E3%83%88%E3%83%9C%E3%83%BC%E3%83%88"
+                  ></i>
+                </rt> </ruby
+              >」で、午前２時半ごろ、<ruby>
+                <a
+                  href="#業務"
+                  data-bs-toggle="tooltip"
+                  title="ぎょうむ「NGHIỆP VỤ」: Nghiệp vụ, công việc, nhiệm vụ, hoạt động, nghiệp vụ/ công việc đảm nhận "
+                  id="業務"
+                  >業務</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%8E%E3%82%87%E3%81%86%E3%82%80&kanji=%E6%A5%AD%E5%8B%99"
+                  ></i>
+                </rt> </ruby
+              >のために
+              <ruby>
+                <a
+                  href="#神戸港"
+                  data-bs-toggle="tooltip"
+                  title="Cảng Kobe"
+                  id="神戸港"
+                  >神戸港</a
+                >
+                <rt> こうべこう </rt>
+              </ruby>
+              を
+              <ruby>
+                <a
+                  href="#出発"
+                  data-bs-toggle="tooltip"
+                  title="しゅっぱつ「XUẤT PHÁT」: xuất phát; khởi hành "
+                  id="出発"
+                  >出発</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%97%E3%82%85%E3%81%A3%E3%81%B1%E3%81%A4&kanji=%E5%87%BA%E7%99%BA"
+                  ></i>
+                </rt>
+              </ruby>
+              してから１０分ほど後に、<ruby>
+                <a
+                  href="#沖合"
+                  data-bs-toggle="tooltip"
+                  title="おきあい「TRÙNG HỢP」: Ngoài khơi "
+                  id="沖合"
+                  >沖合</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%8A%E3%81%8D%E3%81%82%E3%81%84&kanji=%E6%B2%96%E5%90%88"
+                  ></i>
+                </rt> </ruby
+              >３キロにある
+              <ruby>
+                <a
+                  href="#防波堤"
+                  data-bs-toggle="tooltip"
+                  title="ぼうはてい「PHÒNG BA ĐÊ」: Đê ngăn sóng; đê chắn sóng. Còn nghĩa bóng nữa là “tấm lá chắn ngăn ngừa, bảo vệ khỏi những ảnh hưởng xấu” "
+                  id="防波堤"
+                  >防波堤</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%BC%E3%81%86%E3%81%AF%E3%81%A6%E3%81%84&kanji=%E9%98%B2%E6%B3%A2%E5%A0%A4"
+                  ></i>
+                </rt> </ruby
+              >に
+              <ruby>
+                <a
+                  href="#衝突"
+                  data-bs-toggle="tooltip"
+                  title="しょうとつ「XUNG ĐỘT」:  sự va chạm; Sự xung khắc; sự xung đột; cuộc chạm trán"
+                  id="衝突"
+                  >衝突</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%97%E3%82%87%E3%81%86%E3%81%A8%E3%81%A4&kanji=%E8%A1%9D%E7%AA%81"
+                  ></i>
+                </rt> </ruby
+              >しました。
+            </p>
+            <p>
+              　<ruby>
+                <a
+                  href="#全長"
+                  data-bs-toggle="tooltip"
+                  title="ぜんちょう「TOÀN TRƯỜNG」： Tổng chiều dài"
+                  id="全長"
+                  >全長</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%9C%E3%82%93%E3%81%A1%E3%82%87%E3%81%86&kanji=%E5%85%A8%E9%95%B7"
+                  ></i>
+                </rt> </ruby
+              >約１５メートルの<ruby>
+                <a
+                  href="#ボート"
+                  data-bs-toggle="tooltip"
+                  title="ca nô / thuyền dùng mái chèo "
+                  id="ボート"
+                  >ボート</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%83%9C%E3%83%BC%E3%83%88&kanji=%E3%83%9C%E3%83%BC%E3%83%88"
+                  ></i>
+                </rt> </ruby
+              >には<ruby>
+                <a
+                  href="#船員"
+                  data-bs-toggle="tooltip"
+                  title="せんいん「THUYỀN VIÊN」 "
+                  id="船員"
+                  >船員</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%9B%E3%82%93%E3%81%84%E3%82%93&kanji=%E8%88%B9%E5%93%A1"
+                  ></i>
+                </rt> </ruby
+              >５<ruby>人 <rt>にん</rt> </ruby>が
+              <ruby>
+                <a
+                  href="#乗って"
+                  data-bs-toggle="tooltip"
+                  title="Thể ~te của 
+                のる: Lên xe; lên tàu; đi (tàu, xe) "
+                  id="乗って"
+                  >乗って</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="https://storage.dekiru.vn//data/sounds/947_3_1_female.mp3"
+                  ></i>
+                </rt> </ruby
+              >いて、<ruby>山下勇人 <rt>やましたゆうと</rt> </ruby
+              >さん（７１）と<ruby>山中和孝 <rt>やまなかかずたか</rt> </ruby
+              >さん（５２）が<ruby>
+                <a
+                  href="#頭"
+                  data-bs-toggle="tooltip"
+                  title="あたま: ĐẦU "
+                  id="頭"
+                  >頭</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="https://storage.dekiru.vn//Data/2016/12/29/37-636186015777679023.mp3"
+                  ></i>
+                </rt> </ruby
+              >を強く<ruby>
+                <a
+                  href="#打った"
+                  data-bs-toggle="tooltip"
+                  title="Thể ~ta của 
+                うつ: Đánh, gõ, đập, gửi (điện báo, điện tín)/ tiêm vắc xin (ワクチンを打つ) "
+                  id="打った"
+                  >打った</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="https://storage.dekiru.vn//data/sounds/113_4_1_female.mp3"
+                  ></i>
+                </rt> </ruby
+              >とみられ<ruby>
+                <a
+                  href="#死亡"
+                  data-bs-toggle="tooltip"
+                  title="しぼう「TỬ VONG」 "
+                  id="死亡"
+                  >死亡</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%97%E3%81%BC%E3%81%86&kanji=%E6%AD%BB%E4%BA%A1"
+                  ></i>
+                </rt> </ruby
+              >。５０歳から７１歳の３人も<ruby>
+                <a
+                  href="#重軽傷"
+                  data-bs-toggle="tooltip"
+                  title="じゅうけいしょう「TRỌNG KHINH THƯƠNG」: Bị thương nhẹ hoặc nghiêm trọng"
+                  id="重軽傷"
+                  >重軽傷</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%98%E3%82%85%E3%81%86%E3%81%91%E3%81%84%E3%81%97%E3%82%87%E3%81%86&kanji=%E9%87%8D%E8%BB%BD%E5%82%B7"
+                  ></i>
+                </rt> </ruby
+              >を<ruby>
+                <a
+                  href="#負いました"
+                  data-bs-toggle="tooltip"
+                  title="Thể từ điển: 
+                おう 「PHỤ」: Chấp nhận, chịu, gánh (rủi ro, mạo hiểm)/ mang/ vác/ khuân"
+                  id="負いました"
+                  >負いました</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="https://storage.dekiru.vn//data/sounds/759_2_1_female.mp3"
+                  ></i>
+                </rt> </ruby
+              >。
+            </p>
+            <p>
+              　<ruby>
+                <a
+                  href="#衝突"
+                  data-bs-toggle="tooltip"
+                  title="しょうとつ「XUNG ĐỘT」: sự xung khắc/sự xung đột/ cuộc chạm trán/ sự va chạm"
+                  id="衝突"
+                  >衝突</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%97%E3%82%87%E3%81%86%E3%81%A8%E3%81%A4&kanji=%E8%A1%9D%E7%AA%81"
+                  ></i>
+                </rt> </ruby
+              >した
+              <ruby>
+                <a
+                  href="#防波堤1"
+                  data-bs-toggle="tooltip"
+                  title="ぼうはてい「PHÒNG BA ĐÊ」: Đê ngăn sóng; đê chắn sóng. Còn nghĩa bóng nữa là “tấm lá chắn ngăn ngừa, bảo vệ khỏi những ảnh hưởng xấu” "
+                  id="防波堤1"
+                  >防波堤</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%BC%E3%81%86%E3%81%AF%E3%81%A6%E3%81%84&kanji=%E9%98%B2%E6%B3%A2%E5%A0%A4"
+                  ></i>
+                </rt> </ruby
+              >の<ruby>
+                <a
+                  href="#周辺"
+                  data-bs-toggle="tooltip"
+                  title="しゅうへん「CHU BIÊN」: Vùng xung quanh/ IT (Thiết bị ngoại vi)"
+                  id="周辺"
+                  >周辺</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%97%E3%82%85%E3%81%86%E3%81%B8%E3%82%93&kanji=%E5%91%A8%E8%BE%BA"
+                  ></i>
+                </rt> </ruby
+              >は、ふだんからボートが通る
+              <ruby>
+                <a
+                  href="#航路"
+                  data-bs-toggle="tooltip"
+                  title="こうろ「HÀNG LỘ」: Đường đi (trên không, trên biển) / Tuyến bay, đường bay/ Lộ trình"
+                  id="航路"
+                  >航路</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%93%E3%81%86%E3%82%8D&kanji=%E8%88%AA%E8%B7%AF"
+                  ></i>
+                </rt> </ruby
+              >で、当時海は<ruby>
+                <a
+                  href="#穏やか"
+                  data-bs-toggle="tooltip"
+                  title="おだやか「ỔN」: ôn hòa / hiền hòa/ điềm đạm/ yên ả/ lặng sóng/ nhẹ nhàng/ thanh thản "
+                  id="穏やか"
+                  >穏やか</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%8A%E3%81%A0%E3%82%84%E3%81%8B&kanji=%E7%A9%8F%E3%82%84%E3%81%8B"
+                  ></i>
+                </rt> </ruby
+              >だったということです。海上保安部は、<ruby>
+                <a
+                  href="#"
+                  data-bs-toggle="tooltip"
+                  title="そうじゅう「THAO TÚNG」: Điều hành/ điều khiển / lái (tàu...) . 運転 :lái những loại xe nhỏ như ô tô xe máy/  操縦: nhưng loại cỡ lớn như tàu thuỷ ,tàu vũ trụ máy bay/ 操る (あやつる「THAO」): lái cái nào cũng được"
+                  id="操縦"
+                  >操縦</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%9D%E3%81%86%E3%81%98%E3%82%85%E3%81%86&kanji=%E6%93%8D%E7%B8%A6"
+                  ></i>
+                </rt> </ruby
+              >ミスの可能性があるとみています。
+            </p>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="luyenNews02">
+          <div class="content">
+            <p>
+              <ruby>
+                <a
+                  href="#日清食品"
+                  data-bs-toggle="tooltip"
+                  title="Tập đoàn Nissin Foods là tập đoàn chuyên sản xuất mì ăn liền lớn nhất của Nhật Bản do chủ tịch Andō Momofuku sáng lập vào ngày 4 tháng 9 năm 1948 tại Nhật Bản "
+                  id="日清食品"
+                  >日清食品</a
+                >
+                <rt> にっしんしょくひん </rt> </ruby
+              >は、今月カップ
+              <ruby>
+                <a
+                  href="#ヌードル"
+                  data-bs-toggle="tooltip"
+                  title="mỳ/ mỳ sợi/ noodles "
+                  id="ヌードル"
+                  >ヌードル</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%83%8C%E3%83%BC%E3%83%89%E3%83%AB&kanji=%E3%83%8C%E3%83%BC%E3%83%89%E3%83%AB"
+                  ></i>
+                </rt>
+              </ruby>
+              の新商品、
+              <ruby>
+                <a
+                  href="#通称"
+                  data-bs-toggle="tooltip"
+                  title="つうしょう「THÔNG XƯNG」: Tên thường gọi"
+                  id="通称"
+                  >通称</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%A4%E3%81%86%E3%81%97%E3%82%87%E3%81%86&kanji=%E9%80%9A%E7%A7%B0"
+                  ></i>
+                </rt>
+              </ruby>
+              「合体カップヌードル」を
+              <ruby>
+                <a
+                  href="#発売"
+                  data-bs-toggle="tooltip"
+                  title="はつばい「PHÁT MẠI」:  bán ra/ bắt đầu bán ra"
+                  id="発売"
+                  >発売</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%AF%E3%81%A4%E3%81%B0%E3%81%84&kanji=%E7%99%BA%E5%A3%B2"
+                  ></i>
+                </rt>
+              </ruby>
+              します。２つの
+              <ruby>
+                <a
+                  href="#味"
+                  data-bs-toggle="tooltip"
+                  title="あじ「VỊ」: Vị/ gia vị "
+                  id="味"
+                  >味</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%82%E3%81%98&kanji=%E5%91%B3"
+                  ></i>
+                </rt>
+              </ruby>
+              の
+              <ruby>
+                <a
+                  href="#合体"
+                  data-bs-toggle="tooltip"
+                  title="がったい「HỢP THỂ」: Hợp nhất; kết hợp (vào trong một); liền lại; liên minh; sự sáp nhập"
+                  id="合体"
+                  >合体</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%8C%E3%81%A3%E3%81%9F%E3%81%84&kanji=%E5%90%88%E4%BD%93"
+                  ></i>
+                </rt>
+              </ruby>
+              させたそのお味は？<i
+                class="fa-solid fa-play control-audio"
+                src="./fileAmThanh/News02/News02 (C1).mp3"
+              ></i>
+              <a
+                href="#今月カップ ヌードル の新商品"
+                data-bs-toggle="tooltip"
+                title="Nissin Foods sẽ tung ra một sản phẩm mì cốc mới trong tháng này, với tên gọi là [Mì ly kết hợp]. Sự kết hợp của hai hương vị là gì?"
+                id="今月カップ ヌードル の新商品"
+              >
+                <i class="fa fa-language"></i>
+              </a>
+            </p>
+            <p>
+              <ruby>
+                <a
+                  href="#人気"
+                  data-bs-toggle="tooltip"
+                  title="にんき「NHÂN KHÍ」: Được đông đảo người yêu thích; được hâm mộ"
+                  id="人気"
+                  >人気</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%AB%E3%82%93%E3%81%8D&kanji=%E4%BA%BA%E6%B0%97"
+                  ></i>
+                </rt> </ruby
+              >の
+              <ruby>
+                シーフード
+                <rt
+                  ><i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%82%B7%E3%83%BC%E3%83%95%E3%83%BC%E3%83%89&kanji=%E3%82%B7%E3%83%BC%E3%83%95%E3%83%BC%E3%83%89"
+                  ></i
+                ></rt>
+              </ruby>
+              <ruby>
+                ヌードル
+                <rt
+                  ><i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%83%8C%E3%83%BC%E3%83%89%E3%83%AB&kanji=%E3%83%8C%E3%83%BC%E3%83%89%E3%83%AB"
+                  ></i
+                ></rt> </ruby
+              >と
+              <ruby>
+                <a
+                  href="#定番"
+                  data-bs-toggle="tooltip"
+                  title="ていばん / じょうばん「ĐỊNH PHIÊN」: điển hình/ mang tính đại diện "
+                  id="定番"
+                  >定番</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%A6%E3%81%84%E3%81%B0%E3%82%93&kanji=%E5%AE%9A%E7%95%AA"
+                  ></i>
+                </rt>
+              </ruby>
+              のカップヌードルが合体
+              <i
+                class="fa-solid fa-play control-audio"
+                src="./fileAmThanh/News02/News02 (C2).mp3"
+              ></i
+              >、
+              <ruby>
+                <a
+                  href="#チリトマト"
+                  data-bs-toggle="tooltip"
+                  title="Tên loại mì: Chili Tomato "
+                  id="チリトマト"
+                  >チリトマト</a
+                >
+                <rt> </rt>
+              </ruby>
+              と
+              <ruby>
+                <a
+                  href="#トムヤムクン"
+                  data-bs-toggle="tooltip"
+                  title="tom yum goong (Thai soup dish) : Lẩu Thái"
+                  id="トムヤムクン"
+                  >トムヤムクン</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%83%88%E3%83%A0%E3%83%A4%E3%83%A0%E3%82%AF%E3%83%B3&kanji=%E3%83%88%E3%83%A0%E3%83%A4%E3%83%A0%E3%82%AF%E3%83%B3"
+                  ></i>
+                </rt>
+              </ruby>
+              も合体
+              <i
+                class="fa-solid fa-play control-audio"
+                src="./fileAmThanh/News02/News02 (C3).mp3"
+              ></i>
+              <a
+                href="#人気のシーフードヌードルと定番のカップヌードルが合体"
+                data-bs-toggle="tooltip"
+                title="Đó là sự kết hợp giữa Mì hải sản được yêu thích và mì ly điển hình. Giữa chili tomato và tom yum goong cũng là một sự kết hợp."
+                id="人気のシーフードヌードルと定番のカップヌードルが合体"
+              >
+                <i class="fa fa-language"></i>
+              </a>
+              。こうして2種類の味を合体させてできたのが、日清食品が今月12日から発売する「スーパー合体」です。<i
+                class="fa-solid fa-play control-audio"
+                src="./fileAmThanh/News02/News02 (C4).mp3"
+              ></i>
+              <a
+                href="#こうして2種類の味を合体させてできたのが"
+                data-bs-toggle="tooltip"
+                title="Sản phẩm mà đã cho kết hợp 2 loại hương vị bằng cách này chính là 「スーパー合体」(supper gattai) mà Nissin Foods sẽ tung ra từ ngày 12 tháng 9."
+                id="こうして2種類の味を合体させてできたのが"
+              >
+                <i class="fa fa-language"></i>
+              </a>
+            </p>
+            <p>
+              <ruby>
+                <a
+                  href="#パッケージ"
+                  data-bs-toggle="tooltip"
+                  title="sự đóng gói/bao gói [package]"
+                  id="パッケージ"
+                  >パッケージ</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8&kanji=%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8"
+                  ></i>
+                </rt> </ruby
+              >も合体しています。<ruby>
+                <a
+                  href="#誕生"
+                  data-bs-toggle="tooltip"
+                  title="たんじょう「ĐẢN SANH」: Sự ra đời"
+                  id="誕生"
+                  >誕生</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%9F%E3%82%93%E3%81%98%E3%82%87%E3%81%86&kanji=%E8%AA%95%E7%94%9F"
+                  ></i>
+                </rt> </ruby
+              >の
+              <ruby>
+                <a
+                  href="#きっかけ"
+                  data-bs-toggle="tooltip"
+                  title="Cơ duyên / lý do; nguyên cớ; động lực; Động cơ; cơ hội;  "
+                  id="きっかけ"
+                  >きっかけ</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%8D%E3%81%A3%E3%81%8B%E3%81%91&kanji=%E5%88%87%E3%81%A3%E6%8E%9B%E3%81%91"
+                  ></i>
+                </rt>
+              </ruby>
+              はネットです
+              <i
+                class="fa-solid fa-play control-audio"
+                src="./fileAmThanh/News02/News02 (C5).mp3"
+              ></i
+              >。2つのカップヌードルを混ぜ合わせて食べることが
+              <ruby>
+                <a
+                  href="#話題"
+                  data-bs-toggle="tooltip"
+                  title="わだい「THOẠI ĐỀ」: Chủ đề/ Đề tài "
+                  id="話題"
+                  >話題</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%82%8F%E3%81%A0%E3%81%84&kanji=%E8%A9%B1%E9%A1%8C"
+                  ></i>
+                </rt>
+              </ruby>
+              になっていたのを受け、去年9月に
+              <ruby>
+                <a
+                  href="#第1弾"
+                  data-bs-toggle="tooltip"
+                  title="cái đầu tiên (được ra mắt) "
+                  id="第1弾"
+                  >第1弾</a
+                >
+                <rt> だいいちだん </rt>
+              </ruby>
+              を発売
+              <i
+                class="fa-solid fa-play control-audio"
+                src="./fileAmThanh/News02/News02 (C6).mp3"
+              ></i
+              >。ほかの新商品の
+              <ruby>
+                <a
+                  href="#1.5倍"
+                  data-bs-toggle="tooltip"
+                  title="ばい「BỘI」: Gấp Number (tăng lên nhân number lần). Chỉ có 倍　không thì là gấp đôi. 3倍 gấp ba,4倍 gấp bốn"
+                  id="1.5倍"
+                  >1.5倍</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%B0%E3%81%84&kanji=%E5%80%8D"
+                  ></i>
+                </rt>
+              </ruby>
+              も売れるほど大<ruby>
+                <a
+                  href="#好評"
+                  data-bs-toggle="tooltip"
+                  title="こうひょう 「HẢO BÌNH」: nhận xét tốt/ đánh giá tốt            "
+                  id="好評"
+                  >好評
+                </a>
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%93%E3%81%86%E3%81%B2%E3%82%87%E3%81%86&kanji=%E5%A5%BD%E8%A9%95"
+                  ></i>
+                </rt> </ruby
+              >だったことから、<ruby>
+                第2弾
+                <rt>だい２だん</rt> </ruby
+              >を発売することにしたと言います
+              <i
+                class="fa-solid fa-play control-audio"
+                src="./fileAmThanh/News02/News02 (C7).mp3"
+              ></i
+              >。
+            </p>
+            <p>
+              通称「合体カップヌードル」を
+              <ruby>
+                <a
+                  href="#開けて"
+                  data-bs-toggle="tooltip"
+                  title="Thể ~te của あける:  Mở, mở một cái gì đó..."
+                  id="開けて"
+                  >開けて</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="https://storage.dekiru.vn//data/sounds/1410_3_1_female.mp3"
+                  ></i>
+                </rt>
+              </ruby>
+              みると
+              <i
+                class="fa-solid fa-play control-audio"
+                src="./fileAmThanh/News02/News02 (C8).mp3"
+              ></i
+              >、「
+              <ruby>
+                <a
+                  href="#謎肉"
+                  data-bs-toggle="tooltip"
+                  title="なぞにく「MÊ」「NHỤC」：thịt bí ẩn "
+                  id="謎肉"
+                  >謎肉</a
+                >
+                <rt> なぞにく </rt> </ruby
+              >がゴロゴロ入っていますね。さらに「シーフード」に入っている
+              <ruby>
+                <a
+                  href="#かまぼこ"
+                  data-bs-toggle="tooltip"
+                  title="boiled fish paste [sausage]：Một loại chả cá của nhật bản, Được làm từ loại thịt cá có màu trắng được nghiền nhuyễn, được nặn thành các hình thù đẹp mắt khác nhau "
+                  id="かまぼこ"
+                  >かまぼこ</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%8B%E3%81%BE%E3%81%BC%E3%81%93&kanji=%E8%92%B2%E9%89%BE"
+                  ></i>
+                </rt>
+              </ruby>
+              もたくさん入っています。<i
+                class="fa-solid fa-play control-audio"
+                src="./fileAmThanh/News02/News02 (9).mp3"
+              ></i
+              >」
+            </p>
+            <audio
+              class="audio"
+              controls
+              loop
+              src="./fileAmThanh/News02/News02.mp3"
+            ></audio>
+            <p>
+              合体といっても、スープと
+              <ruby>
+                <a
+                  href="#具材"
+                  data-bs-toggle="tooltip"
+                  title="ぐざい「CỤ TÀI」: Material, ingredient (nguyên liệu trong nấu ăn)             "
+                  id="具材"
+                  >具材</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%90%E3%81%96%E3%81%84&kanji=%E5%85%B7%E6%9D%90"
+                  ></i>
+                </rt> </ruby
+              >の
+              <ruby>
+                <a
+                  href="#割合"
+                  data-bs-toggle="tooltip"
+                  title="わりあい「CÁT HỢP」: Tỷ lệ "
+                  id="割合"
+                  >割合</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%82%8F%E3%82%8A%E3%81%82%E3%81%84&kanji=%E5%89%B2%E5%90%88"
+                  ></i>
+                </rt> </ruby
+              >は
+              <ruby>
+                <a
+                  href="#半分"
+                  data-bs-toggle="tooltip"
+                  title="はんぶん/ はんぷん「BÁN PHÂN」: Một nửa "
+                  id="半分"
+                  >半分</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%AF%E3%82%93%E3%81%B6%E3%82%93&kanji=%E5%8D%8A%E5%88%86"
+                  ></i>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%AF%E3%82%93%E3%81%B7%E3%82%93&kanji=%E5%8D%8A%E5%88%86"
+                  ></i>
+                </rt>
+              </ruby>
+              <ruby>
+                <a
+                  href="#ずつ"
+                  data-bs-toggle="tooltip"
+                  title="Mỗi một "
+                  id="ずつ"
+                  >ずつ</a
+                >
+                <rt>
+                  <i class="fa fa-volume-up control-audio" src=""></i>
+                </rt> </ruby
+              ><a
+                href="#というわけではありません"
+                data-bs-toggle="tooltip"
+                title="không phải là / không có nghĩa là "
+                id="というわけではありません"
+                ><span>というわけではありません</span></a
+              >。その
+              <ruby>
+                <a
+                  href="#"
+                  data-bs-toggle="tooltip"
+                  title="わけ「DỊCH」:  Lý do; nguyên nhân"
+                  id=""
+                  >訳</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%82%8F%E3%81%91&kanji=%E8%A8%B3"
+                  ></i>
+                </rt> </ruby
+              >は...
+              <i
+                class="fa-solid fa-play control-audio"
+                src="./fileAmThanh/News02/News02 (C10).mp3"
+              ></i>
+            </p>
+            <p>
+              <ruby>
+                <a
+                  href="#1対1"
+                  data-bs-toggle="tooltip"
+                  title="Tỷ lệ 1:1"
+                  id="1対1"
+                  >1対1</a
+                >
+                <rt> 1たい1 </rt> </ruby
+              >で<ruby>
+                <a
+                  href="#混ぜる"
+                  data-bs-toggle="tooltip"
+                  title="trộn/pha trộn/hòa trộn "
+                  id="混ぜる"
+                  >混ぜる</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%BE%E3%81%9C%E3%82%8B&kanji=%E6%B7%B7%E3%81%9C%E3%82%8B"
+                  ></i>
+                </rt> </ruby
+              >ことだと、なかなかこう
+              <ruby>
+                味
+                <rt
+                  ><i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%82%E3%81%98&kanji=%E5%91%B3"
+                  ></i
+                ></rt> </ruby
+              >が<ruby>
+                消
+                <rt>け</rt> </ruby
+              >し<ruby>
+                合
+                <rt>あ</rt> </ruby
+              >ってしまったり、<ruby>
+                <a
+                  href="#特徴"
+                  data-bs-toggle="tooltip"
+                  title="とくちょう「ĐẶC TRƯNG」: Đặc trưng "
+                  id="特徴"
+                  >特徴</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%A8%E3%81%8F%E3%81%A1%E3%82%87%E3%81%86&kanji=%E7%89%B9%E5%BE%B4"
+                  ></i>
+                </rt> </ruby
+              >がこう<ruby>消 <rt>き</rt> </ruby>えてしまったり、<ruby
+                >色々
+                <rt
+                  ><i
+                    class="fa fa-volume-up control-audio"
+                    src="https://storage.dekiru.vn/Data/2017/11/03/iroiro-636453173828365038.mp3"
+                  ></i
+                ></rt> </ruby
+              >ありますね
+              <i
+                class="fa-solid fa-play control-audio"
+                src="./fileAmThanh/News02/News02 (C11).mp3"
+              ></i
+              >.。両方が
+              <ruby>
+                <a
+                  href="#楽しめる"
+                  data-bs-toggle="tooltip"
+                  title="たのしめる「LẠC」:Có thể thưởng thức, có thể tận hưởng, có thể vui thú "
+                  id="楽しめる"
+                  >楽しめる</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%9F%E3%81%AE%E3%81%97%E3%82%81%E3%82%8B&kanji=%E6%A5%BD%E3%81%97%E3%82%81%E3%82%8B"
+                  ></i>
+                </rt> </ruby
+              >味のバランスを
+              <ruby>
+                <a
+                  href="#模索"
+                  data-bs-toggle="tooltip"
+                  title="もさく「MÔ TÁC」: Tìm kiếm, thăm dò "
+                  id="模索"
+                  >模索</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%82%82%E3%81%95%E3%81%8F&kanji=%E6%A8%A1%E7%B4%A2"
+                  ></i>
+                </rt> </ruby
+              >していった
+              <i
+                class="fa-solid fa-play control-audio"
+                src="./fileAmThanh/News02/News02 (C12).mp3"
+              ></i
+              >。<ruby>
+                <a
+                  href="#比率"
+                  data-bs-toggle="tooltip"
+                  title="ひりつ「BỈ SUẤT」: Tỷ suất/ tỷ lệ "
+                  id="比率"
+                  >比率</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%B2%E3%82%8A%E3%81%A4&kanji=%E6%AF%94%E7%8E%87"
+                  ></i>
+                </rt> </ruby
+              >は0.5
+              <ruby>
+                <a
+                  href="#刻み"
+                  data-bs-toggle="tooltip"
+                  title="きざみ「KHẮC」: nấc (chia theo mức), IT: bước nhảy"
+                  id="刻み"
+                  >刻み</a
+                >
+                <rt>
+                  <i class="fa fa-volume-up control-audio" src=""></i>
+                </rt> </ruby
+              >くらいで。ああでもない、こうでもないと言いながらやっと完成した
+              <i
+                class="fa-solid fa-play control-audio"
+                src="./fileAmThanh/News02/News02 (C13).mp3"
+              ></i
+              >」。
+            </p>
+            <p>
+              例えば、<ruby>
+                <a
+                  href="#欧風"
+                  data-bs-toggle="tooltip"
+                  title="おうふう「ÂU PHONG」: hương vị (phong cách) phương tây/ Âu Mỹ, người phương Tây"
+                  id="欧風"
+                  >欧風</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%8A%E3%81%86%E3%81%B5%E3%81%86&kanji=%E6%AC%A7%E9%A2%A8"
+                  ></i>
+                </rt> </ruby
+              ><ruby>
+                <a
+                  href="#チーズ"
+                  data-bs-toggle="tooltip"
+                  title="cheese (phô mai/ pho mát)"
+                  id="チーズ"
+                  >チーズ</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%83%81%E3%83%BC%E3%82%BA&kanji=%E3%83%81%E3%83%BC%E3%82%BA"
+                  ></i>
+                </rt> </ruby
+              >カレーとみその合体カップヌードルは、カレーとチーズの
+              <ruby>
+                <a
+                  href="#風味"
+                  data-bs-toggle="tooltip"
+                  title="ふうみ「PHONG VỊ」： Mùi vị; hương vị"
+                  id="風味"
+                  >風味</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%B5%E3%81%86%E3%81%BF&kanji=%E9%A2%A8%E5%91%B3"
+                  ></i>
+                </rt>
+              </ruby>
+              が強いため、みそが<ruby>
+                <a
+                  href="#多め"
+                  data-bs-toggle="tooltip"
+                  title="おおめ「ĐA」: nhiều hơn 1 chút. ご飯多めで　お願いします。
+                làm ơn thêm cơm.(lúc gọi món)"
+                  id="多め"
+                  >多め</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="https://data.mazii.net/audios/ja-JP/a72fedf89e6bb48719bd33540c9f6df0.mp3"
+                  ></i>
+                </rt> </ruby
+              >の1対2の比率になっていると言います。<i
+                class="fa-solid fa-play control-audio"
+                src="./fileAmThanh/News02/News02 (C14).mp3"
+              ></i>
+            </p>
+            <p>
+              実際に食べてみると、「カレーの中に
+              <ruby>
+                <a
+                  href="#"
+                  data-bs-toggle="tooltip"
+                  title="確り: chắc chắn/ ổn định/ thật chắc cái gì đó/ Đều đặn/ nghiêm túc/ chắc (kiểu như nắm chắc, hiểu rõ)"
+                  id=""
+                  >しっかり</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%97%E3%81%A3%E3%81%8B%E3%82%8A&kanji=%E7%A2%BA%E3%82%8A"
+                  ></i>
+                </rt>
+              </ruby>
+              <ruby>
+                <a
+                  href="#味噌"
+                  data-bs-toggle="tooltip"
+                  title="みそ「VỊ TẰNG」: món Miso của Nhật (Gia vị lên men làm từ đậu tương) "
+                  id="味噌"
+                  >味噌</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%BF%E3%81%9D&kanji=%E5%91%B3%E5%99%8C"
+                  ></i>
+                </rt> </ruby
+              >は感じられます。スープも
+              <ruby>
+                <a
+                  href="#麺"
+                  data-bs-toggle="tooltip"
+                  title="めん「MIẾN」: mì sợi "
+                  id="麺"
+                  >麺</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%82%81%E3%82%93&kanji=%E9%BA%BA"
+                  ></i>
+                </rt> </ruby
+              >に<ruby>
+                <a
+                  href="#絡み付いて"
+                  data-bs-toggle="tooltip"
+                  title="からみつく「LẠC PHÓ」: cuộn quanh/ bám chặt / bị vướng vào. Trường hợp này ý là: nước sốt nó cũng hòa quyện với mì ăn rất ngon.  "
+                  id="絡み付いて"
+                  >絡み付いて</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="https://storage.dekiru.vn//Data/AutoAudio/ef19916fbdda59ca70151b8d510ddf30_90.mp3"
+                  ></i>
+                </rt> </ruby
+              >とっても美味しいです」<i
+                class="fa-solid fa-play control-audio"
+                src="./fileAmThanh/News02/News02 (C15).mp3"
+              ></i>
+            </p>
+            <p>
+              「今度も、この、あの、合体を
+              <ruby
+                >是非
+                <rt
+                  ><i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%9C%E3%81%B2&kanji=%E6%98%AF%E9%9D%9E"
+                  ></i
+                ></rt> </ruby
+              >ともまあ、楽しんでいただいてですね
+              <i
+                class="fa-solid fa-play control-audio"
+                src="./fileAmThanh/News02/News02 (C16).mp3"
+              ></i
+              >。<ruby>
+                <a
+                  href="#売り上げ"
+                  data-bs-toggle="tooltip"
+                  title="うりあげ「MẠI THƯỢNG」: Doanh số/ Doanh thu/ Kim ngạch bán ra"
+                  id="売り上げ"
+                  >売り上げ</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%86%E3%82%8A%E3%81%82%E3%81%92&kanji=%E5%A3%B2%E3%82%8A%E4%B8%8A%E3%81%92"
+                  ></i>
+                </rt> </ruby
+              >が、あの受ければ、スーパー合体のさらなる
+              <ruby>
+                <a
+                  href="#発展"
+                  data-bs-toggle="tooltip"
+                  title="はってん「PHÁT TRIỂN」: Sự phát triển"
+                  id="発展"
+                  >発展</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%AF%E3%81%A3%E3%81%A6%E3%82%93&kanji=%E7%99%BA%E5%B1%95"
+                  ></i>
+                </rt>
+              </ruby>
+              <ruby>系 <rt>けい</rt> </ruby
+              >も、１つの可能性かなと思っておりますが...。楽しい商品作りを
+              <ruby>
+                <a
+                  href="#心がけて"
+                  data-bs-toggle="tooltip"
+                  title="Ghi nhớ vào đầu; cố gắng, quyết tâm "
+                  id="心がけて"
+                  >心がけて</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="https://storage.dekiru.vn/Data/2017/10/25/kokorogakeru-636445210904546716.mp3"
+                  ></i>
+                </rt>
+              </ruby>
+              張っていきたいなと思います。<i
+                class="fa-solid fa-play control-audio"
+                src="./fileAmThanh/News02/News02 (C17).mp3"
+              ></i
+              >」
+            </p>
+          </div>
+          <div class="luyenPhatAm">
+            <h5>Luyện phát âm</h5>
+            <p>
+              シーフードヌードル
+              <i
+                class="fa fa-volume-up control-audio"
+                src="./fileAmThanh/News02/Tv_シーフードヌードル.mp3"
+              ></i>
+              : mì hải sản
+            </p>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="luyenNews01">
+          <div class="content">
+            <audio
+              class="audio"
+              controls
+              loop
+              src="./fileAmThanh/News01/News01).mp3"
+            >
+              Track1
+            </audio>
+            <p>
+              <ruby>
+                <a
+                  href="#大型"
+                  data-bs-toggle="tooltip"
+                  title="おおがた「ĐẠI HÌNH」: Loại lớn; cỡ lớn "
+                  id="大型"
+                  >大型</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%8A%E3%81%8A%E3%81%8C%E3%81%9F&kanji=%E5%A4%A7%E5%9E%8B"
+                  ></i>
+                </rt> </ruby
+              >で強い台風１１号は、
+              <ruby>
+                沖縄県
+                <rt>おきなわけん</rt>
+              </ruby>
+              の
+              <ruby>
+                石垣島
+                <rt>いしがきじま</rt>
+              </ruby>
+              の
+              <ruby>
+                <a
+                  href="#南"
+                  data-bs-toggle="tooltip"
+                  title="みなみ「NAM」： Phía Nam; phương Nam"
+                  id="南"
+                  >南</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%BF%E3%81%AA%E3%81%BF&kanji=%E5%8D%97"
+                  ></i>
+                </rt>
+              </ruby>
+              を
+              <ruby>
+                <a
+                  href="#北上"
+                  data-bs-toggle="tooltip"
+                  title="ほくじょう 「BẮC THƯỢNG」: tiến về hướng bắc"
+                  id="北上"
+                  >北上</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%BB%E3%81%8F%E3%81%98%E3%82%87%E3%81%86&kanji=%E5%8C%97%E4%B8%8A"
+                  ></i>
+                </rt>
+              </ruby>
+              していて、今夜にも
+              <ruby>
+                先島
+                <rt>さきしま</rt>
+              </ruby>
+              <ruby>
+                <a
+                  href="#諸島"
+                  data-bs-toggle="tooltip"
+                  title="しょとう「CHƯ ĐẢO」: Quần đảo; các đảo; nhóm đảo "
+                  id="諸島"
+                  >諸島</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%97%E3%82%87%E3%81%A8%E3%81%86&kanji=%E8%AB%B8%E5%B3%B6"
+                  ></i>
+                </rt> </ruby
+              >に
+              <ruby>
+                <a
+                  href="#最も"
+                  data-bs-toggle="tooltip"
+                  title="もっとも 「TỐI」: Vô cùng; cực kỳ; cực độ; rất là"
+                  id="最も"
+                  >最も</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%82%82%E3%81%A3%E3%81%A8%E3%82%82&kanji=%E6%9C%80%E3%82%82"
+                  ></i>
+                </rt>
+              </ruby>
+              <ruby>
+                <a
+                  href="#近づく"
+                  data-bs-toggle="tooltip"
+                  title="ちかづく 「CẬN」: Tiếp cận/ Đến gần / Tới gần"
+                  id="近づく"
+                  >近づく</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%A1%E3%81%8B%E3%81%A5%E3%81%8F&kanji=%E8%BF%91%E3%81%A5%E3%81%8F"
+                  ></i>
+                </rt>
+              </ruby>
+              <ruby>
+                <a
+                  href="#見込み"
+                  data-bs-toggle="tooltip"
+                  title="みこみ「KIẾN 」: Dự đoán/ dự báo "
+                  id="見込み"
+                  >見込み</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%BF%E3%81%93%E3%81%BF&kanji=%E8%A6%8B%E8%BE%BC%E3%81%BF"
+                  ></i>
+                </rt> </ruby
+              >です
+              <i
+                class="fa-solid fa-play control-audio"
+                src="./fileAmThanh/News01/News01(C1).mp3"
+              ></i
+              >。
+              <ruby>
+                <a
+                  href="#線状降水帯"
+                  data-bs-toggle="tooltip"
+                  title="せんじょうこうすいたい: vành đai mưa tuyến tính"
+                  id="線状降水帯"
+                  >線状降水帯</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="./fileAmThanh/TV_線状降水帯.mp3"
+                  ></i>
+                </rt>
+              </ruby>
+              が発生する恐れもあり、
+              <ruby>
+                <a
+                  href="#厳重"
+                  data-bs-toggle="tooltip"
+                  title="げんじゅう「NGHIÊM TRỌNG」:Nghiêm trọng; nghiêm ngặt/ ngặt nghèo; nghiêm khắc; nghiêm
+                  "
+                  id="厳重"
+                  >厳重</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%92%E3%82%93%E3%81%98%E3%82%85%E3%81%86&kanji=%E5%8E%B3%E9%87%8D"
+                  ></i>
+                </rt>
+              </ruby>
+              な
+              <ruby>
+                <a
+                  href="#警戒"
+                  data-bs-toggle="tooltip"
+                  title="けいかい「CẢNH GIỚI」 : cảnh báo; cảnh giới; cảnh giác "
+                  id="警戒"
+                  >警戒</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%91%E3%81%84%E3%81%8B%E3%81%84&kanji=%E8%AD%A6%E6%88%92"
+                  ></i>
+                </rt> </ruby
+              >が必要です。<i
+                class="fa-solid fa-play control-audio"
+                src="./fileAmThanh/News01/News01(C2).mp3"
+              ></i>
+            </p>
+            <p>
+              大型で強い台風１１号は、現在、
+              <ruby>
+                <a
+                  href="#石垣島"
+                  data-bs-toggle="tooltip"
+                  title="Ishigaki là một thành phố thuộc tỉnh Okinawa, Nhật Bản."
+                  id="石垣島"
+                  >石垣島</a
+                >
+                <rt> いしがきじま </rt>
+              </ruby>
+              の南をゆっくりと北上しています
+              <i
+                class="fa-solid fa-play control-audio"
+                src="./fileAmThanh/News01/News01) (C3).mp3"
+              ></i
+              >。今夜<span>から</span>明日の
+              <ruby>
+                <a
+                  href="#未明"
+                  data-bs-toggle="tooltip"
+                  title="みめい「VỊ MINH」：Rạng sáng/ sáng sớm "
+                  id="未明"
+                  >未明</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%BF%E3%82%81%E3%81%84&kanji=%E6%9C%AA%E6%98%8E"
+                  ></i>
+                </rt>
+              </ruby>
+              <span>にかけて</span>、強い
+              <ruby>
+                <a
+                  href="#勢力"
+                  data-bs-toggle="tooltip"
+                  title="せいりょく「THẾ LỰC」: có tầm ảnh hưởng/ ảnh hưởng / thế lực/ sức mạnh"
+                  id="勢力"
+                  >勢力</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%9B%E3%81%84%E3%82%8A%E3%82%87%E3%81%8F&kanji=%E5%8B%A2%E5%8A%9B"
+                  ></i>
+                </rt>
+              </ruby>
+              のまま
+              <ruby>
+                沖縄
+                <rt>おきなわ</rt>
+              </ruby>
+              の
+              <ruby>
+                <a
+                  href="#先島"
+                  data-bs-toggle="tooltip"
+                  title="quần đảo Sakishima là một chuỗi các hòn đảo nằm ở cực nam của quần đảo Nhật Bản. "
+                  id="先島"
+                  >先島</a
+                >
+                <rt> さきしま </rt>
+              </ruby>
+              諸島を
+              <ruby>
+                <a
+                  href="#直撃"
+                  data-bs-toggle="tooltip"
+                  title="ちょくげき「TRỰC KÍCH」：tiến thẳng vào ...(bão, thời tiết,..)/ ảnh hưởng trực tiếp đến (bão, lũ lụt ....)/ Cú đánh trực diện"
+                  id="直撃"
+                  >直撃</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%A1%E3%82%87%E3%81%8F%E3%81%92%E3%81%8D&kanji=%E7%9B%B4%E6%92%83"
+                  ></i>
+                </rt>
+              </ruby>
+              する見込みです
+              <i
+                class="fa-solid fa-play control-audio"
+                src="./fileAmThanh/News01/News01) (C4).mp3"
+              ></i
+              >。
+            </p>
+            <p>
+              その後、
+              <ruby>
+                <a
+                  href="#東支那海"
+                  data-bs-toggle="tooltip"
+                  title="Biển Hoa Đông là một biển thuộc Thái Bình Dương và nằm về phía đông của Trung Quốc đại lục. Biển Hoa Đông được bao bọc bởi đảo Kyushu và quần đảo Nansei, phía nam giáp đảo Đài Loan và phía tây giáp Trung Quốc đại lục. Nó thông với Biển Đông ở phía nam qua eo biển Đài Loan và thông với biển Nhật Bản qua eo biển Triều Tiên, mở rộng lên phía bắc đến Hoàng Hải.  "
+                  id="東支那海"
+                  >東支那海</a
+                >
+                <rt>ひがししなかい</rt>
+              </ruby>
+              を北上して、
+              <ruby>
+                <a
+                  href="#週明け"
+                  data-bs-toggle="tooltip"
+                  title="しゅうあけ「CHU MINH」：Ngày thứ hai, ngày đầu tuần"
+                  id="週明け"
+                  >週明け</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%97%E3%82%85%E3%81%86%E3%81%82%E3%81%91&kanji=%E9%80%B1%E6%98%8E%E3%81%91"
+                  ></i>
+                </rt>
+              </ruby>
+              には
+              <ruby>
+                <a
+                  href="#九州"
+                  data-bs-toggle="tooltip"
+                  title="Kyūshū ( 九州 きゅうしゅう ) là hòn đảo lớn thứ 3 trong 4 đảo chính của Nhật Bản. Kyushu nằm ở phía Tây Nam Nhật Bản."
+                  id="九州"
+                  >九州</a
+                >
+                <rt> きゅうしゅう </rt>
+              </ruby>
+              に近づく恐れがあります
+              <i
+                class="fa-solid fa-play control-audio"
+                src="./fileAmThanh/News01/News01) (C5).mp3"
+              ></i
+              >。台風が
+              <ruby>
+                <a
+                  href="#接近"
+                  data-bs-toggle="tooltip"
+                  title="せっきん「TIẾP CẬN」：Sự tiếp cận/ tiến gần/ tới gần "
+                  id="接近"
+                  >接近</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%9B%E3%81%A3%E3%81%8D%E3%82%93&kanji=%E6%8E%A5%E8%BF%91"
+                  ></i>
+                </rt>
+              </ruby>
+              している沖縄では、すでに
+              <ruby>
+                <a
+                  href="#風"
+                  data-bs-toggle="tooltip"
+                  title="かぜ 「PHONG」: Gió"
+                  id="風"
+                  >風</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%8B%E3%81%9C&kanji=%E9%A2%A8"
+                  ></i>
+                </rt>
+              </ruby>
+              が
+              <ruby>
+                <a
+                  href="#強まり"
+                  data-bs-toggle="tooltip"
+                  title="つよまる「CƯỜNG」: mạnh lên"
+                  id="強まり"
+                  >強まり</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%A4%E3%82%88%E3%81%BE%E3%82%8B&kanji=%E5%BC%B7%E3%81%BE%E3%82%8B"
+                  ></i>
+                </rt> </ruby
+              >、石垣島などでは、
+              <ruby>
+                <a
+                  href="#瞬間的"
+                  data-bs-toggle="tooltip"
+                  title="しゅんかんてき「THUẤN GIAN ĐÍCH: Tạm thời, tức thời/ 瞬間: Trong khoảnh khắc/ trong chốc lát/ trong nháy mắt   "
+                  id="瞬間的"
+                  >瞬間的</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%97%E3%82%85%E3%82%93%E3%81%8B%E3%82%93&kanji=%E7%9E%AC%E9%96%93"
+                  ></i>
+                </rt> </ruby
+              >に２５メートルを
+              <ruby>
+                <a
+                  href="#超える"
+                  data-bs-toggle="tooltip"
+                  title="こえる「SIÊU」: Vượt quá; quá (hạn định, giới hạn)"
+                  id="超える"
+                  >超える</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="https://storage.dekiru.vn/Data/2017/10/06/koeru-636428813763611575.mp3"
+                  ></i>
+                </rt>
+              </ruby>
+              <ruby>
+                <a
+                  href="#風01"
+                  data-bs-toggle="tooltip"
+                  title="かぜ 「PHONG」: Gió"
+                  id="風01"
+                  >風</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%8B%E3%81%9C&kanji=%E9%A2%A8"
+                  ></i>
+                </rt> </ruby
+              >を
+              <ruby>
+                <a
+                  href="#観測"
+                  data-bs-toggle="tooltip"
+                  title="かんそく「QUAN TRẮC」: quan sát; đo đạc "
+                  id="観測"
+                  >観測</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%8B%E3%82%93%E3%81%9D%E3%81%8F&kanji=%E8%A6%B3%E6%B8%AC"
+                  ></i>
+                </rt>
+              </ruby>
+              しました
+              <i
+                class="fa-solid fa-play control-audio"
+                src="./fileAmThanh/News01/News01) (C6).mp3"
+              ></i
+              >。
+            </p>
+            <p>
+              明日にかけての
+              <ruby>
+                <a
+                  href="#予想"
+                  data-bs-toggle="tooltip"
+                  title="よそう「DỰ TƯỞNG」: Sự dự đoán "
+                  id="予想"
+                  >予想</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%82%88%E3%81%9D%E3%81%86&kanji=%E4%BA%88%E6%83%B3"
+                  ></i>
+                </rt>
+              </ruby>
+              最大瞬間
+              <ruby>
+                <a
+                  href="#風速"
+                  data-bs-toggle="tooltip"
+                  title="ふうそく「PHONG TỐC」: Tốc độ gió"
+                  id="風速"
+                  >風速</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%B5%E3%81%86%E3%81%9D%E3%81%8F&kanji=%E9%A2%A8%E9%80%9F"
+                  ></i>
+                </rt> </ruby
+              >は65メートルと
+              <ruby>
+                <a
+                  href="#家屋"
+                  data-bs-toggle="tooltip"
+                  title="かおく「GIA ỐC」: Nhà cửa (nhà ở) "
+                  id="家屋"
+                  >家屋</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%8B%E3%81%8A%E3%81%8F&kanji=%E5%AE%B6%E5%B1%8B"
+                  ></i>
+                </rt>
+              </ruby>
+              が
+              <ruby>
+                <a
+                  href="#倒壊"
+                  data-bs-toggle="tooltip"
+                  title="とうかい「ĐẢO HOẠI」: Sự sụp đổ, sự đổ sập"
+                  id="倒壊"
+                  >倒壊</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%A8%E3%81%86%E3%81%8B%E3%81%84&kanji=%E5%80%92%E5%A3%8A"
+                  ></i>
+                </rt> </ruby
+              >することの風が
+              <ruby>
+                <a
+                  href="#吹く"
+                  data-bs-toggle="tooltip"
+                  title="ふく「XUY」: Thổi (gió)"
+                  id="吹く"
+                  >吹く</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%B5%E3%81%8F&kanji=%E5%90%B9%E3%81%8F"
+                  ></i>
+                </rt> </ruby
+              >見込みです
+              <i
+                class="fa-solid fa-play control-audio"
+                src="./fileAmThanh/News01/News01) (C7).mp3"
+              ></i
+              >。海は
+              <ruby>
+                <a
+                  href="#猛烈"
+                  data-bs-toggle="tooltip"
+                  title="もうれつ「MÃNH LIỆT」: Mãnh liệt"
+                  id="猛烈"
+                  >猛烈</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%82%82%E3%81%86%E3%82%8C%E3%81%A4&kanji=%E7%8C%9B%E7%83%88"
+                  ></i>
+                </rt>
+              </ruby>
+              な
+              <ruby>
+                <a
+                  href="#時化"
+                  data-bs-toggle="tooltip"
+                  title="しけ「THÌ HÓA」: Biển động (trái nghĩa: 凪 (なぎ) : biển lặng/ trời yên biển lặng)"
+                  id="時化"
+                  >時化</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%97%E3%81%91&kanji=%E6%99%82%E5%8C%96"
+                  ></i>
+                </rt> </ruby
+              >となり、
+              <ruby>
+                <a
+                  href="#波"
+                  data-bs-toggle="tooltip"
+                  title="なみ 「BA」: Sóng"
+                  id="波"
+                  >波</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%AA%E3%81%BF&kanji=%E6%B3%A2"
+                  ></i>
+                </rt> </ruby
+              >の高さは１０メートルが予想されています
+              <i
+                class="fa-solid fa-play control-audio"
+                src="./fileAmThanh/News01/News01) (C8).mp3"
+              ></i
+              >。
+            </p>
+            <p>
+              <ruby>
+                <a
+                  href="#気象庁"
+                  data-bs-toggle="tooltip"
+                  title="きしょうちょう「KHÍ TƯỢNG SẢNH」: Cục Khí tượng"
+                  id="気象庁"
+                  >気象庁</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%8D%E3%81%97%E3%82%87%E3%81%86%E3%81%A1%E3%82%87%E3%81%86&kanji=%E6%B0%97%E8%B1%A1%E5%BA%81"
+                  ></i>
+                </rt> </ruby
+              >は、今朝、沖縄地方に<ruby>
+                <a
+                  href="#線状降水帯01"
+                  data-bs-toggle="tooltip"
+                  title="せんじょうこうすいたい: vành đai mưa tuyến tính"
+                  id="線状降水帯01"
+                  >線状降水帯</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="./fileAmThanh/TV_線状降水帯.mp3"
+                  ></i>
+                </rt> </ruby
+              >に関する予想を
+              <ruby>
+                <a
+                  href="#発表"
+                  data-bs-toggle="tooltip"
+                  title="はっぴょう「PHÁT BIỂU」:  Sự phát biểu; sự công bố; thông báo"
+                  id="発表"
+                  >発表</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="https://storage.dekiru.vn/Data/2017/07/11/happyou-636353809579782748.mp3"
+                  ></i>
+                </rt>
+              </ruby>
+              しました
+              <i
+                class="fa-solid fa-play control-audio"
+                src="./fileAmThanh/News01/News01) (C9).mp3"
+              ></i
+              >。今日の午後から明日午前中にかけて、沖縄では線状降水帯が発生して大雨
+              <ruby>
+                <a
+                  href="#災害"
+                  data-bs-toggle="tooltip"
+                  title="さいがい「TAI HẠI」: Thảm họa; tai hoạ/ Tai nạn ( lao động)"
+                  id="災害"
+                  >災害</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%95%E3%81%84%E3%81%8C%E3%81%84&kanji=%E7%81%BD%E5%AE%B3"
+                  ></i>
+                </rt>
+              </ruby>
+              の
+              <ruby>
+                <a
+                  href="#危険度"
+                  data-bs-toggle="tooltip"
+                  title="きけん「NGUY HIỂM」: "
+                  id="危険度"
+                  >危険</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%8D%E3%81%91%E3%82%93&kanji=%E5%8D%B1%E9%99%BA"
+                  ></i>
+                </rt> </ruby
+              >度が
+              <ruby>
+                <a
+                  href="#急激"
+                  data-bs-toggle="tooltip"
+                  title="きゅうげき「CẤP KÍCH」: nguy cấp/ khẩn cấp/ kịch liệt/ mạnh mẽ "
+                  id="急激"
+                  >急激</a
+                >
+                <rt>
+                  <i
+                    class="fa fa-volume-up control-audio"
+                    src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%8D%E3%82%85%E3%81%86%E3%81%92%E3%81%8D&kanji=%E6%80%A5%E6%BF%80"
+                  ></i>
+                </rt> </ruby
+              >に
+              <ruby>
+                <a
+                  href="#高まる"
+                  data-bs-toggle="tooltip"
+                  title="たかまる「CAO」: Cao lên; được nâng lên/ tăng lên "
+                  id="高まる"
+                  >高まる</a
+                >
+                <rt>
+                  <i class="fa fa-volume-up control-audio" src=""></i>
+                </rt> </ruby
+              >可能性があります。<i
+                class="fa-solid fa-play control-audio"
+                src="./fileAmThanh/News01/News01) (C10).mp3"
+              ></i>
+            </p>
+          </div>
+          <div class="nguPhap">
+            <h5>Ngữ pháp</h5>
+            <li class="parentContent highlight">
+              ● Nから Nにかけて：từ N đến N (chỉ chung phạm vi thời gian, địa
+              điểm)
+            </li>
+            <div class="childContent">
+              <p>
+                ● Cách dùng: đi sau một danh từ chỉ nơi chốn hoặc thời gian, để
+                diễn tả ý nghĩa "suốt khoảng giữa 2 địa điểm hoặc thời điểm đó".
+                Trong việc biểu thị thời gian, có 2 trường hợp: trường hợp diễn
+                tả một lúc nào đó trong khoảng hai thời điểm, như trong ví dụ
+                (1), và trường hợp diễn tả cả một dải thời gian giữa 2 thời điểm
+                đó, như trong ví dụ (2). Cách dùng này, giống với
+                「...から...まで（に）」, nhưng nó không xác định giới hạn một
+                cách chính xác bằng, nên
+                <b
+                  >thường dùng trong trường hợp muốn nêu lên một cách mơ hồ cái
+                  khoảng thời gian và không gian giăng choàng lên hai lĩnh
+                  vực.</b
+                >
+              </p>
+              <p>
+                ● Ví dụ: (1) 台風は今晩から明日の朝にかけて上陸するもようです。:
+                Có vẻ như từ đêm nay cho tới khoảng sáng mai, cơn bão sẽ đổ bộ
+                lên đất liền. <br />
+                (2) 今月から来月にかけて休暇をとるつもりだ。: Tôi định xin phép
+                nghỉ suốt từ tháng này đến tháng tới. <br />
+                (3) 北陸から東北にかけての一帯が大雪の被害に見舞われた。: Suốt
+                một dải từ miền Hokuriku tới miền Tohoku, đã gánh chịu thiệt hại
+                của trận tuyết lớn.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- BS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- TOOLTIPS BS -->
+    <script>
+      const tooltipTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="tooltip"]'
+      );
+      const tooltipList = [...tooltipTriggerList].map(
+        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+      );
+    </script>
+    <!-- Popovers -->
+    <!-- <script>
+          const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+          const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+      </script> -->
+    <script>
+      $(".control-audio").click(function () {
+        let src = $(this).attr("src");
+        const audio = new Audio(src);
+        audio.play();
+      });
+    </script>
+  </body>
+</html>

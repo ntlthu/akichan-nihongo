@@ -1,0 +1,106 @@
+/* FAQs */
+/* .FAQs__QA {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+} */
+.faq-page {
+  margin-right: 5px;
+}
+
+.FAQs__QA h2 {
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 400;
+  display: block;
+  margin: 0;
+  cursor: pointer;
+  color: var(--title-color);
+  text-align: center;
+}
+
+.FAQs__QA p {
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 24.5px;
+  position: relative;
+  overflow: hidden;
+  max-height: 800px;
+  opacity: 1;
+  transform: translate(0, 0);
+  margin-top: 14px;
+  z-index: 2;
+}
+
+.FAQs__QA ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.FAQs__QA ul li {
+  position: relative;
+  padding: 25px 50px 25px 20px;
+  border: 1px solid #eee;
+  margin: 0 0 15px 0;
+  border-radius: 6px;
+  background: #fff;
+  max-width: 420px;
+  display: inline-block;
+}
+.FAQs__QA ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+.FAQs__QA ul li i.muiten {
+  position: absolute;
+  transform: translate(-6px, 0);
+  margin-top: 16px;
+  right: 25px;
+  top: 16px;
+}
+
+.FAQs__QA ul li i.muiten::before,
+.FAQs__QA ul li i.muiten::after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  width: 3px;
+  height: 9px;
+}
+
+.FAQs__QA ul li i.muiten::before {
+  transform: translate(-2px, 0) rotate(45deg);
+}
+
+.FAQs__QA ul li i.muiten:after {
+  transform: translate(2px, 0) rotate(-45deg);
+}
+
+.FAQs__QA ul li input[type="checkbox"] {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  /* -webkit-appearance: none; */
+}
+
+.FAQs__QA ul li input[type="checkbox"]:checked ~ p {
+  margin-top: 0;
+  max-height: 0;
+  opacity: 0;
+  transform: translate(0, 50%);
+}
+
+.FAQs__QA ul li input[type="checkbox"]:checked ~ i.muiten:before {
+  transform: translate(2px, 0) rotate(45deg);
+}
+
+.FAQs__QA ul li input[type="checkbox"]:checked ~ i.muiten:after {
+  transform: translate(-2px, 0) rotate(-45deg);
+}
