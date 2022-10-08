@@ -1,0 +1,245 @@
+/* GLOBAL CSS */
+* {
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  scroll-behavior: smooth;
+  background: none !important;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+p a {
+  color: black;
+  font-weight: 500;
+}
+
+:root {
+  --pink: #dc4f72;
+  --secondary: #0d5fa8;
+  --title-color: #2c3038;
+  --text-color: #5a5a5a;
+}
+
+/* breadcrumbs */
+.breadcrumbs {
+  /* margin-top: 90px; */
+  padding: 20px 0;
+}
+
+nav#breadcrumbs {
+  padding: 15px 20px;
+  background: #f7f9fc;
+}
+
+.page-wrapper {
+  color: var(--title-color);
+  font-size: 14px;
+}
+
+nav#breadcrumbs a {
+  color: var(--pink);
+  margin: 0 5px 0 0;
+  font-size: 14px;
+}
+
+nav#breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1040px) {
+  nav#breadcrumbs {
+    padding: 10px 0px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .breadcrumbs {
+    margin-top: 70px;
+  }
+}
+/* FAQs */
+/* .FAQs__QA {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  } */
+.faq-page {
+  margin-right: 5px;
+}
+
+.FAQs__QA h2 {
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 400;
+  display: block;
+  margin: 0;
+  cursor: pointer;
+  color: var(--title-color);
+  text-align: center;
+}
+
+.FAQs__QA p {
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 24.5px;
+  position: relative;
+  overflow: hidden;
+  max-height: 800px;
+  opacity: 1;
+  transform: translate(0, 0);
+  margin-top: 14px;
+  z-index: 2;
+}
+
+.FAQs__QA ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.FAQs__QA ul li {
+  position: relative;
+  padding: 10px 40px 0px 13px;
+  border: 1px solid #eee;
+  margin: 0 0 15px 0;
+  border-radius: 6px;
+  background: #fff;
+  max-width: 420px;
+  display: inline-block;
+  box-shadow: 0 0 60px 0 rgb(0 0 0 / 10%);
+}
+.FAQs__QA ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+.FAQs__QA ul li i.muiten {
+  position: absolute;
+  transform: translate(-6px, 0);
+  margin-top: 2px;
+  right: 15px;
+  top: 16px;
+}
+
+.FAQs__QA ul li i.muiten::before,
+.FAQs__QA ul li i.muiten::after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  width: 3px;
+  height: 9px;
+}
+
+.FAQs__QA ul li i.muiten::before {
+  transform: translate(-2px, 0) rotate(45deg);
+}
+
+.FAQs__QA ul li i.muiten:after {
+  transform: translate(2px, 0) rotate(-45deg);
+}
+
+.FAQs__QA ul li input[type="checkbox"] {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  /* -webkit-appearance: none; */
+}
+
+.FAQs__QA ul li input[type="checkbox"]:checked ~ p {
+  margin-top: 0;
+  max-height: 0;
+  opacity: 0;
+  transform: translate(0, 50%);
+}
+
+.FAQs__QA ul li input[type="checkbox"]:checked ~ i.muiten:before {
+  transform: translate(2px, 0) rotate(45deg);
+}
+
+.FAQs__QA ul li input[type="checkbox"]:checked ~ i.muiten:after {
+  transform: translate(-2px, 0) rotate(-45deg);
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 400px;
+  height: 150px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  border-radius: 8px;
+  display: inline-block;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  border-radius: 8px;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background: white;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background: white;
+  color: black;
+  transform: rotateY(180deg);
+  padding-top: 5px;
+}
+
+.faq-page p ruby rt i {
+  font-size: 13px;
+}
+ruby rt i {
+  font-size: 13px;
+}
+.parentContent a {
+  font-size: 17px;
+  font-weight: bold;
+  color: #2c3038;
+}
+
+.childContent {
+  padding-left: 30px;
+}
