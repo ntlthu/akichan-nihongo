@@ -243,3 +243,11 @@ ruby rt i {
 .childContent {
   padding-left: 30px;
 }
+
+.fa-play {
+  color: #dc4f72;
+}
+
+ol li a {
+  color: #5a5a5a;
+}
