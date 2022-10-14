@@ -286,19 +286,21 @@ ruby rt {
     position:relative;
     overflow:auto;
     /* height:500px; */
-    border:1px solid #dc4f72;
-    padding-top:30px;
+    /* border:1px solid #dc4f72; */
+    /* padding-top:30px; */
+    /* padding-bottom: 30px; */
 }
 
 .audioFix {
     position:fixed;
-    margin-top:-30px;
+    /* margin-top:-30px; */
+    bottom: 0;
     display:block;
     background-color: #dc4f72;
     color:white;
     width: 88%;
 }
 
-.kaiwa {
-  padding-top: 45px;
+.talkContent_text {
+  margin-bottom: 100px;
 }
