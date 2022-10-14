@@ -61,11 +61,11 @@ nav#breadcrumbs a:hover {
   }
 }
 
-@media screen and (max-width: 992px) {
+/* @media screen and (max-width: 992px) {
   .breadcrumbs {
     margin-top: 70px;
   }
-}
+} */
 /* FAQs */
 /* .FAQs__QA {
     display: flex;
@@ -280,4 +280,25 @@ nav#breadcrumbs a:hover {
 }
 ruby rt {
   font-size: 11px;
+}
+.talkContent {
+  width: 100%;
+    position:relative;
+    overflow:auto;
+    /* height:500px; */
+    border:1px solid #dc4f72;
+    padding-top:30px;
+}
+
+.audioFix {
+    position:fixed;
+    margin-top:-30px;
+    display:block;
+    background-color: #dc4f72;
+    color:white;
+    width: 88%;
+}
+
+.kaiwa {
+  padding-top: 45px;
 }
