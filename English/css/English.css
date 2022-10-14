@@ -255,9 +255,28 @@ ol li a {
 .audio {
   width: 100%;
 }
+/* .subcontent {
+  position: relative;
+} */
+
+.subcontent .fix {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 70px;
+  right: 0;
+  
+}
+@media screen and (max-width: 768px) {
+  .subcontent .fix {
+    top: 135px;
+  }
+}
 
 /* .footer {
   position: fixed;
+  bottom: 0;
+  right: 0;
   width: 100%;
   z-index: 100;
 } */
