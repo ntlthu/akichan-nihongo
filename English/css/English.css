@@ -84,7 +84,7 @@ nav#breadcrumbs a:hover {
   margin: 0;
   cursor: pointer;
   color: var(--title-color);
-  text-align: center;
+  /* text-align: center; */
 }
 
 .FAQs__QA p {
@@ -93,7 +93,7 @@ nav#breadcrumbs a:hover {
   line-height: 24.5px;
   position: relative;
   overflow: hidden;
-  max-height: 800px;
+  /* max-height: 800px; */
   opacity: 1;
   transform: translate(0, 0);
   margin-top: 14px;
@@ -113,9 +113,15 @@ nav#breadcrumbs a:hover {
   margin: 0 0 15px 0;
   border-radius: 6px;
   background: #fff;
-  max-width: 420px;
+  /* max-width: 420px; */
   display: inline-block;
   box-shadow: 0 0 60px 0 rgb(0 0 0 / 10%);
+}
+.FAQs__QA ul li.rowle {
+  background-color: rgb(206, 241, 247);
+}
+.FAQs__QA ul li.rowchan {
+  background-color: rgb(239, 199, 245);
 }
 .FAQs__QA ul li a {
   text-decoration: none;
