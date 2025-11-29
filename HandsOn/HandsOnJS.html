@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IELTS Speaking</title>
+    <title>Hands-on JS</title>
 
     <link
       rel="stylesheet"
@@ -235,11 +235,39 @@
           data-bs-toggle="pill"
           data-bs-target="#question1"
         >
-          15,16,17
+          15
+        </button>
+        <button
+          class="nav-link"
+          data-bs-toggle="pill"
+          data-bs-target="#question2"
+        >
+          18
+        </button>
+        <button
+          class="nav-link"
+          data-bs-toggle="pill"
+          data-bs-target="#question3"
+        >
+          21
+        </button>
+        <button
+          class="nav-link"
+          data-bs-toggle="pill"
+          data-bs-target="#question4"
+        >
+          22
+        </button>
+        <button
+          class="nav-link"
+          data-bs-toggle="pill"
+          data-bs-target="#question5"
+        >
+          28
         </button>
       </div>
       <div class="tab-content mt-2" id="v-pills-tabContent">
-        <div class="tab-pane fade show active" id="#question1">
+        <div class="tab-pane fade show active" id="question1">
           <div class="talkContent_text container">
             <div class="kaiwa table">
               <div class="tableHeader"></div>
@@ -277,6 +305,7 @@
                 </p>
               </div>
             </div>
+            <p>--------------------------------------------------</p>
             <div class="kaiwa table">
               <div class="tableHeader">
                 <audio
@@ -301,6 +330,7 @@
                 </p>
               </div>
             </div>
+            <p>--------------------------------------------------</p>
             <div class="kaiwa table">
               <div class="tableHeader">
                 <audio
@@ -324,6 +354,7 @@
                 </p>
               </div>
             </div>
+            <p>--------------------------------------------------</p>
             <div class="kaiwa table">
               <div class="tableHeader">
                 <audio
@@ -358,6 +389,418 @@
               src="./audio/15,16,17_full.mp3"
             ></audio>
           </div>
+        </div>
+        <!-- ------------------------------ -->
+        <div class="tab-pane fade" id="question2">
+          <div class="talkContent_text container">
+            <div class="kaiwa table">
+              <div class="tableHeader"></div>
+              <div class="tableContent mt-2">
+                <p>
+                  次は、ジャバスクリプト内のコメントし方についてです。
+                  ジャバスクリプトには2種類のコメントがあります：<br />
+                  １つ目は、1行コメントです。
+                  //を使って記述します。このコメントのショートカットは、Ctrl +
+                  /です。短い説明に使用するためです。例えば、このコードをコメントしたい場合、ここに//を入力します。<br />
+                  ２つ目は、複数行コメントです。/*で始めて*/で終わります。このコメントのショートカットは、Shift
+                  + Alt +
+                  Aです。長い説明や複数行の説明に使用します。ここはコメント内容を書きます。改行するためにEnterできます。
+                  これらのコメント行は実行されません。
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="audioFix">
+            <audio
+              class="audio"
+              controls
+              loop
+              src="./audio/18_comment.m4a"
+            ></audio>
+          </div>
+        </div>
+        <!-- ------------------------------ -->
+        <div class="tab-pane fade" id="question3">
+          <div class="talkContent_text container">
+            <div class="kaiwa table">
+              <div class="tableHeader"></div>
+              <div class="tableContent mt-2">
+                <p>
+                  次は、JavaScript の出力方法の部分に進んでいきましょう。
+                  まず、先ほどやったように、console.log（コンソールログ）
+                  を使って、データを コンソールに出力する方法 です。
+                  例えば、このように変数を宣言します。(let x = 5) <br />
+                  今、この変数をコンソールタブに出力したい場合は、ここで
+                  console.log（コンソールログ） を使います。
+                  このカッコの中に、この x(エックス) という変数 を渡します。
+                  ここでは、この x
+                  という変数の値が5に出力されたということですね。
+                  ここでは、どの行番号かも表示されていて、例えば script.js:8
+                  とは script.js ファイルの 8 行目 という意味です。<br />
+                  このカッコの中に、このように値を渡すことができます。
+                  その中で、これは 文字列 で、これは先ほど宣言した
+                  エックスという変数 です。
+                  この時、出力結果は、このように出ていますね。<br />
+                  ここについて少し補足します。このカッコ内のものは 文字列
+                  として扱われます。どんな値を渡すと、渡した値をそのままにされて出力されます。<br />
+                  <br />
+                  はっきり見やすくするために、このようなコードを追加します。このようにすることで、どのページの内容かを簡単にわかるようになります。
+                </p>
+              </div>
+              <p>--------------------------------------------------</p>
+            </div>
+            <div class="kaiwa table">
+              <div class="tableHeader">
+                <audio
+                  controls
+                  loop
+                  class="audio"
+                  src="./audio/21_part1.m4a"
+                ></audio>
+              </div>
+              <div class="tableContent mt-2">
+                <p>
+                  次は、JavaScript の出力方法の部分に進んでいきましょう。
+                  まず、先ほどやったように、console.log（コンソールログ）
+                  を使って、データを コンソールに出力する方法 です。
+                  例えば、このように変数を宣言します。(let x = 5) <br />
+                  今、この変数をコンソールタブに出力したい場合は、ここで
+                  console.log（コンソールログ） を使います。
+                  このカッコの中に、この x(エックス) という変数 を渡します。
+                  ここでは、この x
+                  という変数の値が5に出力されたということですね。
+                  ここでは、どの行番号かも表示されていて、例えば script.js:8
+                  とは script.js ファイルの 8 行目 という意味です。<br />
+                </p>
+              </div>
+            </div>
+            <p>--------------------------------------------------</p>
+            <div class="kaiwa table">
+              <div class="tableHeader">
+                <audio
+                  controls
+                  loop
+                  class="audio"
+                  src="./audio/21_part2.m4a"
+                ></audio>
+              </div>
+              <div class="tableContent mt-2">
+                <p>
+                  このカッコの中に、このように値を渡すことができます。
+                  その中で、これは 文字列 で、これは先ほど宣言した
+                  エックスという変数 です。
+                  この時、出力結果は、このように出ていますね。<br />
+                  ここについて少し補足します。このカッコ内のものは 文字列
+                  として扱われます。どんな値を渡すと、渡した値をそのままにされて出力されます。<br />
+                  <br />
+                  はっきり見やすくするために、このようなコードを追加します。このようにすることで、どのページの内容かを簡単にわかるようになります。
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="audioFix">
+            <audio
+              class="audio"
+              controls
+              loop
+              src="./audio/15,16,17_full.mp3"
+            ></audio>
+          </div> -->
+        </div>
+        <!-- ------------------------------ -->
+        <div class="tab-pane fade" id="question4">
+          <div class="talkContent_text container">
+            <div class="kaiwa table">
+              <div class="tableHeader"></div>
+              <div class="tableContent mt-2">
+                <p>
+                  —------Đoạn 1—--------- <br />
+                  次は、このページの内容ですね。
+                  この部分では、HTMLの内容を更新する方法についてハンズオンしていきましょう。
+                  例えば、HTMLの方は、このようなPタグを宣言して、IDも設定します。Pタグの内容は、一旦、空白にします。
+                  JSファイル側では、HTMLの内容を更新するにはこのような構文を使います。document.getElementById("")
+                  このダブルクォーテーションの中に、PタグのIDの値を入力します。このIDの値をコピーして、ここに貼り付けます。<br />
+                  —-----Ngừng - đoạn 2 ↓—---------- <br />
+                  次に、このように書きます。(.innerHTML = “”)
+                  この時、このダブルクォーテーションの中に、更新したい内容を入力します。例えば、このようにします。(New
+                  content)
+                  今、ページをリロードします。この時、ここでは、この内容が表示されましたね。<br />
+                  —-----Ngừng - đoạn 3 ↓—---------- <br />
+                  エレメントタブに切り替えて、確認できます。
+                  JSファイルで更新した内容が タグに反映されていますよね。
+                  ただし、HTMLファイルの タグには元々内容が入っていません。
+                  つまり、JSを使ってHTMLの内容を更新できるということです。<br />
+                  —---Đoạn 4 ↓—---------- <br />
+                  では、ここにある内容を別のものに変更してみましょう。例えば、このようにします。（New
+                  content 2）。
+                  ページをリロードします。新しい内容が更新されましたね。<br />
+                  —---Đoạn 5 ↓—---------- <br />
+                  次に、ポップアップで通知を表示するための
+                  アラート関数について見ていきましょう。 ここでは、このように
+                  alert 関数を書きます。
+                  このカッコの中には、変数や文字列などを渡すことができます。
+                  例えば、ここでは、このようにを渡しました。alert("Hello" + x)
+                  <br />
+                  —---Đoạn 6 ↓—---------- <br />
+                  ページをリロードして、この時、このようなアラートが表示されましたね。
+                  この + は文字列を結合するために使います。
+                </p>
+              </div>
+              <p>--------------------------------------------------</p>
+            </div>
+            <div class="kaiwa table">
+              <div class="tableHeader">
+                <audio
+                  controls
+                  loop
+                  class="audio"
+                  src="./audio/22,23_part1,2.m4a"
+                ></audio>
+              </div>
+              <div class="tableContent mt-2">
+                <p>
+                  —------Đoạn 1—--------- <br />
+                  次は、このページの内容ですね。
+                  この部分では、HTMLの内容を更新する方法についてハンズオンしていきましょう。
+                  例えば、HTMLの方は、このようなPタグを宣言して、IDも設定します。Pタグの内容は、一旦、空白にします。
+                  JSファイル側では、HTMLの内容を更新するにはこのような構文を使います。document.getElementById("")
+                  このダブルクォーテーションの中に、PタグのIDの値を入力します。このIDの値をコピーして、ここに貼り付けます。<br />
+                  —-----Ngừng - đoạn 2 ↓—---------- <br />
+                  次に、このように書きます。(.innerHTML = “”)
+                  この時、このダブルクォーテーションの中に、更新したい内容を入力します。例えば、このようにします。(New
+                  content)
+                  今、ページをリロードします。この時、ここでは、この内容が表示されましたね。
+                </p>
+              </div>
+            </div>
+            <p>--------------------------------------------------</p>
+            <div class="kaiwa table">
+              <div class="tableHeader">
+                <audio
+                  controls
+                  loop
+                  class="audio"
+                  src="./audio/22,23_part3,4.m4a"
+                ></audio>
+              </div>
+              <div class="tableContent mt-2">
+                <p>
+                  —-----Ngừng - đoạn 3 ↓—---------- <br />
+                  エレメントタブに切り替えて、確認できます。
+                  JSファイルで更新した内容が タグに反映されていますよね。
+                  ただし、HTMLファイルの タグには元々内容が入っていません。
+                  つまり、JSを使ってHTMLの内容を更新できるということです。<br />
+                  —---Đoạn 4 ↓—---------- <br />
+                  では、ここにある内容を別のものに変更してみましょう。例えば、このようにします。（New
+                  content 2）。
+                  ページをリロードします。新しい内容が更新されましたね。<br />
+                </p>
+              </div>
+            </div>
+            <p>--------------------------------------------------</p>
+            <div class="kaiwa table">
+              <div class="tableHeader">
+                <audio
+                  controls
+                  loop
+                  class="audio"
+                  src="./audio/22,23_part5,6.m4a"
+                ></audio>
+              </div>
+              <div class="tableContent mt-2">
+                <p>
+                  —---Đoạn 5 ↓—---------- <br />
+                  次に、ポップアップで通知を表示するための
+                  アラート関数について見ていきましょう。 ここでは、このように
+                  alert 関数を書きます。
+                  このカッコの中には、変数や文字列などを渡すことができます。
+                  例えば、ここでは、このようにを渡しました。alert("Hello" + x)
+                  <br />
+                  —---Đoạn 6 ↓—---------- <br />
+                  ページをリロードして、この時、このようなアラートが表示されましたね。
+                  この + は文字列を結合するために使います。
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="audioFix">
+            <audio
+              class="audio"
+              controls
+              loop
+              src="./audio/15,16,17_full.mp3"
+            ></audio>
+          </div> -->
+        </div>
+        <!-- ------------------------------ -->
+        <div class="tab-pane fade" id="question5">
+          <div class="talkContent_text container">
+            <div class="kaiwa table">
+              <div class="tableHeader"></div>
+              <div class="tableContent mt-2">
+                <p>
+                  次は、ジャバスクリプト の変数についてです。
+                  ジャバスクリプトでは、変数を宣言するためのキーワードが3つあります。それは
+                  let（レット）、var（バー）、const（コンスト） です。
+                  例えば、このように宣言します。var x = 10; let y = 20; const z
+                  = 30;
+                  var（バー）は古いキーワードなので、現在はあまり使われません。
+                  let（レット）は変数宣言用新しいキーワードで、var のあと
+                  に出たものです。多くの改良点があります。現在はよく使われています。
+                  var（バー）と、let（レット）、とconst（コンスト）
+                  の違い点について簡単に説明します。
+                  例えば、このようなブロックがあるとします。<br />
+                  —---------Đoạn 2—---------
+                  エラーが出ないように、古いコードの部分をコメントアウトします。<br />
+                  —---------Đoạn 3—---------
+                  次に、これをコンソールタブに出力します。
+                  var（バー）の場合は、ブロックの中にある時、つまり、この波カッコの中にある時、ブロックを出ると、つまり、この波カッコの外に出ると、var（バー）
+                  の変数はそのまま使えます。コンソール・ログを出力してみると、これ（
+                  x = 10）がまだ表示されていますね。<br />
+                  —---------Đoạn 4—---------
+                  一方、レット（let）の場合、このブロックの外で
+                  ワイ（y）という変数を
+                  コンソール・ログすると、このエラーが表示されます。つまり、このワイという変数は存在しません。
+                  つまり、var（バー）はプログラムのどこからでも参照できますが、
+                  レット（let）は宣言されたブロックの中でしか参照できないということです。<br />
+                  —---------Đoạn 5—---------
+                  バー（var）の場合、同じ変数名で何度でも宣言することができます。
+                  一方、レット（let）の場合は、同じ変数名で宣言できるのは一度だけです。
+                  例えば、ここでさらに「var x =
+                  15」このように変数を宣言するとします。
+                  コンソールログしてみると、このように「x = 15」と表示されます。
+                  例えば、このように宣言すると（let y = 25）、
+                  そのあと、コンソールログしようとするとエラーになります。
+                  理由は、すでにこのワイが存在しているためです。
+                  そして、ワイ（y）の値を更新したい場合は、このように新しい値を代入するだけで大丈夫です。y
+                  = 25 <br />
+                  —---------Đoạn 6—---------
+                  コンスト（const）は、定数を宣言するためのキーワードです。
+                  宣言した後は、その値を変更することはできません。
+                  例えば、このコンスト（const）をコンソールログすると、値はこのように表示されます。
+                  そして、その値を別のものに変更してページをリロードすると、
+                  このようなエラーが表示されています。
+                  じゃ、それは、ジャバスクリプト
+                  の変数の部分です。皆さんできましたか？
+                </p>
+              </div>
+              <p>--------------------------------------------------</p>
+            </div>
+            <div class="kaiwa table">
+              <div class="tableHeader">
+                <audio
+                  controls
+                  loop
+                  class="audio"
+                  src="./audio/28,29,30_part1,2.m4a"
+                ></audio>
+              </div>
+              <div class="tableContent mt-2">
+                <p>
+                  次は、ジャバスクリプト の変数についてです。
+                  ジャバスクリプトでは、変数を宣言するためのキーワードが3つあります。それは
+                  let（レット）、var（バー）、const（コンスト） です。
+                  例えば、このように宣言します。var x = 10; let y = 20; const z
+                  = 30;
+                  var（バー）は古いキーワードなので、現在はあまり使われません。
+                  let（レット）は変数宣言用新しいキーワードで、var のあと
+                  に出たものです。多くの改良点があります。現在はよく使われています。
+                  var（バー）と、let（レット）、とconst（コンスト）
+                  の違い点について簡単に説明します。
+                  例えば、このようなブロックがあるとします。<br />
+                  —---------Đoạn 2—--------- <br />
+                  エラーが出ないように、古いコードの部分をコメントアウトします。
+                </p>
+              </div>
+            </div>
+            <p>--------------------------------------------------</p>
+            <div class="kaiwa table">
+              <div class="tableHeader">
+                <audio
+                  controls
+                  loop
+                  class="audio"
+                  src="./audio/28,29,30_part3,4.m4a"
+                ></audio>
+              </div>
+              <div class="tableContent mt-2">
+                <p>
+                  —---------Đoạn 3—--------- <br />
+                  次に、これをコンソールタブに出力します。
+                  var（バー）の場合は、ブロックの中にある時、つまり、この波カッコの中にある時、ブロックを出ると、つまり、この波カッコの外に出ると、var（バー）
+                  の変数はそのまま使えます。コンソール・ログを出力してみると、これ（
+                  x = 10）がまだ表示されていますね。<br />
+                  —---------Đoạn 4—--------- <br />
+                  一方、レット（let）の場合、このブロックの外で
+                  ワイ（y）という変数を
+                  コンソール・ログすると、このエラーが表示されます。つまり、このワイという変数は存在しません。
+                  つまり、var（バー）はプログラムのどこからでも参照できますが、
+                  レット（let）は宣言されたブロックの中でしか参照できないということです。
+                </p>
+              </div>
+            </div>
+            <p>--------------------------------------------------</p>
+            <div class="kaiwa table">
+              <div class="tableHeader">
+                <audio
+                  controls
+                  loop
+                  class="audio"
+                  src="./audio/28.29.30_part5.m4a"
+                ></audio>
+              </div>
+              <div class="tableContent mt-2">
+                <p>
+                  —---------Đoạn 5—--------- <br />
+                  バー（var）の場合、同じ変数名で何度でも宣言することができます。
+                  一方、レット（let）の場合は、同じ変数名で宣言できるのは一度だけです。
+                  例えば、ここでさらに「var x =
+                  15」このように変数を宣言するとします。
+                  コンソールログしてみると、このように「x = 15」と表示されます。
+                  例えば、このように宣言すると（let y = 25）、
+                  そのあと、コンソールログしようとするとエラーになります。
+                  理由は、すでにこのワイが存在しているためです。
+                  そして、ワイ（y）の値を更新したい場合は、このように新しい値を代入するだけで大丈夫です。y
+                  = 25
+                </p>
+              </div>
+            </div>
+            <p>--------------------------------------------------</p>
+            <div class="kaiwa table">
+              <div class="tableHeader">
+                <audio
+                  controls
+                  loop
+                  class="audio"
+                  src="./audio/28.29.30_part6.m4a"
+                ></audio>
+              </div>
+              <div class="tableContent mt-2">
+                <p>
+                  —---------Đoạn 6—--------- <br />
+                  コンスト（const）は、定数を宣言するためのキーワードです。
+                  宣言した後は、その値を変更することはできません。
+                  例えば、このコンスト（const）をコンソールログすると、値はこのように表示されます。
+                  そして、その値を別のものに変更してページをリロードすると、
+                  このようなエラーが表示されています。
+                  じゃ、それは、ジャバスクリプト
+                  の変数の部分です。皆さんできましたか？
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="audioFix">
+            <audio
+              class="audio"
+              controls
+              loop
+              src="./audio/15,16,17_full.mp3"
+            ></audio>
+          </div> -->
         </div>
       </div>
     </section>
