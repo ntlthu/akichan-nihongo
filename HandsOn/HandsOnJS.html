@@ -314,6 +314,13 @@
         >
           67
         </button>
+        <button
+          class="nav-link"
+          data-bs-toggle="pill"
+          data-bs-target="#question13"
+        >
+          73
+        </button>
       </div>
       <div class="tab-content mt-2" id="v-pills-tabContent">
         <div class="tab-pane fade show active" id="question1">
@@ -1130,7 +1137,7 @@
                   3 つの値がある ということです。<br />
                   もう１つの例です。例えば、配列の最後の値を取り出したい場合は、このようにコードを書きます。console.log(cars[cars.length
                   - 1])　<br />
-                  配列は 0 から始まるので、ここでは 1
+                  配列のインデックスは 0 から始まるので、ここでは 1
                   を引く必要があります。ページリロードして、この最後のものが出力されましたね。
                   それは、Javascriptの配列の部分です。これまで、皆さんは、できましたか？
                 </p>
@@ -1301,6 +1308,94 @@
                   まとめると、関数は主に、３つの種類があります。
                   それは、パラメータが無い関数と、パラメータがある関数と、リターンがある関数です。<br />
                   これで JavaScript の関数の部分です。皆さん、できましたか？
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="audioFix">
+            <audio
+              class="audio"
+              controls
+              loop
+              src="./audio/15,16,17_full.mp3"
+            ></audio>
+          </div> -->
+        </div>
+        <div class="tab-pane fade" id="question13">
+          <div class="talkContent_text container">
+            <div class="kaiwa table">
+              <div class="tableHeader">
+                <audio
+                  controls
+                  loop
+                  class="audio"
+                  src="./audio/73,74,75_p1.m4a"
+                ></audio>
+              </div>
+              <div class="tableContent mt-2">
+                <p>
+                  次は、この部分です。まずは、この部分です。
+                  この部分とは、関数を変数に代入するということです。
+                  先ほどのように別の関数を作る代わりに、関数を直接作って変数の値として代入することもできます。つまり、このようにします。<br />
+                  let sum = function(a, b) { return a + b; }<br />
+                  ここで作成した関数は、先ほどより短い構造があります。つまりこの時点では関数名はありませんね。
+                  今、これをコンソールログしてみて、この a と b は、それぞれ 10
+                  と 20 に置き換えられます。
+                  ページをリロードして、返り値はこれで、正しいですね。
+                  つまり、この関数は通常通り動作することができます。<br />
+                </p>
+              </div>
+            </div>
+            <p>--------------------------------------------------</p>
+            <div class="kaiwa table">
+              <div class="tableHeader">
+                <audio
+                  controls
+                  loop
+                  class="audio"
+                  src="./audio/73,74,75_p2.m4a"
+                ></audio>
+              </div>
+              <div class="tableContent mt-2">
+                <p>
+                  —----------------------Đoạn 2—---------------------　<br />
+                  次は、このアロー関数の部分です。
+                  アロー関数は、関数式をより短い書き方です。
+                  例えば、このように宣言します。let sum = (a, b) => { return a +
+                  b; };　<br />
+                  ここでは、これは、変数を宣言しています。この部分は、アロー関数と呼ばれます。
+                  この矢印は、functionキーワードの代わりになっています。
+                  つまり、functionキーワードをわざわざ書く代わりに、このように矢印で書くことができます。
+                  これをコンソールログしてみて、この a と b は、それぞれ 5 と 10
+                  に置き換えられます。console.log(sum(5, 10));　<br />
+                  返した結果は、正しいですね。
+                </p>
+              </div>
+            </div>
+            <div class="kaiwa table">
+              <div class="tableHeader">
+                <audio
+                  controls
+                  loop
+                  class="audio"
+                  src="./audio/73,74,75_p3.m4a"
+                ></audio>
+              </div>
+              <div class="tableContent mt-2">
+                <p>
+                  —----------------------Đoạn 3—---------------------　<br />
+
+                  例えば、パラメータが1つだけがある関数の場合、カッコを使わなくても構いません。例えばこのように書けます。let
+                  square = n => { return n * n } <br />
+                  ここはパラメータが1つの n
+                  だけだから、カッコは書かなくても大丈夫です。
+                  これをコンソールログしてみて、５かける５が２５になりますね。console.log(square(5));　<br />
+                  さらに、return が1行だけのときは、 この波カッコと return
+                  を書かなくても大丈夫です。つまり、こんな感じで書けます。let
+                  square = n => n * n 　<br />
+                  簡単な関数にとっては、関数式やアロー関数を使うと、書き方が柔軟で、短くなります。
+                  それは、関数を変数に代入する部分と、アロー関数の部分です。
                 </p>
               </div>
             </div>
