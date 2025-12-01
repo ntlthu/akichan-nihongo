@@ -303,9 +303,16 @@
         <button
           class="nav-link"
           data-bs-toggle="pill"
-          data-bs-target="#question10"
+          data-bs-target="#question11"
         >
           56
+        </button>
+        <button
+          class="nav-link"
+          data-bs-toggle="pill"
+          data-bs-target="#question12"
+        >
+          67
         </button>
       </div>
       <div class="tab-content mt-2" id="v-pills-tabContent">
@@ -1196,6 +1203,104 @@
                   <br />
                   ページをリロードして、このキーの値が取得できました。
                   ここまで、皆さんできましたか？
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="audioFix">
+            <audio
+              class="audio"
+              controls
+              loop
+              src="./audio/15,16,17_full.mp3"
+            ></audio>
+          </div> -->
+        </div>
+        <div class="tab-pane fade" id="question12">
+          <div class="talkContent_text container">
+            <div class="kaiwa table">
+              <div class="tableHeader">
+                <audio
+                  controls
+                  loop
+                  class="audio"
+                  src="./audio/67,68,69,70_p1,2.m4a"
+                ></audio>
+              </div>
+              <div class="tableContent mt-2">
+                <p>
+                  次は、JavaScriptの関数の部分になります。
+                  関数の共通の書き方は、このようになります。 function
+                  myFunction(p1, p2) { } <br />
+                  この書き方では、まず、functionというキーワードを書きます。
+                  次に関数名を記述します。これ(myFunction)は、関数名ですね。関数名は、何でも大丈夫です。
+                  次は、カッコを入力して、カッコの中には、空白にすることができます。
+                  または、各パラメータを渡します。パラメータはカンマで区切ります。
+                  次は、波カッコです。波カッコの中には、実行するコードです。<br />
+                  —---------------------Đoạn 2—------------------- <br />
+                  例えば、このように関数を宣言します。<br />
+                  function sayHello() { console.log(“Hello”); } <br />
+                  これは、パラメータが無い関数ですね。つまり、このカッコの中には、空白にしています。
+                  次は、この関数を実行するには、ここでは、このようにします。sayHello();　<br />
+                  ページをリロードして、ここでは、この値が表示されていますね。この行です。
+                </p>
+              </div>
+            </div>
+            <p>--------------------------------------------------</p>
+            <div class="kaiwa table">
+              <div class="tableHeader">
+                <audio
+                  controls
+                  loop
+                  class="audio"
+                  src="./audio/67,68,69,70_p3.m4a"
+                ></audio>
+              </div>
+              <div class="tableContent mt-2">
+                <p>
+                  —---------------------Đoạn 3—------------------- <br />
+                  次は、パラメータがある関数の例をしていきましょう。パラメータとは、外部から渡される入力用の変数のことです。
+                  このように関数を宣言します。<br />
+                  function greet(name) { console.log(“Hello: ”, name); }　<br />
+                  この（greet）関数を呼び出して、1つのパラメータを渡します。例えば
+                  、このように渡す場合は、このように書きます。
+                  greet("John");　<br />
+                  ページをリロードして、この時、このように表示されていますね。つまり、これを渡すと、この時、このネーム変数の値は、これ（John）になって、表示結果がこのようになります。<br />
+                </p>
+              </div>
+            </div>
+            <div class="kaiwa table">
+              <div class="tableHeader">
+                <audio
+                  controls
+                  loop
+                  class="audio"
+                  src="./audio/67,68,69,70_p4,5.m4a"
+                ></audio>
+              </div>
+              <div class="tableContent mt-2">
+                <p>
+                  —---------------------Đoạn ４—------------------- <br />
+                  次は、このように関数を宣言します。<br />
+                  function add(a, b) { let result = a + b; return result; }　<br />
+
+                  この関数を呼び出して、これらの２つのパラメータを渡します。<br />
+                  let sum = add(2, 3); console.log(sum)<br />
+                  ページをリロードします。ここでの結果は、5になっていますね。<br />
+                  つまり、この "add" 関数を呼び出すと、この関数 "add"
+                  内のコードが実行されます。 入力パラメータは 2 と 3
+                  なので、このエー たす ビーは、この時点で 、「に たす
+                  さん」となります。これで、この変数 result の結果は 5
+                  になります。<br />
+                  そして次に、（return
+                  result;）ここでのリターンとは、リザルトの値をこの関数に返すことになります。
+                  つまり、この場合は 5 の結果を取得して返すことになります。<br />
+                  <br />
+                  —---------------------Đoạn 5—------------------- <br />
+                  まとめると、関数は主に、３つの種類があります。
+                  それは、パラメータが無い関数と、パラメータがある関数と、リターンがある関数です。<br />
+                  これで JavaScript の関数の部分です。皆さん、できましたか？
                 </p>
               </div>
             </div>
