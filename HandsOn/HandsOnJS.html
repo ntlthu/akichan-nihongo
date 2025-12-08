@@ -296,6 +296,27 @@
         >
           80
         </button>
+        <button
+          class="nav-link"
+          data-bs-toggle="pill"
+          data-bs-target="#page83_84"
+        >
+          83
+        </button>
+        <button
+          class="nav-link"
+          data-bs-toggle="pill"
+          data-bs-target="#page85_87"
+        >
+          85
+        </button>
+        <button
+          class="nav-link"
+          data-bs-toggle="pill"
+          data-bs-target="#page88_89"
+        >
+          88
+        </button>
       </div>
       <div class="tab-content mt-2" id="v-pills-tabContent">
         <div class="tab-pane fade show active" id="page36_37">
@@ -1154,7 +1175,178 @@
                   このsetTimeoutは、JavaScriptの非同期と呼ばれます。<br />
                   本来なら、この部分は、コード内の順番によって、ここに表示されるはずですが、<br />
                   非同期のため、下のほうに表示されてしまいました。<br />
-                  そのため、非同期処理をするために、次のようにします。<br />
+                  そのため、非同期処理をするために、つまり、コードの順番どおりに結果を返すようにプログラムに強制（きょうせい）するために、次のようにします。<br />
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="audioFix">
+            <audio
+              class="audio"
+              controls
+              loop
+              src="./audio/15,16,17_full.mp3"
+            ></audio>
+          </div> -->
+        </div>
+        <div class="tab-pane fade" id="page83_84">
+          <div class="talkContent_text container">
+            <div class="kaiwa table">
+              <div class="tableContent mt-2">
+                <p>
+                  dùng callback để xử lý bất đồng bộ <br />
+                  非同期処理をするために、２つの方法があります。<br />
+                  方法１は、先ほど勉強したコールバックを使います。<br />
+                  このしかたは、このようにします。<br />
+                  ここでの出力結果を見ると、コードに書かれた順番どおりに出力されていますね。<br />
+                  このコードの実行の流れを説明いたします。<br />
+                  この行では、mainという関数を実行するコマンドがあるので、main関数の中に入って、上から処理します。<br />
+                  まず、これを処理します。そのため、この文字列をここで出力されます。<br />
+                  次に、この行に来ると、この時、fetchData関数を呼び出して、パラメータとして
+                  output を渡します。<br />
+                  このoutputは、この関数のことです。<br />
+                  つまり、この時点では、このoutput関数は、このcallbackになります。<br />
+                  次に、JSは、このfetchData関数に飛んで、この時、setTimeoutに来ます。<br />
+                  このsetTimeoutの中には、これらの処理がありますが、これらがまだすぐに実行しません。2
+                  秒待つ必要があります。<br />
+                  ２秒経ってから、この処理をして、これの値を取得します。<br />
+                  次に、この行に来て、callbackを呼び出して、このcallbackは、このoutput関数のことなので、この時、JSは、このoutput関数を実行します。<br />
+                  この時、このデータは、このpersonのことなので、このpersonは、ここに差し替えして、<br />
+                  次は、これを実行して、この文字列と、このpersonの値をここで出力します。<br />
+                  次は、この行に来て、この文字列を出力します。<br />
+                  これまで、みんなさんは、できましたか？<br />
+                </p>
+              </div>
+            </div>
+            <p>--------------------------------------------------</p>
+            <div class="kaiwa table">
+              <div class="tableContent mt-2">
+                <p>
+                  cách viết ngắn gọn hơn: đưa thẳng function output vào main
+                  <br />
+                  それは、コールバックを使って非同期処理を行う方法の完全な書き方です。<br />
+                  実際のコードは、そのように書きません。そうすると、コードが長すぎるからです。もともと、このoutput関数は、このmain関数で動くだけです。<br />
+                  そのため、コードを短くするために、ここに直接関数を書きます。つまり、このように書きます。<br />
+                  この時、コールバックを使って非同期処理するコードは、このようになります。<br />
+                  この仕方は、この関数の中で置いているため、ここでは、先ほどのoutputという関数名が不要です。<br />
+                  この方法では、先ほどの書き方と同じ効果があります。<br />
+                  実行してみて、先ほどの結果と同じですね。<br />
+                  または、さらに短くするために、ここはアロー関数に置き換えることもできます。<br />
+                  アロー関数には、このように書きます。この時、functionというキーワードを削除して、代わりに、矢印にします。<br />
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="audioFix">
+            <audio
+              class="audio"
+              controls
+              loop
+              src="./audio/15,16,17_full.mp3"
+            ></audio>
+          </div> -->
+        </div>
+        <div class="tab-pane fade" id="page85_87">
+          <div class="talkContent_text container">
+            <div class="kaiwa table">
+              <div class="tableContent mt-2">
+                <p>
+                  次に、Promise（プロミス）を使って非同期処理をする方法です。<br />
+                  Promise
+                  は、コールバックの後に出た方法で、コールバックの欠点を解決するものです。<br />
+                  例えば、コールバックの方法では、これらの欠点があります。(cầm
+                  chuột và chỉ vào các nhược điểm của callback).<br />
+                  プロミスでは、これらの欠点を解決できます。<br />
+                  よく理解できるように、このような例を見てみましょう。<br />
+                  このコードの処理の流れは、次のようになります。<br />
+                  これらの関数は、定義するだけですね。まだ何も処理していません。<br />
+                  この行に来ると、main関数を実行します。<br />
+                  まず、これを実行して、この文字列をここで出力します（Start
+                  fetching…）<br />
+                  次に、fetchDataっていう関数を呼び出して、この時は、JSは、fetchData関数の中に入って、<br />
+                  この時、fetchData関数は、すぐに Promise
+                  （プロミス）を返します。<br />
+                  このプロミスの中で、このような１つの関数があります。アロー関数ですね。２つのパラメータは、これとこれです。<br />
+                  この関数は、すぐに実行されます。そのため、console.log(res)をすると、返した結果は、これです。Promise
+                  {pending}<br />
+                  Promise {pending}　この結果になった理由は、
+                  この関数の中に入って、setTimeoutのコードがあります。<br />
+                  setTimeoutの中にも、また、他の１つのアロー関数があります。<br />
+                  この関数のコードは、これらの２つの処理があります。<br />
+                  今、setTimeoutのコードになっているので、これらの２つの処理がまだ実行されていません。<br />
+                  ２秒経ってから、その処理が実行されます。<br />
+                  そのため、コンソールログをすると、このように表示されます。
+                </p>
+              </div>
+            </div>
+            <p>--------------------------------------------------</p>
+            <div class="kaiwa table">
+              <div class="tableContent mt-2">
+                <p>
+                  次は、このコードを削除して、このように書きます。<br />
+                  // fetchData()<br />
+                  // .then(result)<br />
+                  // .catch(showError)<br />
+                  ２秒後、このような配列を含む変数を作成して、その作成した変数の値を取得して、この関数のこのパラメータに返します。<br />
+                  この時、このパラメータの値がここに渡されます。<br />
+                  このパラメータ (resolve) の値は、ここに渡されます。(result)<br />
+                  このパラメータ (reject)
+                  の値は、ここに渡されます。(showError)<br />
+                  簡単に言うと、この.thenは、パラメータ１の値を取得します。<br />
+                  この.catchは、パラメータ2の値を取得します。<br />
+                  次に、このresultは、このresult関数のことです。そのため、この関数を実行して、このような情報を出力します。<br />
+                  このrejectの場合は、手動で実行する時、ここでは、このように渡します。(reject
+                  (“Error”)).<br />
+                  手動で実行しない場合、コードがシステムエラーなどで失敗した場合は、<br />
+                  この showError
+                  関数が自動的に実行され、そのエラー内容が渡されます。<br />
+                  じゃ、それは、Promise（プロミス）のコードですね。<br />
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="audioFix">
+            <audio
+              class="audio"
+              controls
+              loop
+              src="./audio/15,16,17_full.mp3"
+            ></audio>
+          </div> -->
+        </div>
+        <div class="tab-pane fade" id="page88_89">
+          <div class="talkContent_text container">
+            <div class="kaiwa table">
+              <div class="tableContent mt-2">
+                <p>
+                  次は、このページの部分ですね。<br />
+                  Promise（プロミス）の方法では、コールバックのようにコードが何重（なんじゅう）にも入れ子になりません。<br />
+                  しかし、例えば、このresult関数の中にさらに非同期処理がある場合は、その時もまた
+                  .then や .catch を続けて書く必要があります。<br />
+                  そのため、その欠点を解決するために、このasync/awaitの方法が生まれました。<br />
+                  これは、JavaScriptの最も簡単で、分かりやすい非同期処理の方法です。<br />
+                  この方法の仕方は、このようになります。<br />
+                  このようなコードがあります。<br />
+                  この方法を有効にするためには、次の２条件が必要があります。<br />
+                  １つ目は、await を付ける関数の前に、async
+                  を宣言しておく必要があります。<br />
+                  ここでの await
+                  は、この関数が実行し終わるまで待ってから、この次の行を実行するという意味です。<br />
+                  ２つ目の条件は、await を使う関数は、必ず Promise
+                  を返す必要があります。<br />
+                  この関数では、Promiseを返していますね。そのため、条件を満たしています。<br />
+                  Promiseを返しない場合、例えば、このようになります。<br />
+                  このawaitが効果がありません。<br />
+                  この関数を実行して、この行が先に出力しました。<br />
+                  今は 5
+                  秒待っているところなので、ここにはまだ結果が出ていません。<br />
+                  ５秒経ちましたので、このような結果が出ています。<br />
+                  この方法は Promise のバージョンアップ版です。<br />
+                  この方法のコードは、とても短く、何重にも入れ子になりません。
+                  <br />
                 </p>
               </div>
             </div>
