@@ -289,6 +289,13 @@
         <button class="nav-link" data-bs-toggle="pill" data-bs-target="#page79">
           79
         </button>
+        <button
+          class="nav-link"
+          data-bs-toggle="pill"
+          data-bs-target="#page80_82"
+        >
+          80
+        </button>
       </div>
       <div class="tab-content mt-2" id="v-pills-tabContent">
         <div class="tab-pane fade show active" id="page36_37">
@@ -1046,6 +1053,117 @@
           <div class="audioFix">
             <audio class="audio" controls loop src="./audio/79.mp3"></audio>
           </div>
+        </div>
+        <div class="tab-pane fade" id="page80_82">
+          <div class="talkContent_text container">
+            <div class="kaiwa table">
+              <div class="tableHeader">
+                <audio
+                  controls
+                  loop
+                  class="audio"
+                  src="./audio/80_82_p1.mp3"
+                ></audio>
+              </div>
+              <div class="tableContent mt-2">
+                <p>
+                  次に、JavaScript の非同期処理の部分です。（ひどうき
+                  しょり）<br />
+                  なぜ非同期処理が必要なのかを理解するために、この例を見てみましょう。<br />
+                  この例のコードもチャットでお送りします。<br />
+                  この例では、これらの２つの関数を宣言しています。<br />
+                  このコードを実行してみると、コンソールタブにはこのように表示されます。<br />
+                  このコードの実行の流れを説明いたします。<br />
+                </p>
+              </div>
+            </div>
+            <p>--------------------------------------------------</p>
+            <div class="kaiwa table">
+              <div class="tableHeader">
+                <audio
+                  controls
+                  loop
+                  class="audio"
+                  src="./audio/80_82_p2.mp3"
+                ></audio>
+              </div>
+              <div class="tableContent mt-2">
+                <p>
+                  まず、JavaScript は上から実行して、このような2
+                  つの関数があることを覚えておきます。<br />
+                  覚えておくだけで、この時点ではまだ何も処理していません。<br />
+                  <br />
+                  次に、この関数呼び出しの行に来ると、mainという関数を検索して、このmain関数に入って、また上から処理します。<br />
+                  具体的には、この行に来た時、この内容を出力します。console.log("Start
+                  fetching..."); ⇒ gặp console.log output ra Start fetching…<br />
+                  次は、この行に来ます（let data =
+                  fetchData();）。この行の宣言とは、fetchData関数を実行して、fetchData関数の値を取得して、このデータ変数に返すということですね。<br />
+                  そのため、この関数（fetchData）を検索して、fetchData関数に入って、また上から処理します。<br />
+                </p>
+              </div>
+            </div>
+            <p>--------------------------------------------------</p>
+            <div class="kaiwa table">
+              <div class="tableHeader">
+                <audio
+                  controls
+                  loop
+                  class="audio"
+                  src="./audio/80_82_p3.mp3"
+                ></audio>
+              </div>
+              <div class="tableContent mt-2">
+                <p>
+                  このfetchData関数には、まず、dataという変数を作成して、ヌールの値を代入します。<br />
+                  次は、このsetTimeoutのコードに来ると、ロジック上は、このコードを実行した後の結果が、この配列をこのdata変数に返して、次に、この文字列と、この配列を出力しますね。<br />
+                  しかし、ここでは待機時間（たいきじかん）を 2
+                  秒に設定しているため、このコードは 2
+                  秒後に実行されます。（にびょうご）<br />
+                  その間（そのあいだ）、JavaScript は setTimeout
+                  の処理が終わって結果が返ってくるまで待ちません。<br />
+                  その代わりに、この下の行に来て、先に実行します。 setTimeout
+                  の処理はバックグラウンドで実行されます。
+                </p>
+              </div>
+            </div>
+            <p>--------------------------------------------------</p>
+            <div class="kaiwa table">
+              <div class="tableHeader">
+                <audio
+                  controls
+                  loop
+                  class="audio"
+                  src="./audio/80-82_P4.mp3"
+                ></audio>
+              </div>
+              <div class="tableContent mt-2">
+                <p>
+                  そのため、この時点では、このdataのヌール値を取得して、この関数を呼び出した箇所に返します。つまり、この時点で、これの値がヌールですね。<br />
+                  次に、この行に来ます　console.log("Data:", data);。<br />
+                  この文字列と、このdataの値を出力します。つまり、この行です。Data:
+                  null <br />
+                  次に、この行に来て console.log("Done
+                  fetching.");、この文字列を出力します。Done fetching. <br />
+                  その後、2 秒経ってからこの setTimeout
+                  の中のコードが実行されるため、
+                  この時点で初めてここの行が下に出力されます。<br />
+                  このsetTimeoutは、JavaScriptの非同期と呼ばれます。<br />
+                  本来なら、この部分は、ここに表示されるはずですが、
+                  非同期のため、下のほうに表示されてしまいました。<br />
+                  そのため、非同期処理をするために、次のようにします。
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="audioFix">
+            <audio
+              class="audio"
+              controls
+              loop
+              src="./audio/15,16,17_full.mp3"
+            ></audio>
+          </div> -->
         </div>
       </div>
     </section>
