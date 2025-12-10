@@ -233,65 +233,6 @@
         <button
           class="nav-link active"
           data-bs-toggle="pill"
-          data-bs-target="#page36_37"
-        >
-          36
-        </button>
-        <button
-          class="nav-link"
-          data-bs-toggle="pill"
-          data-bs-target="#page38_40"
-        >
-          38
-        </button>
-        <button
-          class="nav-link"
-          data-bs-toggle="pill"
-          data-bs-target="#page44_46"
-        >
-          44
-        </button>
-        <button
-          class="nav-link"
-          data-bs-toggle="pill"
-          data-bs-target="#page47_48"
-        >
-          47
-        </button>
-        <button
-          class="nav-link"
-          data-bs-toggle="pill"
-          data-bs-target="#page56_57"
-        >
-          56
-        </button>
-        <button
-          class="nav-link"
-          data-bs-toggle="pill"
-          data-bs-target="#page67-70"
-        >
-          67
-        </button>
-        <button
-          class="nav-link"
-          data-bs-toggle="pill"
-          data-bs-target="#page73_75"
-        >
-          73
-        </button>
-        <button
-          class="nav-link"
-          data-bs-toggle="pill"
-          data-bs-target="#page76_78"
-        >
-          76
-        </button>
-        <button class="nav-link" data-bs-toggle="pill" data-bs-target="#page79">
-          79
-        </button>
-        <button
-          class="nav-link"
-          data-bs-toggle="pill"
           data-bs-target="#page80_82"
         >
           80
@@ -319,763 +260,7 @@
         </button>
       </div>
       <div class="tab-content mt-2" id="v-pills-tabContent">
-        <div class="tab-pane fade show active" id="page36_37">
-          <div class="talkContent_text container">
-            <div class="kaiwa table">
-              <div class="tableHeader">
-                <audio
-                  controls
-                  loop
-                  class="audio"
-                  src="./audio/36,37_doan1.mp3"
-                ></audio>
-              </div>
-              <div class="tableContent mt-2">
-                <p>
-                  次は、JavaScript のデータ型について説明します。<br />
-                  JavaScript には
-                  7つのデータ型があります。例えば、テキストやナンバーなどです。<br />
-                  例えば、このように、テキスト型と、ナンバー型の 2
-                  つのデータ型を宣言します。let name = “Alice”; let age = 25;
-                  <br />
-                  テキスト型の場合、値は、このような ダブルクォーテーション や
-                  シングルクォーテーション の中に入ります。
-                  一方、ナンバー型は、このように単純に数値になります。<br />
-                  このほかにも、さまざまなデータ型がありますので、詳しくは資料を参照してください。<br />
-                </p>
-              </div>
-            </div>
-            <p>--------------------------------------------------</p>
-            <div class="kaiwa table">
-              <div class="tableHeader">
-                <audio
-                  controls
-                  loop
-                  class="audio"
-                  src="./audio/36,37_doan2.mp3"
-                ></audio>
-              </div>
-              <div class="tableContent mt-2">
-                <p>
-                  —-----------------Đoạn 2—---------------- <br />
-                  もう、一点です。JavaScript
-                  では、事前にデータ型を宣言する必要はありません。
-                  値を代入するときに、JavaScript
-                  が自動的にデータ型を判断してくれます。
-                  そのため、変数がどのデータ型に属しているかを確認するには、これ（typeof）を使用します。<br />
-                  ここでは、データ型を確認したい変数名を渡します。例えば、この変数を渡します。let
-                  check = typeof age; <br />
-                  コンソールログすると、結果が ナンバー（number）
-                  と返されていますね。
-                  今、ここでは、このネームという変数を渡してみると、 今回は
-                  文字列が返されますね。<br />
-                  じゃ、それは、データ型と、データ型の確認の部分についてです。ここまで、皆さんは、できましたか？
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- <div class="audioFix">
-            <audio
-              class="audio"
-              controls
-              loop
-              src="./audio/15,16,17_full.mp3"
-            ></audio>
-          </div> -->
-        </div>
-        <div class="tab-pane fade" id="page38_40">
-          <div class="talkContent_text container">
-            <div class="kaiwa table">
-              <div class="tableHeader">
-                <audio
-                  controls
-                  loop
-                  class="audio"
-                  src="./audio/38,40_p1,2.m4a"
-                ></audio>
-              </div>
-              <div class="tableContent mt-2">
-                <p>
-                  次は、JavaScript内の文字列です。<br />
-                  例えば、このように３つの変数を宣言します。let text1 =
-                  “Hello”;　let text2 = ‘World’;　let text3 = `John`
-                  //backtick　<br />
-                  文字列は、ダブルクォーテーション（“
-                  ”）、または、シングルクォーテーション（‘
-                  ’）、または、バックティックの中に入っている内容です。<br />
-                  今、これらの宣言をコンソールログしてみて、結果は、ここで、これらの文字列が出力されていますね。<br />
-                  —-----------------Đoạn 2—-------------------- <br />
-                  バックティックを使った文字列の場合、このように、変数を文字列の中に直接渡すことができます。<br />
-                  例えば、この例では、変数を渡すには、この記号の中でドル記号（$）
-                  と、波かっこ（${ }）
-                  を入力します。波かっこの中には、変数名を入れます。<br />
-                  次は、何かの値を入力します。ここでは、この値にしています。<br />
-                  let backtick = `${text1} John`; <br />
-                  次に、これをコンソールログして、
-                  ここに表示された結果を見ると、この値が表示されましたね。<br />
-                </p>
-              </div>
-            </div>
-            <p>--------------------------------------------------</p>
-            <div class="kaiwa table">
-              <div class="tableHeader">
-                <audio
-                  controls
-                  loop
-                  class="audio"
-                  src="./audio/38,40_p3.mp3"
-                ></audio>
-              </div>
-              <div class="tableContent mt-2">
-                <p>
-                  —-----------------Đoạn 3—-------------------- <br />
-                  次に、JavaScript
-                  では、文字列を処理するためのさまざまなプロパティやメソッドが用意されています。<br />
-                  例えば、文字列に含まれる文字数を調べたい場合はこのプロパティ（
-                  .length）を使います。<br />
-                  例えば、ここでは、このようなコードを宣言していますね。console.log(text1.length)
-                  <br />
-                  こっち側の出力結果が 5 になっています。<br />
-                  この「5」という数字は、text1 という変数が 5 文字
-                  で構成されているという意味です。<br />
-                </p>
-              </div>
-            </div>
-            <p>--------------------------------------------------</p>
-            <div class="kaiwa table">
-              <div class="tableHeader">
-                <audio
-                  controls
-                  loop
-                  class="audio"
-                  src="./audio/36,37_p4.mp3"
-                ></audio>
-              </div>
-              <div class="tableContent mt-2">
-                <p>
-                  —-----------------Đoạn 4—-------------------- <br />
-                  次は、他の例をしていきましょう。このように変数を宣言します。let
-                  text = “ Apple, Banana, Kiwi “; <br />
-                  これをコンソールログしてみて、先頭と末尾にスペースが入っていますよね。<br />
-                  今、このスペースを消したい場合は、このメソッドを使います。
-                  .trim()。console.log(text.trim()) <br />
-                  ファイルを保存して、ページをリロードします。結果は、文字列の先頭と末尾にあったスペースがカットされましたね。<br />
-                </p>
-              </div>
-            </div>
-            <div class="kaiwa table">
-              <div class="tableHeader">
-                <audio
-                  controls
-                  loop
-                  class="audio"
-                  src="./audio/38.40_doan 5.mp3"
-                ></audio>
-              </div>
-              <div class="tableContent mt-2">
-                <p>
-                  —-----------------Đoạn 5—-------------------- <br />
-                  次に、他の例です。文字列を何かの文字で分割したい場合は、このメソッド（.split()
-                  ）を使うことができます。<br />
-                  例えば、このようにコードを書きます。console.log(text.split(“,”));　<br />
-                  このカッコの中に、この記号を入力して、次は、分割したい文字を入力します。例えば、ここでは、このカンマですね。<br />
-                  実行した後、結果は、このように出ますね。つまり、文字列が配列にこのカンマで分割されたということです。<br />
-                  それ以外、文字列を処理するためのさまざまなメソッドもありますので、資料を参照してください。<br />
-                  ここまで、皆さんは、できましたか？
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- <div class="audioFix">
-            <audio
-              class="audio"
-              controls
-              loop
-              src="./audio/15,16,17_full.mp3"
-            ></audio>
-          </div> -->
-        </div>
-        <div class="tab-pane fade" id="page44_46">
-          <div class="talkContent_text container">
-            <div class="kaiwa table">
-              <div class="tableHeader">
-                <audio
-                  controls
-                  loop
-                  class="audio"
-                  src="./audio/44-46_p1.mp3"
-                ></audio>
-              </div>
-              <div class="tableContent mt-2">
-                <p>
-                  次は、ジャバスクリプト内の日付（JavaScript Dates）
-                  についての部分です。 例えば、このように例をします。let d1 =
-                  new Date();　<br />
-                  これをコンソールログしてみると、このような書き方には、つまり、カッコの中に空白する書き方には、システムの現在の日時が返されます。
-                </p>
-              </div>
-            </div>
-            <p>--------------------------------------------------</p>
-            <div class="kaiwa table">
-              <div class="tableHeader">
-                <audio
-                  controls
-                  loop
-                  class="audio"
-                  src="./audio/44-46_p2.mp3"
-                ></audio>
-              </div>
-              <div class="tableContent mt-2">
-                <p>
-                  このようにDateに日付を渡すこともできます。let d2 = new
-                  Date(“2022-03-25”) <br />
-                  フォーマットは 年‐月‐日 の順になります。
-                  時・分・秒を渡さない場合は、PCのシステムの現在のタイムゾーンが自動的に適用されます。つまり、弊社側は、このように出ます。07:00:00　<br />
-
-                  もし、システムが日本のタイムゾーン（GMT+9）に設定されている場合は、ここの出力結果は
-                  ９時（09:00:00）になります。<br />
-                </p>
-              </div>
-            </div>
-            <p>--------------------------------------------------</p>
-            <div class="kaiwa table">
-              <div class="tableHeader">
-                <audio
-                  controls
-                  loop
-                  class="audio"
-                  src="./audio/44-46_p3.mp3"
-                ></audio>
-              </div>
-              <div class="tableContent mt-2">
-                <p>
-                  今、このように、ここに時・分・秒も追加して渡してみます。let d2
-                  = new Date(“2022-03-25 18:30:50”);　<br />
-                  ページをリロードします。この時間を出力されましたね。<br />
-                  —------------------------------------------------<br />
-                  また、この渡し方以外にも、このように渡すこともできます。let d3
-                  = new Date(2025, 8, 9, 14, 30, 5)　<br />
-                  つまり、年、月、日、時、分、秒
-                  の順番で、それぞれの値を個別に渡します。
-                  コンソールログして、この結果になります。
-                  ここで一つ注意点があります。JavaScript では、月の値は 0
-                  から始まります。 例えば、このように 8 を渡すと、出力される月は
-                  9 月 になります。 別の例として、もし 0 を渡すと、let d3 = new
-                  Date(2025, 0, 9, 14, 30, 5) <br />
-                  結果は 1 月 として出力されます。<br />
-                </p>
-              </div>
-            </div>
-            <p>--------------------------------------------------</p>
-            <div class="kaiwa table">
-              <div class="tableHeader">
-                <audio
-                  controls
-                  loop
-                  class="audio"
-                  src="./audio/44,46_p3.m4a"
-                ></audio>
-              </div>
-              <div class="tableContent mt-2">
-                <p>
-                  —------------------Đoạn 3—---------------------- <br />
-                  JavaScript
-                  には、Dateを処理したり操作したりするためのさまざまなメソッドがあります。<br />
-                  例えば、これは 年を出力するためのメソッド です。.getFullYear()
-                  <br />
-                  現在の年を出力したい場合は、このようにコンソールログします。console.log(d1.getFullYear())
-                  <br />
-                  また、これは 月を出力するためのメソッド です。.getMonth()
-                  <br />
-                  日付を出力したい場合は、このようにします。console.log(d1.getDate())
-                  <br />
-                  —-------------------------- <br />
-                  じゃ、月の例に戻っていきましょう。もし、このように書くだけだと、前の月が出力されてしまいます。
-                  先ほども説明したように、JavaScriptの月は 0 から始まる ため、
-                  現在の月を正しく出力したい場合は、このように 1
-                  を足します。console.log(d1.getMoth() + 1)　<br />
-                  このほかにも、資料に記載されているように、Dateを処理したり操作したりするためのさまざまなメソッドがありますので、
-                  ぜひ参考にしてください。
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- <div class="audioFix">
-            <audio
-              class="audio"
-              controls
-              loop
-              src="./audio/15,16,17_full.mp3"
-            ></audio>
-          </div> -->
-        </div>
-        <div class="tab-pane fade" id="page47_48">
-          <div class="talkContent_text container">
-            <!-- <div class="kaiwa table">
-              <div class="tableHeader"></div>
-              <div class="tableContent mt-2">
-                <p></p>
-              </div>
-
-              <p>--------------------------------------------------</p>
-            </div> -->
-            <div class="kaiwa table">
-              <div class="tableHeader">
-                <audio
-                  controls
-                  loop
-                  class="audio"
-                  src="./audio/47,48_p1.mp3"
-                ></audio>
-              </div>
-              <div class="tableContent mt-2">
-                <p>
-                  次は、JavaScriptの配列についての部分です。
-                  配列を初期化する方法は 2 つあります。 1
-                  つ目は、このように書く方法です。let a1 = [] <br />
-                  2 つ目は、このように書く方法です。let new Array(); <br />
-                  例えば、このように配列を宣言します。let cars = [“Saab”,
-                  “Volvo”, “BMW”]; <br />
-                  次は、この配列の中から何か一つ要素を取り出してみましょう。
-                  JavaScriptと、多くのプログラミング言語では、配列のインデックス（つまり、開始位置）は
-                  0 から 始まります。
-                  この例では、これのインデックスが0で、これのインデックスが1
-                  となります。<br />
-                  配列の値を取り出すには、ここで配列名を書いて、console.log(cars[0])
-                  次に この記号［ ］
-                  を付けて、ここでは、インデックスを入れます。console.log(cars[0])　<br />
-                  ページをリロードして、結果は、この最初の値が出力されましたね。
-                  もし、ここでは、１に変更してみて、コンソールログすると、この値が出ますね。
-                </p>
-              </div>
-            </div>
-            <p>--------------------------------------------------</p>
-            <div class="kaiwa table">
-              <div class="tableHeader">
-                <audio
-                  controls
-                  loop
-                  class="audio"
-                  src="./audio/47,48_p2.m4a"
-                ></audio>
-              </div>
-              <div class="tableContent mt-2">
-                <p>
-                  —-------------------Đoạn 2—------------------ <br />
-                  例えば、配列にいくつの値が入っているかを確認したい場合は、このプロパティを使います。
-                  .length　<br />
-                  例えば、このように書きます。console.log(cars.length)　<br />
-                  ページをリロードして、ここでは、３と出力されていますね。この３とは、この配列に
-                  3 つの値がある ということです。<br />
-                  <br />
-                  もう１つの例です。例えば、配列の最後の値を取り出したい場合は、このようにコードを書きます。console.log(cars[cars.length
-                  - 1])　<br />
-                  配列のインデックスは 0 から始まるので、ここでは 1
-                  を引く必要があります。ページリロードして、この最後のものが出力されましたね。
-                  それは、Javascriptの配列の部分です。これまで、皆さんは、できましたか？
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- <div class="audioFix">
-            <audio
-              class="audio"
-              controls
-              loop
-              src="./audio/15,16,17_full.mp3"
-            ></audio>
-          </div> -->
-        </div>
-        <div class="tab-pane fade" id="page56_57">
-          <div class="talkContent_text container">
-            <!-- <div class="kaiwa table">
-              <div class="tableHeader"></div>
-              <div class="tableContent mt-2">
-                <p></p>
-              </div>
-
-              <p>--------------------------------------------------</p>
-            </div> -->
-            <div class="kaiwa table">
-              <div class="tableHeader">
-                <audio
-                  controls
-                  loop
-                  class="audio"
-                  src="./audio/56,57_p1.m4a"
-                ></audio>
-              </div>
-              <div class="tableContent mt-2">
-                <p>
-                  次は、JavaScriptのオブジェクトの部分です。
-                  オブジェクトを初期化する方法は 2 つあります。 1
-                  つ目は、このように書きます。a1 = {} <br />
-                  2 つ目は、このように書きます。a2 = new Object(); <br />
-                  配列と同じように、早く進めるために方法1を使います。
-                  例えば、次のようにオブジェクトを宣言します。let car = {type:
-                  “Honda”, model: “500”, color: “White”} <br />
-                  このように1行で書くこともできます。<br />
-                  または、見やすくするために次のように改行して書くこともできます。
-                  <br />
-                  let car = { type: “Honda” , model: “500” , color: “White” }
-                </p>
-              </div>
-            </div>
-            <p>--------------------------------------------------</p>
-            <div class="kaiwa table">
-              <div class="tableHeader">
-                <audio
-                  controls
-                  loop
-                  class="audio"
-                  src="./audio/56,57_p2.m4a"
-                ></audio>
-              </div>
-              <div class="tableContent mt-2">
-                <p>
-                  このオブジェクトの中には、これはキーです。プロパティと呼ぶこともできます。
-                  これは値です。
-                  プロパティにアクセスするには2つの方法があります。<br />
-                  方法1では、キーを使ってこのように記述します。console.log(car.type);<br />
-                  このカッコの中には変数名を渡し、次に、ドットを入力してキーを渡します。
-                  ページをリロードしたら、このキーの値が取得できました。<br />
-                  <br />
-                  2つ目の方法は、ここでは変数名を渡して、次は、角カッコを入力して、その中にキーを渡します。console.log(car[type])
-                  <br />
-                  ページをリロードして、このキーの値が取得できました。
-                  ここまで、皆さんできましたか？
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- <div class="audioFix">
-            <audio
-              class="audio"
-              controls
-              loop
-              src="./audio/15,16,17_full.mp3"
-            ></audio>
-          </div> -->
-        </div>
-        <div class="tab-pane fade" id="page67-70">
-          <div class="talkContent_text container">
-            <div class="kaiwa table">
-              <div class="tableHeader">
-                <audio
-                  controls
-                  loop
-                  class="audio"
-                  src="./audio/67,68,69,70_p1,2.m4a"
-                ></audio>
-              </div>
-              <div class="tableContent mt-2">
-                <p>
-                  次は、JavaScriptの関数の部分になります。
-                  関数の共通の書き方は、このようになります。 <br />
-                  function myFunction(p1, p2) { } <br />
-                  この書き方では、まず、functionというキーワードを書きます。<br />
-                  次に関数名を記述します。関数名は、何でも大丈夫です。<br />
-                  次は、カッコを入力して、カッコの中には、空白にすることができます。<br />
-                  または、各パラメータを渡すことができます。パラメータはカンマで区切ります。<br />
-                  次は、波カッコです。波カッコの中には、実行するコードです。<br />
-                  —---------------------Đoạn 2—------------------- <br />
-                  例えば、このように関数を宣言します。<br />
-                  function sayHello() { console.log(“Hello”); } <br />
-                  これは、パラメータが無い関数ですね。つまり、このカッコの中には、空白にしています。<br />
-                  次は、この関数を実行するには、ここでは、このように書きます。sayHello();　<br />
-                  ページをリロードして、ここでは、この値が表示されていますね。この行です。
-                </p>
-              </div>
-            </div>
-            <p>--------------------------------------------------</p>
-            <div class="kaiwa table">
-              <div class="tableHeader">
-                <audio
-                  controls
-                  loop
-                  class="audio"
-                  src="./audio/67,68,69,70_p3.m4a"
-                ></audio>
-              </div>
-              <div class="tableContent mt-2">
-                <p>
-                  —---------------------Đoạn 3—------------------- <br />
-                  次は、パラメータがある関数の例をしていきましょう。<del
-                    >パラメータとは、外部から渡される入力用の変数のことです。 </del
-                  ><br />
-                  このように関数を宣言します。<br />
-                  function greet(name) { console.log(“Hello: ”, name); }　<br />
-                  ここでは、ネームという1つのパラメータを渡します。<br />
-                  これは、関数が実行する処理です。<br />
-                  この（greet）関数を呼び出して、このネームの値を渡します。例えば
-                  、この値にします。これは、ネームというパラメータの値と呼ばれます。
-                  greet("John");　<br />
-                  ページをリロードして、この時、このように表示されていますね。
-                </p>
-              </div>
-            </div>
-            <div class="kaiwa table">
-              <div class="tableHeader">
-                <audio
-                  controls
-                  loop
-                  class="audio"
-                  src="./audio/67,68,69,70_p4_mix.mp3"
-                ></audio>
-              </div>
-              <div class="tableContent mt-2">
-                <p>
-                  次は、戻り値（もどりち）がある関数の例を見ていきましょう。<br />
-                  このように関数を宣言します。<br />
-                  function add(a, b) { let result = a + b; return result; }　<br />
-                  この関数には、a と b の 2つのパラメータを渡します。<br />
-                  これは、関数が実行する処理です。<br />
-                  「return result;」このリターン
-                  リザルトとは、リザルトという変数の値を関数を呼び出した側に返すという意味です。<br />
-                  let sum = add(2,
-                  3);　この宣言とは、このadd（アッド）っていう関数を呼び出して、パラメータに値を渡しています。<br />この時、a
-                  が 2 で、b が 3 っていうことですね。 console.log(sum) <br />
-                  この宣言とは、この変数の結果を出力するということです。この変数の結果が、そのままこの関数の結果になるんです。<br />
-                  で、JavaScript が実行する流れは、上から処理します。<br />
-                  そのため、このコードの流れは、次のとおりです。 <br />
-                  まず、JS は関数の定義を読み込んで、「add
-                  っていう関数があるんだな」と覚えるだけで、まだ実行はしません。<br />
-                  次に、この行に来ると、add
-                  っていう関数を呼び出して、2つのパラメータに値を渡します。この時、aが２，ｂが３です。<br />
-                  それから関数の中に入って、この処理を実行して、終わったら結果をリザルト
-                  っていう変数に入れます。<br />
-                  で、このリザルトを呼び出し元（よびだしもと）に戻します。つまり、ここです。<br />
-                  最後に、このsumの結果をコンソールに表示します。
-                  その結果は、５ですね。<br />
-                  —---------------------Đoạn 5—------------------- <br />
-                  まとめると、関数は主に、３つの種類があります。
-                  それは、パラメータが無い関数と、パラメータがある関数と、リターンがある関数です。<br />
-                  これで JavaScript の関数の部分です。皆さん、できましたか？
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- <div class="audioFix">
-            <audio
-              class="audio"
-              controls
-              loop
-              src="./audio/15,16,17_full.mp3"
-            ></audio>
-          </div> -->
-        </div>
-        <div class="tab-pane fade" id="page73_75">
-          <div class="talkContent_text container">
-            <div class="kaiwa table">
-              <div class="tableHeader">
-                <audio
-                  controls
-                  loop
-                  class="audio"
-                  src="./audio/73,74,75_p1.m4a"
-                ></audio>
-              </div>
-              <div class="tableContent mt-2">
-                <p>
-                  次は、この部分です。まずは、この部分です。<br />
-                  この部分とは、関数を変数に代入するということです。<br />
-                  先ほどのように別の関数を作る代わりに、関数を直接作って変数の値として代入することもできます。つまり、このようにします。<br />
-                  let sum = function(a, b) { return a + b; }<br />
-                  ここで作成した関数は、先ほどより短い構造があります。つまりこの時点では関数名がありませんね。<br />
-                  今、これをコンソールログしてみて、この a と b は、それぞれ 10
-                  と 20 に置き換えられます。<br />
-                  ページをリロードして、返り値はこれで、正しいですね。<br />
-                  つまり、この関数は通常通り動作することができます。<br />
-                </p>
-              </div>
-            </div>
-            <p>--------------------------------------------------</p>
-            <div class="kaiwa table">
-              <div class="tableHeader">
-                <audio
-                  controls
-                  loop
-                  class="audio"
-                  src="./audio/73,74,75_p2.m4a"
-                ></audio>
-              </div>
-              <div class="tableContent mt-2">
-                <p>
-                  —----------------------slide 74—---------------------　<br />
-                  次は、このアロー関数の部分です。<br />
-                  アロー関数は、関数式をより短い書き方です。<br />
-                  例えば、このように宣言します。let sum = (a, b) => { return a +
-                  b; };　<br />
-                  ここでは、これは、変数を宣言しています。この部分は、アロー関数と呼ばれます。<br />
-                  この矢印は、functionキーワードの代わりになっています。<br />
-                  つまり、functionキーワードをわざわざ書く代わりに、このように矢印で書くことができます。<br />
-                  これをコンソールログしてみて、この a と b は、それぞれ 5 と 10
-                  に置き換えられます。console.log(sum(5, 10));　<br />
-                  返した結果は、正しいですね。
-                </p>
-              </div>
-            </div>
-            <div class="kaiwa table">
-              <div class="tableHeader">
-                <audio
-                  controls
-                  loop
-                  class="audio"
-                  src="./audio/73,74,75_p3.m4a"
-                ></audio>
-              </div>
-              <div class="tableContent mt-2">
-                <p>
-                  —----------------------Đoạn 3—---------------------　<br />
-                  次の例に行きましょう。例えば、パラメータが1つだけがある関数の場合、カッコを使わなくても構いません。代わりに、このように書けます。let
-                  square = n => { return n * n } <br />
-                  ここはパラメータが1つの n
-                  だけだから、カッコは書かなくても大丈夫です。<br />
-                  これをコンソールログしてみて、この結果は、正しいですね。console.log(square(5));　<br />
-                  —-----------------------------------　<br />
-                  他の例です。リターンが1行だけのときは、 この波カッコと
-                  リターンを書かなくても大丈夫です。つまり、こんな感じで書けます。let
-                  square = n => n * n 　<br />
-                  簡単な関数にとっては、関数式やアロー関数を使うと、書き方が柔軟で、短くなります。<br />
-                  それは、関数を変数に代入する部分と、アロー関数の部分です。<br />
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- <div class="audioFix">
-            <audio
-              class="audio"
-              controls
-              loop
-              src="./audio/15,16,17_full.mp3"
-            ></audio>
-          </div> -->
-        </div>
-        <div class="tab-pane fade" id="page76_78">
-          <div class="talkContent_text container">
-            <div class="kaiwa table">
-              <div class="tableHeader">
-                <audio controls loop class="audio" src="./audio/76.mp3"></audio>
-              </div>
-              <div class="tableContent mt-2">
-                <p>
-                  ----------------------slide 76----------------- <br />
-                  次は、JavaScriptのスコープの部分です。<br />
-                  例えば、このように変数を宣言します。let globalVar = “I am
-                  global”; <br />
-                  続いて、このような関数を宣言します。 <br />
-                  function showGlobal() { console.log(globalVar); }<br />
-                  この関数を実行します。showGlobal();<br />
-                  この変数の値は、ここで表示されましたね。この行です。<br />
-                  今、この変数を関数外にコンソールログして、この変数の値は、まだここで表示されましたね。この行です。<br />
-                  つまり、関数の外で宣言した変数は、関数の中でも外でも呼び出して使えるということです。
-                </p>
-              </div>
-            </div>
-            <p>--------------------------------------------------</p>
-            <div class="kaiwa table">
-              <div class="tableHeader">
-                <audio controls loop class="audio" src="./audio/77.mp3"></audio>
-              </div>
-              <div class="tableContent mt-2">
-                <p>
-                  ーーーーーーーーーーーーーーslide 77
-                  ーーーーーーーーーーーーーー <br />
-                  次は、他の例をしていきましょう。<br />
-                  function testScope() {<br />
-                  let localVar = “I am local”;<br />
-                  console.log(localVar);<br />
-                  }<br />
-                  testScope();<br />
-                  まず、このような関数を宣言します。<br />
-                  この関数の中で、このような変数を宣言します。<br />
-                  続いて、この関数の中でこの変数をコンソールログします。<br />
-                  ここでは、この関数を実行します。<br />
-                  結果は、この変数の値は、ここで表示されましたね。この行です。<br />
-                  <br />
-                  しかし、この変数をこの関数の外にコンソールログしてみて、console.log(localVar)<br />
-                  結果は、この変数が定義されないというエラーが出ていますね。この行です。<br />
-                  ということは、関数の中で宣言した変数は、関数の外に出ると使えないということです。<br />
-                  ここまで、皆さんできましたか？<br />
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- <div class="audioFix">
-            <audio
-              class="audio"
-              controls
-              loop
-              src="./audio/15,16,17_full.mp3"
-            ></audio>
-          </div> -->
-        </div>
-        <div class="tab-pane fade" id="page79">
-          <div class="talkContent_text container">
-            <div class="kaiwa table">
-              <div class="tableContent mt-2">
-                <p>
-                  次は、JavaScriptのコールバックの部分です。<br />
-                  例えば、このような２つの関数を宣言します。 <br />
-                  function calculate(a, b, callback) { let result = a + b;
-                  callback(result); } <br />
-                  function showResult(sum) { console.log(“The sum is: “, sum); }
-                  <br />
-                  calculate(10, 20, showResult); <br />
-                  次に、この関数を呼び出して、各パラメータに値をこのように渡します。<br />
-                  ページをリロードして、このコードの結果は、このようになっていますね。The
-                  sum is: 30 <br />
-                  このコードの処理の流れを説明いたします。<br />
-                  JavaScriptは、上から順番に実行していくので、まずこの関数に来たときに「こういう関数があるんだな」って感じで覚えておきます。<br />
-                  次に、この関数に来たら、JS
-                  も「これがあるんだな」と同じように覚えておきます。<br />
-                  この時点で、まだ何も実行されなくて、こういう関数が2つあるんだなってメモリに登録しているだけです。<br />
-                  次に、この関数呼び出しの行に来ると、JS は calculate
-                  っていう関数を、この 3 つのパラメータで呼び出します。
-                  つまり、この時点で a が 10、b が 20、そして callback が
-                  showResult という関数になります。<br />
-                  次に、このcalculate関数の中に入って、この処理を実行して、終わったらその結果を
-                  result に代入します。 <br />
-                  そのあと、callback を呼び出して、result を渡します。ここでの
-                  callback は showResult という関数なので、この sum がこの
-                  result になります。つまり、30 になります。<br />
-                  次に、JS は showResult
-                  の方に飛んで、この関数を実行します。つまり、このコードを実行します。<br />
-                  このときの sum は 30
-                  なので、出力される結果はこんな感じになります。The sum is: 30
-                  <br />
-                  それは、このコードの動き方です。皆さんできましたか？<br />
-                  <br />
-                  注意点があります。ここでのパラメータの callback
-                  っていう名前は、別に callback
-                  じゃなくてもよくて、何でも大丈夫です。
-                </p>
-              </div>
-            </div>
-            <!-- <p>--------------------------------------------------</p>
-            <div class="kaiwa table">
-              <div class="tableHeader">
-                <audio controls loop class="audio" src=""></audio>
-              </div>
-              <div class="tableContent mt-2">
-                <p></p>
-              </div>
-            </div> -->
-          </div>
-
-          <div class="audioFix">
-            <audio class="audio" controls loop src="./audio/79.mp3"></audio>
-          </div>
-        </div>
-        <div class="tab-pane fade" id="page80_82">
+        <div class="tab-pane fade show active" id="page80_82">
           <div class="talkContent_text container">
             <div class="kaiwa table">
               <div class="tableHeader">
@@ -1193,6 +378,14 @@
         <div class="tab-pane fade" id="page83_84">
           <div class="talkContent_text container">
             <div class="kaiwa table">
+              <div class="tableHeader">
+                <audio
+                  controls
+                  loop
+                  class="audio"
+                  src="./audio/83,84_p1.mp3"
+                ></audio>
+              </div>
               <div class="tableContent mt-2">
                 <p>
                   dùng callback để xử lý bất đồng bộ <br />
@@ -1221,6 +414,14 @@
             </div>
             <p>--------------------------------------------------</p>
             <div class="kaiwa table">
+              <div class="tableHeader">
+                <audio
+                  controls
+                  loop
+                  class="audio"
+                  src="./audio/83,84_p2.mp3"
+                ></audio>
+              </div>
               <div class="tableContent mt-2">
                 <p>
                   cách viết ngắn gọn hơn: đưa thẳng function output vào main
@@ -1250,9 +451,7 @@
         </div>
         <div class="tab-pane fade" id="page85_87">
           <div class="talkContent_text container">
-            <div class="kaiwa table">
-              <div class="tableContent mt-2">
-                <p>
+            <p>
                   次に、Promise（プロミス）を使って非同期処理をする方法です。<br />
                   Promise
                   は、コールバックの後に出た方法で、コールバックの欠点を解決するものです。<br />
@@ -1279,11 +478,6 @@
                   ２秒経ってから、その処理が実行されます。<br />
                   そのため、コンソールログをすると、このように表示されます。
                 </p>
-              </div>
-            </div>
-            <p>--------------------------------------------------</p>
-            <div class="kaiwa table">
-              <div class="tableContent mt-2">
                 <p>
                   次は、このコードを削除して、このように書きます。<br />
                   // fetchData()<br />
@@ -1304,49 +498,83 @@
                   関数が自動的に実行され、そのエラー内容が渡されます。<br />
                   じゃ、それは、Promise（プロミス）のコードですね。<br />
                 </p>
-              </div>
-            </div>
+            
+          
+            
           </div>
 
-          <!-- <div class="audioFix">
+          <div class="audioFix">
             <audio
               class="audio"
               controls
               loop
-              src="./audio/15,16,17_full.mp3"
+              src="./audio/85-87.mp3"
             ></audio>
-          </div> -->
+          </div>
         </div>
         <div class="tab-pane fade" id="page88_89">
           <div class="talkContent_text container">
             <div class="kaiwa table">
+              <div class="tableHeader">
+                <audio
+                  controls
+                  loop
+                  class="audio"
+                  src=""
+                ></audio>
+              </div>
               <div class="tableContent mt-2">
                 <p>
-                  次は、このページの部分ですね。<br />
-                  Promise（プロミス）の方法では、コールバックのようにコードが何重（なんじゅう）にも入れ子になりません。<br />
-                  しかし、例えば、このresult関数の中にさらに非同期処理がある場合は、その時もまた
-                  .then や .catch を続けて書く必要があります。<br />
-                  そのため、その欠点を解決するために、このasync/awaitの方法が生まれました。<br />
-                  これは、JavaScriptの最も簡単で、分かりやすい非同期処理の方法です。<br />
-                  この方法の仕方は、このようになります。<br />
-                  このようなコードがあります。<br />
-                  この方法を有効にするためには、次の２条件が必要があります。<br />
-                  １つ目は、await を付ける関数の前に、async
-                  を宣言しておく必要があります。<br />
-                  ここでの await
-                  は、この関数が実行し終わるまで待ってから、この次の行を実行するという意味です。<br />
-                  ２つ目の条件は、await を使う関数は、必ず Promise
-                  を返す必要があります。<br />
-                  この関数では、Promiseを返していますね。そのため、条件を満たしています。<br />
-                  Promiseを返しない場合、例えば、このようになります。<br />
-                  このawaitが効果がありません。<br />
-                  この関数を実行して、この行が先に出力しました。<br />
-                  今は 5
-                  秒待っているところなので、ここにはまだ結果が出ていません。<br />
-                  ５秒経ちましたので、このような結果が出ています。<br />
-                  この方法は Promise のバージョンアップ版です。<br />
-                  この方法のコードは、とても短く、何重にも入れ子になりません。
+                  次は、このページの部分ですね。<br>
+Promise（プロミス）の方法では、コールバックのようにコードが何重（なんじゅう）にも入れ子になりません。<br>
+しかし、例えば、このresult関数の中にさらに非同期処理がある場合は、その時もまた .then や .catch を続けて書く必要があります。<br>
+そのため、その欠点を解決するために、このasync/awaitの方法が生まれました。<br>
+これは、JavaScriptの最も簡単で、分かりやすい非同期処理の方法です。<br>
+この方法の仕方は、このようになります。<br>
+このようなコードがあります。<br>
+この方法を有効にするためには、次の２条件が必要があります。<br>
+１つ目は、await を付ける関数の前に、async を宣言しておく必要があります。<br>
+ここでの await は、この関数が実行し終わるまで待ってから、この次の行を実行するという意味です。<br>
+２つ目の条件は、await を使う関数は、必ず Promise を返す必要があります。<br>
+この関数では、Promiseを返していますね。そのため、条件を満たしています。<br>
+Promiseを返しない場合、例えば、このようになります。<br>
+このawaitが効果がありません。<br>
+この関数を実行して、この行が先に出力しました。<br>
+今は 5 秒待っているところなので、ここにはまだ結果が出ていません。<br>
+５秒経ちましたので、このような結果が出ています。<br>
+この方法は Promise のバージョンアップ版です。<br>
+この方法のコードは、とても短く、何重にも入れ子になりません。<br>
+
                   <br />
+                </p>
+              </div>
+            </div>
+            <p>----------------------------------------------------</p>
+            <div class="kaiwa table">
+              <div class="tableHeader">
+                <audio
+                  controls
+                  loop
+                  class="audio"
+                  src=""
+                ></audio>
+              </div>
+              <div class="tableContent mt-2">
+                <p>
+                 もう一点です。それ（上）は、パラメータ１の場合です。つまり、resolveのパラメータの場合は、すぐに結果が受け取りました。<br>
+では、パラメータ２の場合は、つまり、rejectの場合は、どうすれば、いいのか、見てみましょう。<br>
+例えば、ここでは、reject(“Has error”)、このように宣言します。<br>
+実行してみて、<br>
+今は 5 秒待っているところなので、何も表示されていませんね。<br>
+このテキスト（Has error）を含むエラーがでました。<br>
+このエラーが出た後、プログラムが停止されます。もう処理しません。<br>
+そのため、このエラー内容（Has error）を出すようにするには、先ほどのPromise方法では、.catchで実行されますね。<br>
+ここでは、そのエラーテキストをキャッチするために、このコードを try...catch の中に入れます。<br>
+try...catch の部分は、次のページでよく言います。<br>
+このようにします。<br>
+新しいコードを実行してみて、。。。こっち側は、このエラーの内容をキャッチしましたね。<br>
+このエラーの内容がキャッチされました後、このコードを引き続き実行します。この行が出力されました。<br>
+というのは、そうすると、エラーが出ても、プログラムが停止せずに、引き続き実行できます。
                 </p>
               </div>
             </div>
