@@ -261,6 +261,9 @@
         <button class="nav-link" data-bs-toggle="pill" data-bs-target="#page90">
           90
         </button>
+        <button class="nav-link" data-bs-toggle="pill" data-bs-target="#page93">
+          93
+        </button>
       </div>
       <div class="tab-content mt-2" id="v-pills-tabContent">
         <div class="tab-pane fade show active" id="page80_82">
@@ -654,6 +657,69 @@
 
           <div class="audioFix">
             <audio class="audio" controls loop src="./audio/90.mp3"></audio>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="page93">
+          <div class="talkContent_text container">
+            <p>
+              次は、JavaScript の this についてハンズオンしていきましょう。<br />
+              —---------this không nằm trong hàm—------------- <br />
+              例えば、このようにコンソールログしてみて、console.log(this);
+              <br />
+              つまり、この時、このthisは、関数の中に置いていません。<br />
+              そのため、この時のthisは、window
+              になります。で、この時の返した結果は、このようになります。その中では、windowのプロパティが入っています。<br />
+              —---------this nằm trong hàm—------------- <br />
+              次は、this が 関数の中にある場合の例を見ていきましょう。<br />
+              例えば、このような例があります。<br />
+              const person = {<br />
+              name: "Alice",<br />
+              showName() {<br />
+              console.log(this.name);<br />
+              }<br />
+              }<br />
+              person.showName();<br />
+              これは、person
+              という名前がある定数を作成して、この定数の値は、このようなオブジェクトを入れます。<br />
+              このオブジェクトの中には、２つの値があります。１つ目は、このようなキーと値が入っています。<br />
+              ２つ目は、このような関数が入っています。この関数の中には、この処理を実行します。<br />
+              「person.showName();」この行とは、このオブジェクトのキーにアクセスするということです。つまり、この関数を呼び出して実行することです。<br />
+              そのため、この処理を実行します。ここには、thisが入っています。この時、このthisとは、このオブジェクトのことです。<br />
+              そのため、this.nameは person.name
+              と同じ意味になり、このような結果が出ます。<br />
+              ●例えば、ここにこのようにキーと値のペアを１つ追加する場合、ここでは、このキーにアクセスするために、このように書きます。このthisは、このオブジェクトになるので、この値を取得して、ここで表示します。<br />
+              —----------ví dụ this nằm trong hàm xử lý sự
+              kiện—--------------<br />
+              他の例を見ていきましょう。<br />
+              例えば、this は、今このようなイベントハンドラーの中にあります。<br />
+              この値は、HTMLファイル側のボタンのIDです。<br />
+              このボタンをクリックしてみると、ここには、このように表示されています。<br />
+              この場合のthisは、onclick
+              イベントを設定した要素そのものになります。<br />
+              そのため、コンソールタブに出力すると、この id を持つ HTML
+              要素がそのまま表示されます。<br />
+              要するに、this
+              は固定されたものではなく、状況によって値が変わります。<br />
+              —----------ví dụ —-------------- <br />
+              他の例を見ていきましょう。<br />
+              function greet() {<br />
+              console.log("Hi ", this.name, this.age)<br />
+              }<br />
+              greet.call({name: "Bob", age: 30})<br />
+              この場合の this は、ここで渡したオブジェクト自体を指します。<br />
+              このthis.nameとは、このネームにアクセスするということです。<br />
+              このthis.ageとは、このエイジにアクセスするということです。<br />
+              そのため、表示結果は、このようになります。<br />
+            </p>
+          </div>
+
+          <div class="audioFix">
+            <audio
+              class="audio"
+              controls
+              loop
+              src="./audio/93_this.mp3"
+            ></audio>
           </div>
         </div>
       </div>
