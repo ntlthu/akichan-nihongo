@@ -285,6 +285,13 @@
         >
           109
         </button>
+        <button
+          class="nav-link"
+          data-bs-toggle="pill"
+          data-bs-target="#page119-121"
+        >
+          119
+        </button>
       </div>
       <div class="tab-content mt-2" id="v-pills-tabContent">
         <div class="tab-pane fade show active" id="page80_82">
@@ -596,10 +603,10 @@
                   error）を出すようにするには、先ほどのPromise方法では、.catchで実行されますね。<br />
                   ここでは、そのエラーテキストをキャッチするために、このコードを
                   try...catch の中に入れます。<br />
-                  try...catch の部分は、次のページでよく言います。<br />
+                  try...catch の部分は、次のページで言います。<br />
                   このようにします。<br />
                   新しいコードを実行してみて、。。。こっち側は、このエラーの内容をキャッチしましたね。<br />
-                  このエラーの内容がキャッチされました後、このコードを引き続き実行します。この行が出力されました。<br />
+                  このエラーの内容がキャッチされた後、このコードを引き続き実行します。この行が出力されました。<br />
                   というのは、そうすると、エラーが出ても、プログラムが停止せずに、引き続き実行できます。
                 </p>
               </div>
@@ -779,7 +786,12 @@
           </div>
 
           <div class="audioFix">
-            <audio class="audio" controls loop src="./audio/93_this.mp3"></audio>
+            <audio
+              class="audio"
+              controls
+              loop
+              src="./audio/93_this.mp3"
+            ></audio>
           </div>
         </div>
         <div class="tab-pane fade" id="page98-101">
@@ -1025,6 +1037,257 @@
                   もしこのように書けば、表示もこのようになります。つまり、キーを取得したあとに、その値が続けて表示されるということです。<br />
                   それは、for...in
                   ループです。以上がループに関する説明になりました。皆さんは、何か質問はありますか？<br />
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="audioFix">
+            <audio
+              class="audio"
+              controls
+              loop
+              src="./audio/15,16,17_full.mp3"
+            ></audio>
+          </div> -->
+        </div>
+        <div class="tab-pane fade" id="page119-121">
+          <div class="talkContent_text container">
+            <div class="kaiwa table">
+              <!-- <div class="tableHeader">
+                <audio controls loop class="audio" src=""></audio>
+              </div> -->
+              <div class="tableContent mt-2">
+                <p>
+                  —-----------update nội dung html—--------------
+                  次は、この部分です。最初の JavaScript
+                  のハンズオンでは、JavaScript を使って HTML
+                  の内容を更新したり変更したりする方法についても見ました。<br />
+                  なので、ここでその部分について、もう少し補足して説明します。<br />
+                  例えば、HTMLファイルの方は、このようなIDがる２つのP要素を宣言します。<br />
+                  この宣言のブラウザでの表示は、このようになっています。<br />
+
+                  JavaScriptファイルの方は、このような２つの変数を宣言します。<br />
+                  let element1 = document.getElementById("demo1");<br />
+                  let element2 = document.getElementById("demo2");<br />
+
+                  element1.innerText = "Hello DOM 1 Updated InnerText";<br />
+                  element2.innerHTML = "Hello DOM 2 Updated InnerText";<br />
+                  ファイルを保存してから、ブラウザでの表示は、このようになっています。<br />
+                  このコードを説明いたします。<br />
+                  これは、id で HTML
+                  の要素を取得して、その要素を変数の値として代入するための構文です。<br />
+                  前回は、この構文を使って HTML
+                  要素の内容を更新したり変更したりしました。<br />
+                  これ（element2）は、このことに該当します。document.getElementById("demo2");<br />
+                  今回、このように使えます。innerTextもHTML
+                  要素の内容を更新したり変更したりするために使用されます。<br />
+                  ただし、innerText と innerHTML
+                  の違いは、今コンソールタブに表示されている結果を見ると分かります。<br />
+                  innerText の場合、JavaScript
+                  は中身をすべてテキストとして処理します。<br />
+                  そのため、中に HTML
+                  タグが含まれていても、それを文字としてそのまま表示して、普通のテキストと同じように表示されます。<br />
+                  一方、innerHTML の場合は、JavaScript はその内容を HTML
+                  として処理します。<br />
+                  つまり、中に HTML タグがあると、それを文字としてではなく、HTML
+                  のタグとして読み取り、HTML
+                  の構造どおりに画面に表示します。innerText
+                  のように文字列としてそのまま表示されるわけではありません。<br />
+                  または、このタブで確認できます。これは、テキストとして表示されています。<br />
+                  一方、これは、HTMLタグとして表示されています。<br />
+                </p>
+              </div>
+            </div>
+            <p>----------------------------------------------------</p>
+            <div class="kaiwa table">
+              <!-- <div class="tableHeader">
+                <audio controls loop class="audio" src=""></audio>
+              </div> -->
+              <div class="tableContent mt-2">
+                <p>
+                  —--------------------thay đổi style của thẻ—---------------
+                  <br />
+                  次に、これは、HTML要素のスタイルを変更する方法についての例です。<br />
+                  element2.style.color = "#bd0103";<br />
+                  element2.style.fontSize = "40px";<br />
+                  element2.style.backgroundColor = "gray";<br />
+                  element2→これは、このIDがあるHTML要素を呼び出すことです。<br />
+                  style → HTML要素のスタイルを変更するためのプロパティです。<br />
+                  color / fontSize / backgroundColor →
+                  変更したいスタイルの種類です。<br />
+                  .style.color は文字の色を変更するためです。<br />
+                  .style.fontSize はフォントサイズを調整するためです。<br />
+                  .style.backgroundColor は要素の背景色を変更するためです。<br />
+                  色を設定するには、こんなふうにカラーコードを指定することもできます。または、カラー名で指定することもできます。<br />
+                  じゃ、それは、HTML要素のスタイルを変更する方法です。その他のプロパティについては、資料を参考にしてください。<br />
+                  これまで、皆さんできましたか？
+                </p>
+              </div>
+            </div>
+            <p>----------------------------------------------------</p>
+            <div class="kaiwa table">
+              <!-- <div class="tableHeader">
+                <audio controls loop class="audio" src=""></audio>
+              </div> -->
+              <div class="tableContent mt-2">
+                <p>
+                  —---------------------getElementsByClassName—-----------
+                  <br />
+                  先ほどは ID を使って HTML
+                  要素を取得する方法をハンズオンしましたが、次はクラスを使って
+                  HTML 要素を取得する方法を見ていきます。<br />
+                  例えば、HTMLの方は、これらの２つのP要素があります。<br />
+                  ブラウザでの表示は、このようになっています。<br />
+                  JavaScriptの方は、同じクラスを持つすべての要素を取得するには、この構文を使います。<br />
+                  let notes = document.getElementsByClassName("note");<br />
+                  この構文では、このElementsには、Sという文字があります。IDの構文では、ElementにSがありません。<br />理由は、id
+                  は 1 つだけですが、class は複数あるので、ここでは s
+                  が付いています。<br />
+                  ただし、この時点では notes
+                  という変数を作って、このクラス名があるHTML
+                  要素をすべて取得しただけで、まだ JavaScript
+                  で何か処理をしていません。<br />
+                  例えば、ここでは、このようにコンソールログをすると、返ってきた結果は
+                  1 つの要素ではなく、HTML
+                  Collection（コレクション）です。つまり各要素の一覧を返します。各要素は
+                  0 から順番に番号が付けられています。<br />
+                  この HTML
+                  Collection（コレクション）は見た目は配列のように見えますが、実際には本当の配列ではありません。<br />
+                  length: 2　これとは、note というクラスを持つ要素が 2
+                  つあるという意味です。<br />
+                  *************Sự khác nhau giữa mảng và
+                  HTMLCollection*************<br />
+                  配列と HTMLCollection の違い点は次のとおりです。<br />
+                  Array（JavaScript の配列）：<br />
+                  配列は、JavaScript の「標準的な」配列です。<br />
+                  forEach、map、filter、reduce
+                  など、ほとんどの配列メソッドが使えます。<br />
+                  要素の追加・削除・変更を柔軟に行えます。<br />
+                  DOM とは関係なく、単なる通常のデータ構造です。<br />
+                  HTMLCollection<br />
+                  HTMLCollectionは、見た目は配列のように見えますが、本当の配列ではありません。<br />
+                  配列のメソッドは使えません。<br />
+                  これは「ライブコレクション」で、HTML が変更されると
+                  HTMLCollection もすぐに自動更新されます。<br />
+                  簡単に言えば、Array
+                  は本当の配列で、機能が多く、さまざまなメソッドが使えます。<br />
+                  一方、HTMLCollection
+                  は配列ではないためメソッドは使えませんが、DOM
+                  が変更されると自動的に更新されます。<br />
+                  ******************************************************************************<br />
+                  次は、HTMLCollection
+                  の各要素には、インデックスを使って、このようにアクセスできます。<br />
+                  notes[0].style.color = "blue";<br />
+                  notes[0] は、この notes
+                  という変数の中にある最初の要素にアクセスするという意味です。<br />
+                  style.colorとは、この変数の中にある最初の要素の色を変更するという意味です。<br />
+                  そのため、結果は、この最初のノートだけは、色が変更されました。<br />
+                  もし、ノート２に色を変更したい場合、ここでは、１に変更します。notes[1]。<br />
+                  —-------dùng vòng lặp áp dụng style cho all phần tử—-----<br />
+                  for(let i = 0; i ＜ notes.length; i++) {<br />
+                  notes[i].style.color = "blue";<br />
+                  }<br />
+                  また、すべての要素にスタイルを適用したい場合は、このコードのように、for
+                  ループを使って一覧全体を順番に処理して、各要素の文字色を変更することができます。<br />
+                  この方法を使うと、複数の要素をまとめて操作でき、すっきりして管理もしやすくなります。<br />
+                  notes.length とは、note クラスを持つ要素の数量のことです。<br />
+                  notes[i] は、notes という変数の一覧の中にある i
+                  番目の要素のことです。<br />
+                  このループは、最初の要素から最後の要素まで、1
+                  つずつ順番に処理していきます。<br />
+                  それは、クラスを使って HTML
+                  要素を取得する方法です。ここまで、皆さんは、何か質問がありますか？<br />
+                </p>
+              </div>
+            </div>
+            <p>----------------------------------------------------</p>
+            <div class="kaiwa table">
+              <!-- <div class="tableHeader">
+                <audio controls loop class="audio" src=""></audio>
+              </div> -->
+              <div class="tableContent mt-2">
+                <p>
+                  —---------------------getElementsByTagName—----------- <br />
+                  IDやクラスで取得する方法以外に、タグ名を使って HTML
+                  要素を取得することもできます。<br />
+                  この例を見てみましょう。<br />
+                  ここの構文は、この部分をタグ名（TagName）に置き換えて使います。<br />
+                  このようにすると、すべてのPタグを取得しています。<br />
+                  ここで返した結果も、HTMLCollectionになります。<br />
+                  class
+                  の場合と同じに、タグ名を使った場合も、インデックスで各要素にアクセスして、指定したタグのスタイルを変更することができます。<br />
+                  例えばこのように、これは最初の p
+                  タグの文字色を変更しています。<br />
+                  または、class
+                  の場合と同じように、Forループを使うこともできます。<br />
+                </p>
+              </div>
+            </div>
+            <p>----------------------------------------------------</p>
+            <div class="kaiwa table">
+              <!-- <div class="tableHeader">
+                <audio controls loop class="audio" src=""></audio>
+              </div> -->
+              <div class="tableContent mt-2">
+                <p>
+                  —----------------querySelector—---------------- <br />
+                  次は、クエリセレクターの部分をハンズオンしていきましょう。(nói
+                  luôn trong lúc Thảo đang ghi ví dụ) <br />
+                  (sau khi ghi ví dụ xong)
+                  先ほど紹介した方法以外にも、このように querySelector
+                  を使うこともできます。<br />
+                  querySelector は、CSS
+                  と同じ構文を使えるため、最も柔軟に要素を選択できる方法です。<br />
+                  この構文は、ここでは、このように、querySelectorを入力して、このカッコの中には、もしクラスであれば、このように.を使います。もし、ＩＤであれば、この記号を使います。<br />
+                  let selectorClass =
+                  document.querySelector(".note");　この宣言の意味は、note
+                  というクラスを持つ最初の要素を選択する、ということです。<br />
+                  document.querySelector("#demo1") この宣言の意味は、demo1
+                  という id を持つ要素を選択する、ということです。<br />
+                  ここでマウスを合わせると、その要素にフォーカスします。<br />
+                  対象要素を取得したあと、こんなふうに、その要素に直接操作して更新することができます。selectorId.style.color
+                  = "green" <br />
+                  次の例を見てみましょう。<br />
+                  この例では、このカッコの中には class や id だけでなく、p や
+                  div
+                  などのタグ名を直接書いて、そのセレクターに一致する最初の要素を取得することもできます。<br />
+                  例えば、このように書けば、最初のPを取得します。これの使い方も、上記部分と同じです。<br />
+                </p>
+              </div>
+            </div>
+            <p>----------------------------------------------------</p>
+            <div class="kaiwa table">
+              <!-- <div class="tableHeader">
+                <audio controls loop class="audio" src=""></audio>
+              </div> -->
+              <div class="tableContent mt-2">
+                <p>
+                  —----------------querySelectorAll—---------------- <br />
+                  次の部分は、querySelectorAllの部分です。<br />
+                  これらの例を見てみましょう。このコードを実行すると、返ってきた結果は、このようになります。この下の
+                  3 行ですね。<br />
+                  querySelectorAll を使うと、結果として NodeList
+                  が返されます。<br />
+                  NodeList
+                  も配列のように見えますが、本当の配列ではありません。<br />
+                  インデックスでアクセスできますし、for や
+                  forEachループを使って順番に処理することもできます。<br />
+                  NodeList と HTMLCollection の違い点は次のとおりです。<br />
+                  多くの場合、NodeList
+                  は「静的（static）」で、ページが変更されても自動的には更新されません。<br />
+                  一方、HTMLCollection は、HTML
+                  が変更されるとすぐに自動更新されます。<br />
+                  querySelectorAll(".note") →これとはnote
+                  というクラスを持つすべての要素を取得します。HTMLの方は、note
+                  というクラスを持つ要素が２つあります。で、ここでは、この 2
+                  つの要素がすべて取得されています。<br />
+                  querySelectorAll("#demo1") → この宣言は、その id を持つ要素が
+                  1 つしかなくても、結果はリストとして返ってきます。<br />
+                  querySelectorAll("p") →
+                  ページ上にあるすべてのPタグを取得します。<br />
+                  querySelectorAllには、インデックスでアクセスするには、このように、します。<br />
+                  結果としては、ブラウザでの表示は、このようになります。<br />
                 </p>
               </div>
             </div>
