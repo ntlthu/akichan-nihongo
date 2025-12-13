@@ -416,8 +416,8 @@
               <div class="tableContent mt-2">
                 <p>
                   dùng callback để xử lý bất đồng bộ <br />
-                  非同期処理をするために、２つの方法があります。<br />
-                  方法１は、先ほど勉強したコールバックを使います。<br />
+                  非同期処理をするために、次の方法があります。<br />
+                  方法１は、先週勉強したコールバックを使います。<br />
                   このしかたは、このようにします。<br />
                   ここでの出力結果を見ると、コードに書かれた順番どおりに出力されていますね。<br />
                   このコードの実行の流れを説明いたします。<br />
@@ -683,15 +683,48 @@
         <div class="tab-pane fade" id="page93">
           <div class="talkContent_text container">
             <p>
-              次は、JavaScript の this についてハンズオンしていきましょう。<br />
-              —---------this không nằm trong hàm—------------- <br />
+              次は、JavaScript の this の部分です。this
+              の概念については資料の中でも説明しましたので、今はさっそくハンズオンに入っていきますね。<br />
+              —---------Trong global scope:—------------- <br />
               例えば、このようにコンソールログしてみて、console.log(this);
               <br />
               つまり、この時、このthisは、関数の中に置いていません。<br />
               そのため、この時のthisは、window
               になります。で、この時の返した結果は、このようになります。その中では、windowのプロパティが入っています。<br />
-              —---------this nằm trong hàm—------------- <br />
-              次は、this が 関数の中にある場合の例を見ていきましょう。<br />
+              JavaScript の window
+              は、ブラウザでコードが実行されるときのウェブページ全体のグローバルオブジェクトです。<br />
+              グローバル変数、グローバル関数、ドキュメント、コンソール、アラートなど、すべてのものがここに含まれています。<br />
+              —------------trong hàm bình thường—------------------------
+              次に、他の例を見てみます。例えば、このような例があります。<br />
+              function testFunc() {<br />
+              console.log(this) }<br />
+              testFunc();<br />
+              この場合、this は通常の関数の中にあります。この時のthisも、window
+              になります。<br />
+              ただし、ストリクトモードを使用している場合、this は undefined
+              になります。<br />
+              例えば、この例（↓）の場合は、thisの返し結果がundefinedになります。
+              'use strict';これは、ストリクトモードのことです。<br />
+              function testFunc() { 'use strict'; console.log(this) }<br />
+              testFunc();<br />
+
+              *Start - nếu họ hỏi strict mode là gì thì trả lời như sau, còn
+              không hỏi thì thôi*<br />
+              Strict モードは、JavaScript における厳格なモードで、"use
+              strict";の行を書くことで有効になります。<br />
+              簡単に説明すると： JavaScript
+              がエラーをより厳密に検出するようになり、<br />
+              不具合を引き起こしやすい挙動を防ぎます。例：宣言されていない変数の使用などです。<br />
+
+              コードの安全性と可読性が向上し、 通常の JavaScript
+              では許可されてしまう非標準な書き方を避けることができます。<br />
+
+              Strict モードを有効にすると、
+              危険な動作や潜在的なエラーのある挙動の一部は完全に禁止されます。<br />
+              —---------this nằm trong phương thức (method) của
+              object—------------<br />
+              次は、this が
+              オブジェクトのメソッドの中にある場合の例を見ていきましょう。<br />
               例えば、このような例があります。<br />
               const person = {<br />
               name: "Alice",<br />
@@ -702,9 +735,9 @@
               person.showName();<br />
               これは、person
               という名前がある定数を作成して、この定数の値は、このようなオブジェクトを入れます。<br />
-              このオブジェクトの中には、２つの値があります。１つ目は、このようなキーと値が入っています。<br />
-              ２つ目は、このような関数が入っています。この関数の中には、この処理を実行します。<br />
-              「person.showName();」この行とは、このオブジェクトのキーにアクセスするということです。つまり、この関数を呼び出して実行することです。<br />
+              このオブジェクトの中には、これらの値があります。１つ目は、このようなキーと値が入っています。<br />
+              ２つ目は、このようなメソッドが入っています。このメソッドの中には、この処理を実行します。<br />
+              「person.showName();」この行とは、このオブジェクトのキーにアクセスするということです。つまり、このメソッドを呼び出して実行することです。<br />
               そのため、この処理を実行します。ここには、thisが入っています。この時、このthisとは、このオブジェクトのことです。<br />
               そのため、this.nameは person.name
               と同じ意味になり、このような結果が出ます。<br />
@@ -716,18 +749,29 @@
               この値は、HTMLファイル側のボタンのIDです。<br />
               このボタンをクリックしてみると、ここには、このように表示されています。<br />
               この場合のthisは、onclick
-              イベントを設定した要素そのものになります。<br />
+              イベントを設定したその要素自身になります。<br />
               そのため、コンソールタブに出力すると、この id を持つ HTML
               要素がそのまま表示されます。<br />
+              また、他の例を見てみましょう。<br />
+              document.getElementById("btn").onclick = function() {<br />
+              console.log(this)<br />
+              this.style.fontSize = "35px";<br />
+              }<br />
+              この時、このボタンをクリックすると、フォントサイズが大きくなります。<br />
               要するに、this
               は固定されたものではなく、状況によって値が変わります。<br />
-              —----------ví dụ —-------------- <br />
+              —----------Giới thiệu về call({}) để gán this thủ công
+              —--------------<br />
               他の例を見ていきましょう。<br />
               function greet() {<br />
               console.log("Hi ", this.name, this.age)<br />
-              }<br />
-              greet.call({name: "Bob", age: 30})<br />
+              } greet.call({name: "Bob", age: 30})<br />
               この場合の this は、ここで渡したオブジェクト自体を指します。<br />
+              通常の greet() 関数はどのオブジェクトにも属していないため、this
+              には name や age はありません。<br />
+              greet.call({ name: "Bob", age: 30 })
+              のように呼び出すと、オブジェクトを関数の this
+              として渡しています。<br />
               このthis.nameとは、このネームにアクセスするということです。<br />
               このthis.ageとは、このエイジにアクセスするということです。<br />
               そのため、表示結果は、このようになります。<br />
@@ -735,12 +779,7 @@
           </div>
 
           <div class="audioFix">
-            <audio
-              class="audio"
-              controls
-              loop
-              src="./audio/93_this.mp3"
-            ></audio>
+            <audio class="audio" controls loop src=""></audio>
           </div>
         </div>
         <div class="tab-pane fade" id="page98-101">
