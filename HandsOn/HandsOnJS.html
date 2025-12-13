@@ -292,6 +292,13 @@
         >
           119
         </button>
+        <button
+          class="nav-link"
+          data-bs-toggle="pill"
+          data-bs-target="#page124-125"
+        >
+          124
+        </button>
       </div>
       <div class="tab-content mt-2" id="v-pills-tabContent">
         <div class="tab-pane fade show active" id="page80_82">
@@ -1301,6 +1308,71 @@
               src="./audio/15,16,17_full.mp3"
             ></audio>
           </div> -->
+        </div>
+        <div class="tab-pane fade" id="page124-125">
+          <div class="talkContent_text container">
+            <div class="kaiwa table">
+              <!-- <div class="tableHeader">
+                <audio controls loop class="audio" src=""></audio>
+              </div> -->
+              <div class="tableContent mt-2">
+                <p>
+                  次は、この部分です。この部分は、.classList を使って CSS
+                  クラスを管理する部分です。<br />
+                  まず、HTML ファイルの中で、このように 1
+                  つのクラスを定義します。これは、インラインCSSです。<br />
+                  次は、JavaScriptの方は、この構文でdemo1
+                  という要素を取得します。<br />
+                  let element1 = document.getElementById("demo1");<br />
+                  element1.classList.add("highlight");　<br />
+                  この宣言とは、id が demo1 の HTML 要素を取得し、その要素に
+                  このクラス（highlight）を追加します。そうすると、CSS
+                  で定義しておいたスタイルがすべて適用されます。<br />
+                  この方法は、先ほど行ったように JavaScript でたくさんの style
+                  プロパティを設定する方法に比べて、ずっとすっきりしていて、コードも管理しやすくなります。<br />
+                  これは、このコードを保存する前の状態です。保存して、ページをリロードすると、このCSSコードが適用されました。<br />
+
+                  また、クラスを要素に追加するだけでなく、要素からクラスを削除することもできます。<br />
+                  例えば、削除する構文はこのようになります。ファイルを保存して、ページをリロードすると、このクラス（highlight）のコードがもう適用されませんでした。<br />
+                </p>
+              </div>
+            </div>
+            <p>----------------------------------------------------</p>
+            <div class="kaiwa table">
+              <!-- <div class="tableHeader">
+                <audio controls loop class="audio" src=""></audio>
+              </div> -->
+              <div class="tableContent mt-2">
+                <p>
+                  —----------------Toggle method—---------------- <br />
+                  次に、.toggle メソッドについて紹介します。<br />
+                  例えば、HTMLの方は、このようなボタンを宣言します。このボタンには、このように
+                  onclick イベントを設定します。<br />
+                  JavaScript 側では、このように highlight
+                  という関数を定義します。<br />
+                  これはクリックイベントなので、ボタンをクリックすると、この
+                  highlight() 関数が実行されます。<br />
+                  では、highlight()
+                  関数は何をするかというと、こういう処理を行います。<br />
+                  element1.classList.toggle("highlight")　この宣言とは、：<br />
+                  element1　→これは、操作したい HTML 要素です。<br />
+                  .classList.toggle("highlight") →これは、その要素の highlight
+                  クラスをオンまたはオフするという意味です。highlight
+                  クラスは、このクラスです。<br />
+                  もし element1 に highlight クラスがなければ、追加されます。<br />
+                  もし element1 に highlight クラスがあれば、削除されます。<br />
+                  では、このボタンをクリックしてみます。<br />
+                  皆さん、この要素の変化を見てください。この状態は、まだhighlight
+                  クラスが追加されていません。このボタンをクリックすると、追加されました。<br />
+                  もう一度クリックすると、削除されました。<br />
+                  これが .toggle()
+                  の役割です。状態を切り替える効果を簡単に実現できます。<br />
+                  例えば、highlightクラスのオン／オフや、メニューの開閉や、テーマの切り替えなどです。<br />
+                  これでこの部分は終わりです。皆さん、質問はありますか？<br />
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
