@@ -230,15 +230,15 @@
         role="tablist"
         aria-orientation="vertical"
       >
-        <button
+        <!-- <button
           class="nav-link active"
           data-bs-toggle="pill"
           data-bs-target="#page80_82"
         >
           80
-        </button>
+        </button> -->
         <button
-          class="nav-link"
+          class="nav-link active"
           data-bs-toggle="pill"
           data-bs-target="#page83_84"
         >
@@ -314,8 +314,23 @@
           139
         </button>
       </div>
+      <button
+          class="nav-link"
+          data-bs-toggle="pill"
+          data-bs-target="#page152"
+        >
+          152
+        </button>
+        <button
+          class="nav-link"
+          data-bs-toggle="pill"
+          data-bs-target="#page156"
+        >
+          156
+        </button>
+      </div>
       <div class="tab-content mt-2" id="v-pills-tabContent">
-        <div class="tab-pane fade show active" id="page80_82">
+        <!-- <div class="tab-pane fade show active" id="page80_82">
           <div class="talkContent_text container">
             <div class="kaiwa table">
               <div class="tableHeader">
@@ -421,16 +436,16 @@
             </div>
           </div>
 
-          <!-- <div class="audioFix">
+          <div class="audioFix">
             <audio
               class="audio"
               controls
               loop
               src="./audio/15,16,17_full.mp3"
             ></audio>
-          </div> -->
-        </div>
-        <div class="tab-pane fade" id="page83_84">
+          </div>
+        </div> -->
+        <div class="tab-pane fade show active" id="page83_84">
           <div class="talkContent_text container">
             <div class="kaiwa table">
               <div class="tableHeader">
@@ -445,24 +460,26 @@
                 <p>
                   dùng callback để xử lý bất đồng bộ <br />
                   非同期処理をするために、次の方法があります。<br />
-方法１は、先週勉強したコールバックを使います。<br />
-このしかたは、このようにします。<br />
-ここでの出力結果を見ると、コードに書かれた順番どおりに出力されていますね。<br />
-このコードの実行の流れを説明いたします。<br />
-この行では、mainという関数を実行するコマンドがあるので、main関数の中に入って、上から処理します。<br />
-まず、これを処理します。そのため、この文字列をここで出力されます。<br />
-次に、この行に来ると、この時、fetchData関数を呼び出して、パラメータとして output を渡します。<br />
-このoutputは、この関数のことです。<br />
-つまり、この時点では、このoutput関数は、このcallbackになります。<br />
-次に、ここでは、fetchData関数を呼び出しているため、今、JSは、このfetchData関数に飛んで、この時、setTimeoutに来ます。<br />
-このsetTimeoutの中には、これらの処理がありますが、これらがまだすぐに実行しません。2 秒待つ必要があります。<br />
-２秒経ってから、この処理をして、これの値を取得します。(chỉ chuột vô cái dòng data = {id….})<br />
-次に、この行に来て、callbackを呼び出して、このcallbackは、このoutput関数のことなので、この時、JSは、このoutput関数に飛んで、実行します。<br />
-この時、このデータは、このpersonのことなので、このpersonは、ここに差し替えして、<br />
-次は、これを実行して、この文字列と、このpersonの値をここで出力します。<br />
-次は、この行に来て、この文字列を出力します。<br />
-これまで、みなさんは、できましたか？<br />
-
+                  方法１は、先週勉強したコールバックを使います。<br />
+                  このしかたは、このようにします。<br />
+                  ここでの出力結果を見ると、コードに書かれた順番どおりに出力されていますね。<br />
+                  このコードの実行の流れを説明いたします。<br />
+                  この行では、mainという関数を実行するコマンドがあるので、main関数の中に入って、上から処理します。<br />
+                  まず、これを処理します。そのため、この文字列をここで出力されます。<br />
+                  次に、この行に来ると、この時、fetchData関数を呼び出して、パラメータとして
+                  output を渡します。<br />
+                  このoutputは、この関数のことです。<br />
+                  つまり、この時点では、このoutput関数は、このcallbackになります。<br />
+                  次に、ここでは、fetchData関数を呼び出しているため、今、JSは、このfetchData関数に飛んで、この時、setTimeoutに来ます。<br />
+                  このsetTimeoutの中には、これらの処理がありますが、これらがまだすぐに実行しません。2
+                  秒待つ必要があります。<br />
+                  ２秒経ってから、この処理をして、これの値を取得します。(chỉ
+                  chuột vô cái dòng data = {id….})<br />
+                  次に、この行に来て、callbackを呼び出して、このcallbackは、このoutput関数のことなので、この時、JSは、このoutput関数に飛んで、実行します。<br />
+                  この時、このデータは、このpersonのことなので、このpersonは、ここに差し替えして、<br />
+                  次は、これを実行して、この文字列と、このpersonの値をここで出力します。<br />
+                  次は、この行に来て、この文字列を出力します。<br />
+                  これまで、みなさんは、できましたか？<br />
                 </p>
               </div>
             </div>
@@ -1780,23 +1797,112 @@
               </div> -->
               <div class="tableContent mt-2">
                 <p>
-                  ３）3つ目は、PUTのメッソドです。PUTの動きもPOSTと似て、サーバーへデータを送信するメソッドです。違い点は、目的だけです。<br>
-先ほど言った通りに、POSTは、新しいレコードを作成するために使用します。<br>
-PUTは、既存のレコード全体を更新するために使用します（つまり、データをすべて上書きします）<br>
-これは、PUTのコードです。このコードの中には、ここのレコードをすべて更新したいため（chỉ vô 4 dòng data của const data）、method には PUT を指定しています。<br>
-このコードを実行すると、戻った結果は、このようになります。(chỉ bên tab console)<br>
-４）次は、４つ目は、PATCHのメソッドです。PATCHもかなりPUTと似ていますが、以下の違いがあります。<br>
-PUT はレコード全体を更新するため、すべてのデータを送信する必要があります。<br>
-一方、PATCH はレコードの一部だけを更新するため、修正したいフィールドのみを送信します。<br>
-例えば、これは、PATCHのコードです。<br>
-このコードの中には、更新するのはこれだけで十分なので、この内容だけを渡しています。そして、ここでのメソッドは、Patchにします。<br>
-このコードを実行すると、結果は、この内容だけが更新されましたね。他の内容は、旧内容のままです。<br>
-それは、ＰＡＴＣＨの部分です。<br>
-5）次のメソッドは、DELETEです。<br>
-
+                  ３）3つ目は、PUTのメッソドです。PUTの動きもPOSTと似て、サーバーへデータを送信するメソッドです。違い点は、目的だけです。<br />
+                  先ほど言った通りに、POSTは、新しいレコードを作成するために使用します。<br />
+                  PUTは、既存のレコード全体を更新するために使用します（つまり、データをすべて上書きします）<br />
+                  これは、PUTのコードです。このコードの中には、ここのレコードをすべて更新したいため（chỉ
+                  vô 4 dòng data của const data）、method には PUT
+                  を指定しています。<br />
+                  このコードを実行すると、戻った結果は、このようになります。(chỉ
+                  bên tab console)<br />
+                  ４）次は、４つ目は、PATCHのメソッドです。PATCHもかなりPUTと似ていますが、以下の違いがあります。<br />
+                  PUT
+                  はレコード全体を更新するため、すべてのデータを送信する必要があります。<br />
+                  一方、PATCH
+                  はレコードの一部だけを更新するため、修正したいフィールドのみを送信します。<br />
+                  例えば、これは、PATCHのコードです。<br />
+                  このコードの中には、更新するのはこれだけで十分なので、この内容だけを渡しています。そして、ここでのメソッドは、Patchにします。<br />
+                  このコードを実行すると、結果は、この内容だけが更新されましたね。他の内容は、旧内容のままです。<br />
+                  それは、ＰＡＴＣＨの部分です。<br />
+                  5）次のメソッドは、DELETEです。<br />
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="page152">
+          <div class="talkContent_text container">
+            <p>
+              次の部分は、JavaScriptの
+              AJAXの部分です。先ほどのFetchAPIと同じに、AJAX
+              も、JavaScriptのサーバーと通信するための一つの方法です。<br />
+              ただし、AJAX は古い技術で、Fetch API
+              より前に出てきたものなので、Fetch API
+              ほど最適化されていなくて、書き方も結構ややこしくて長くなりがちです。<br />
+              そのため、JavaScript では Fetch
+              のほうがよく使われていて、コードがすっきりしていて直感的に書けますし、非同期解決の設計もより優れています。<br />
+              なので、ここでは、こういうものもあることを紹介だけにしておいて、<br />
+              実際の開発では、さっき使った Fetch を使うことが多いです。<br />
+
+              例えば、このような例があります。<br />
+              function loadUser() {<br />
+              const xhttp = new XMLHttpRequest();<br />
+
+              console.log("xhttp", xhttp);<br />
+
+              xhttp.onload = function () {<br />
+              // console.log(this);<br />
+
+              let responseData = this.response;<br />
+              console.log("Response Data: ", responseData);<br />
+              console.log("User: ", JSON.parse(responseData));<br />
+
+              }<br />
+              // Call API endpoint<br />
+              xhttp.open("GET",
+              "https://jsonplaceholder.typicode.com/users/1");<br />
+              xhttp.send();<br />
+              } loadUser();<br />
+
+              このコードを説明いたします。<br>
+AJAX を使うには、この変数（xhttp）を宣言して、 new で初期化して、次は、これを書きます。XMLHttpRequest()<br>
+    xhttp.open("GET", "https://jsonplaceholder.typicode.com/users/1");<br>
+    xhttp.send();<br>
+このコード（↑）は、リクエストを作成して、サーバーへ送信して、このAPIからデータを取得するためです。<br>
+サーバーが処理して、データを返してから、このコードが実行されます。(đoạn code chỗ onload được chạy)<br>
+サーバーから返ってきたデータが this.response に代入されます。<br>
+サーバーから返ってきたデータは JSON の文字列なので、JavaScript のオブジェクトに変換するために、JSON.parse()のコードを書きます。<br>
+そうすると、このAPIからデータが取得できました。<br>
+
+            </p>
+          </div>
+
+          <div class="audioFix">
+            <audio class="audio" controls loop src="./audio/152.mp3"></audio>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="page156">
+          <div class="talkContent_text container">
+            <p>
+              —---------giới thiệu json—--- <br>
+次の部分は、JSONの部分です。<br>
+let jsonString = '{"name": "Alice", "age": 25, "city": "HCM"}';<br>
+これは、JSONと呼ばれます。見た目は、オブジェクトのように見えますが、<br>
+データは文字列の形で保存されています。オブジェクトと同じようなキーと値の構造がありますが、これらがすべてダブルクォーテーションで囲まれています。<br>
+
+—---------console log json—---<br>
+*console.log cho họ xem*<br>
+console.log("JSON String: ", jsonString);<br>
+コンソールログをすると、このように文字列で表示されています。<br>
+
+—---------console log json—---<br>
+let jsonObject = JSON.parse(jsonString);<br>
+console.log("JSON Object: ", jsonObject);<br>
+
+
+console.log("Name: ", jsonObject.name);<br>
+console.log("Age: ", jsonObject.age);<br>
+console.log("City: ", jsonObject.city);<br>
+このJsonをオブジェクトに変換したい場合、この構文を使います。JSON.parse<br>
+このコードを実行すると、結果は、Jsonオブジェクトに返ってきます。<br>
+オブジェクトになった時、これらのキーを取得できます。
+
+
+            </p>
+          </div>
+
+          <div class="audioFix">
+            <audio class="audio" controls loop src="./audio/152.mp3"></audio>
           </div>
         </div>
       </div>
