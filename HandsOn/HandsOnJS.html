@@ -328,6 +328,27 @@
         >
           156
         </button>
+        <button
+          class="nav-link"
+          data-bs-toggle="pill"
+          data-bs-target="#page160"
+        >
+          160
+        </button>
+        <button
+          class="nav-link"
+          data-bs-toggle="pill"
+          data-bs-target="#page164-165"
+        >
+          164
+        </button>
+         <button
+          class="nav-link"
+          data-bs-toggle="pill"
+          data-bs-target="#page168-169"
+        >
+          164
+        </button>
       </div>
       <div class="tab-content mt-2" id="v-pills-tabContent">
         <!-- <div class="tab-pane fade show active" id="page80_82">
@@ -459,27 +480,26 @@
               <div class="tableContent mt-2">
                 <p>
                   dùng callback để xử lý bất đồng bộ <br />
-                  非同期処理をするために、次の方法があります。<br />
-                  方法１は、先週勉強したコールバックを使います。<br />
-                  このしかたは、このようにします。<br />
-                  ここでの出力結果を見ると、コードに書かれた順番どおりに出力されていますね。<br />
-                  このコードの実行の流れを説明いたします。<br />
-                  この行では、mainという関数を実行するコマンドがあるので、main関数の中に入って、上から処理します。<br />
-                  まず、これを処理します。そのため、この文字列をここで出力されます。<br />
-                  次に、この行に来ると、この時、fetchData関数を呼び出して、パラメータとして
-                  output を渡します。<br />
-                  このoutputは、この関数のことです。<br />
-                  つまり、この時点では、このoutput関数は、このcallbackになります。<br />
-                  次に、ここでは、fetchData関数を呼び出しているため、今、JSは、このfetchData関数に飛んで、この時、setTimeoutに来ます。<br />
-                  このsetTimeoutの中には、これらの処理がありますが、これらがまだすぐに実行しません。2
-                  秒待つ必要があります。<br />
-                  ２秒経ってから、この処理をして、これの値を取得します。(chỉ
-                  chuột vô cái dòng data = {id….})<br />
-                  次に、この行に来て、callbackを呼び出して、このcallbackは、このoutput関数のことなので、この時、JSは、このoutput関数に飛んで、実行します。<br />
-                  この時、このデータは、このpersonのことなので、このpersonは、ここに差し替えして、<br />
-                  次は、これを実行して、この文字列と、このpersonの値をここで出力します。<br />
-                  次は、この行に来て、この文字列を出力します。<br />
-                  これまで、みなさんは、できましたか？<br />
+                  では、始めましょう。先日は、非同期の現象を見ましたね。<br />
+今、非同期を解決するために、３つの方法があります。<br />
+方法１は、先週勉強したコールバックを使います。<br />
+このしかたは、このようにします。<br />
+ここでの出力結果を見ると、コードに書かれた順番どおりに出力されていますね。<br />
+このコードの実行の流れを説明いたします。<br />
+この行では、mainという関数を実行するコマンドがあるので、main関数の中に入って、上から処理します。<br />
+まず、これを処理します。そのため、この文字列をここで出力されます。<br />
+次に、この行に来ると、この時、fetchData関数を呼び出して、パラメータとして output を渡します。
+このoutputは、この関数のことです。<br />
+つまり、この時点では、このoutput関数は、このcallbackになります。<br />
+次に、ここでは、fetchData関数を呼び出しているため、JSは、このfetchData関数に飛んで、この時、setTimeoutに来ます。<br />
+このsetTimeoutの中には、これらの処理がありますが、これらがまだすぐに実行しません。2 秒待つ必要があります。<br />
+２秒経ってから、この処理をして、これの値を取得します。<br />
+次に、この行に来て、callbackを呼び出して、このcallbackは、このoutput関数のことなので、この時、JSは、このoutput関数を実行します。<br />
+この時、このデータは、このpersonのことなので、このpersonは、ここに差し替えして、<br />
+次は、これを実行して、この文字列と、このpersonの値をここで出力します。<br />
+次は、この行に来て、この文字列を出力します。<br />
+これまで、みなさんは、できましたか？<br />
+
                 </p>
               </div>
             </div>
@@ -495,17 +515,20 @@
               </div>
               <div class="tableContent mt-2">
                 <p>
-                  cách viết ngắn gọn hơn: đưa thẳng function output vào main
-                  <br />
-                  それは、コールバックを使って非同期処理を行う方法の完全な書き方です。<br />
-                  実際のコードは、そのように書きません。そうすると、コードが長すぎるからです。もともと、このoutput関数は、このmain関数で動くだけです。<br />
-                  そのため、コードを短くするために、ここに直接関数を書きます。つまり、このように書きます。<br />
-                  この時、コールバックを使って非同期処理するコードは、このようになります。<br />
-                  この仕方は、この関数の中で置いているため、ここでは、先ほどのoutputという関数名が不要です。<br />
-                  この方法では、先ほどの書き方と同じ効果があります。<br />
-                  実行してみて、先ほどの結果と同じですね。<br />
-                  または、さらに短くするために、ここはアロー関数に置き換えることもできます。<br />
-                  アロー関数には、このように書きます。この時、functionというキーワードを削除して、代わりに、矢印にします。<br />
+                  —-------------------------------------------------------- <br>
+cách viết ngắn gọn hơn: đưa thẳng function output vào main<br>
+それは、コールバックを使って非同期処理を行う方法の完全な書き方です。<br>
+実際のコードは、そのように書きません。そうすると、コードが長すぎるからです。もともと、このoutput関数は、このmain関数で動くだけです。<br>
+そのため、コードを短くするために、ここに直接関数を書きます。つまり、このように書きます。<br>
+この時、コールバックを使って非同期処理するコードは、このようになります。<br>
+この仕方は、この関数の中で置いているため、ここでは、先ほどのoutputという関数名が不要です。<br>
+この方法では、先ほどの書き方と同じ効果があります。<br>
+実行してみて、先ほどの結果と同じですね。<br>
+または、さらに短くするために、ここはアロー関数に置き換えることもできます。<br>
+アロー関数には、このように書きます。この時、functionというキーワードを削除して、代わりに、矢印にします。<br>
+それは、コールバックを使って非同期を解決する方法です。<br>
+皆さん、何か質問がありますか？<br>
+
                 </p>
               </div>
             </div>
@@ -1379,23 +1402,26 @@
               </div> -->
               <div class="tableContent mt-2">
                 <p>
-                  次は、この部分です。この部分は、.classList を使って CSS
-                  クラスを管理する部分です。<br />
-                  まず、HTML ファイルの中で、このように 1
-                  つのクラスを定義します。これは、インラインCSSです。<br />
-                  次は、JavaScriptの方は、この構文でdemo1
-                  という要素を取得します。<br />
-                  let element1 = document.getElementById("demo1");<br />
-                  element1.classList.add("highlight");　<br />
-                  この宣言とは、id が demo1 の HTML 要素を取得し、その要素に
-                  このクラス（highlight）を追加します。そうすると、CSS
-                  で定義しておいたスタイルがすべて適用されます。<br />
-                  この方法は、先ほど行ったように JavaScript でたくさんの style
-                  プロパティを設定する方法に比べて、ずっとすっきりしていて、コードも管理しやすくなります。<br />
-                  これは、このコードを保存する前の状態です。保存して、ページをリロードすると、このCSSコードが適用されました。<br />
-
-                  また、クラスを要素に追加するだけでなく、要素からクラスを削除することもできます。<br />
-                  例えば、削除する構文はこのようになります。ファイルを保存して、ページをリロードすると、このクラス（highlight）のコードがもう適用されませんでした。<br />
+                  次は、この部分です。この部分は、.classList を使って CSS クラスを管理する部分です。<br />
+( chỉ vào class highligh bên HTML. ) →　まず、HTML ファイルの中で、このように 1 つのクラスを定義します。これは、インラインCSSです。<br />
+(cho họ xem display trên browser ) → 今、ブラウザでの表示は、このようになっていますね。CSSが無い状態です。<br />
+—--------------ví dụ về add class—---------------- <br />
+(qua file JS ) →次は、JavaScriptの方は、この構文で、ID demo1 の要素を取得します。<br />
+let element1 = document.getElementById("demo1");<br />
+次は、クラスをID demo1 の要素に追加するには、このように書きます。↓<br />
+element1.classList.add("highlight");　<br />
+(chỉ vào đoạn code trên và giải thích) → element1：これは、この変数を呼び出します。<br />
+classList.add("highlight");　これは、クラスを要素に追加する構文です。<br />
+ファイルを保存して、ページをリロードして、今の状態では、このID demo1の要素は、このクラスのCSSが適用されましたね。<br />
+この方法は、 たくさんの style プロパティを設定する方法に比べて、ずっとすっきりしていて、コードも管理しやすくなります。<br />
+—---------------ví dụ về xóa class—--------------<br />
+また、クラスを要素に追加するだけでなく、要素からクラスを削除することもできます。<br />
+(HTML thêm class highligh vào demo1) →例えば、今、HTMLファイルの方は、このクラスをこの要素に追加します。<br />
+(cho họ thấy display html hiện tại) →今、ブラウザでの表示は、このようになっていますね。<br />
+(qua file JS ) →次は、JavaScriptの方は、削除する構文はこのように書きます。<br />
+ファイルを保存して、ページをリロードすると、この要素では、このクラス（highlight）のコードが消しましたね。<br />
+HTML 側にはその class が残っていますが、JavaScript 側ですでに削除しているため、HTML 側のその class は機能しません。<br />
+じゃ、それは、クラスを要素に追加して削除する方法です。皆さんできましたか？<br />
                 </p>
               </div>
             </div>
@@ -1406,31 +1432,20 @@
               </div> -->
               <div class="tableContent mt-2">
                 <p>
-                  —----------------Toggle method—---------------- <br />
-                  次に、.toggle メソッドについて紹介します。<br />
-                  例えば、HTMLの方は、このようなボタンを宣言します。このボタンには、このように
-                  onclick イベントを設定します。<br />
-                  JavaScript 側では、このように highlight
-                  という関数を定義します。<br />
-                  これはクリックイベントなので、ボタンをクリックすると、この
-                  highlight() 関数が実行されます。<br />
-                  では、highlight()
-                  関数は何をするかというと、こういう処理を行います。<br />
-                  element1.classList.toggle("highlight")　この宣言とは、：<br />
-                  element1　→これは、操作したい HTML 要素です。<br />
-                  .classList.toggle("highlight") →これは、その要素の highlight
-                  クラスをオンまたはオフするという意味です。highlight
-                  クラスは、このクラスです。<br />
-                  もし element1 に highlight クラスがなければ、追加されます。<br />
-                  もし element1 に highlight クラスがあれば、削除されます。<br />
-                  では、このボタンをクリックしてみます。<br />
-                  皆さん、この要素の変化を見てください。この状態は、まだhighlight
-                  クラスが追加されていません。このボタンをクリックすると、追加されました。<br />
-                  もう一度クリックすると、削除されました。<br />
-                  これが .toggle()
-                  の役割です。状態を切り替える効果を簡単に実現できます。<br />
-                  例えば、highlightクラスのオン／オフや、メニューの開閉や、テーマの切り替えなどです。<br />
-                  これでこの部分は終わりです。皆さん、質問はありますか？<br />
+                  —----------------Toggle method—---------------- <br>
+次に、.toggle メソッドについて紹介します。<br>
+(chỉ vào bên HTML. ) →例えば、HTMLの方は、このようなボタンを宣言します。このボタンには、このように onclick イベントを設定します。<br>
+(qua file JS ) →JavaScript 側では、このように highlight という関数を定義します。<br>
+この関数の中には、このような処理を宣言します。<br>
+.classList.toggle("highlight") →これは、この要素に highlight クラスをオンまたはオフするということです。highlight クラスは、このクラスです。<br>
+もし element1 に highlight クラスがなければ、追加されます。<br>
+もし element1 に highlight クラスがあれば、削除されます。<br>
+(vừa chỉ html, vừa chỉ js )→これはクリックイベントなので、ボタンをクリックすると、この highlight() 関数が実行されます。<br>
+では、このボタンをクリックしてみます。<br>
+皆さん、この要素の変化を見てください。(click cho họ xem và nói theo tình trạng)<br>
+これが .toggle() の役割です。状態を切り替える効果を簡単に実現できます。<br>
+例えば、highlightクラスのオン／オフや、メニューの開閉や、テーマの切り替えなどです。<br>
+これでこの部分は終わりです。皆さん、質問はありますか？<br>
                 </p>
               </div>
             </div>
@@ -1444,29 +1459,31 @@
               </div> -->
               <div class="tableContent mt-2">
                 <p>
-                  次の部分は、DOM イベントについてです。<br />
-                  資料にも、いくつかのよく使われるイベントについてすでに紹介しています。<br />
-                  例えば onchange や onclick などです。<br />
-                  イベントは必ずしもボタンに付けるものではなくて、 p や div や
-                  img や input など、ユーザーが操作したときに反応させたいHTML
-                  要素であれば、付けることができます。<br />
-                  先ほど、 ボタンの onclick をしましたが、今は p
-                  タグで試してみます。<br />
-                  例えば、HTML で p タグを宣言して、このように onclick
-                  イベントを設定します。これがこのイベントを実行する関数です。<br />
-                  JavaScript 側では、このように関数を定義します。<br />
-                  ファイルを保存して、ページをリロードし、このイベントを実行してみます。<br />
-                  このP要素は、これですね。ここでクリックすると、ここに、このテキストが表示されました。<br />
-                  または、onchange のケースについて、こんな例があります。＜input
-                  type="text" onchange="alert('Input changed!')" /＞<br />
-                  HTML ファイルでは、タイプがテキストがある input
-                  タグを宣言します。<br />
-                  この input タグには、このように onchange
-                  イベントを付けて、JavaScriptのコードを直接書くこともできます。<br />
-                  ファイルを保存して、ページをリロードして、このテキストボックスに新しい内容を入力して、外にクリックするか
-                  Enter キーを押すと、onchange
-                  イベントが動いて、このようなアラートが表示されました。<br />
-                  または、他の値に変更してみて、外にクリックして、このアラートが表示されましたね。
+                  —---------giới thiệu Thu nói—---------- <br>
+次の部分は、DOM イベントについてです。<br>
+資料にも、いくつかのよく使われるイベントについて、すでに紹介しています。<br>
+例えば onchange や onclick などです。<br>
+イベントは、必ずしもボタンに付けるものではなくて、<br>
+ユーザーが操作したときに反応させたいHTML 要素であれば、付けることができます。例えば、p や div や img や input などです。<br>
+先ほど、 ボタンの onclick をしましたので、今は p タグで試してみます。<br>
+—------- ví dụ trên thẻ p sự kiện onclick—-----------<br>
+＜p onclick="handleClick()"＞click me 3＜/p＞<br>
+(chỉ vào bên HTML. ) →例えば、HTML で このようにp タグを宣言して、このように onclick イベントを設定します。これがこのイベントを実行する関数です。<br>
+function handleClick() {<br>
+    console.log("Button clicked!");<br>
+}<br>
+JavaScript 側では、このように、関数を定義します。<br>
+ファイルを保存して、ページをリロードし、このイベントを実行してみます。<br>
+このP要素は、これですね。ここでクリックすると、ここに、このテキストが表示されました。<br>
+—------- ví dụ trên thẻ input sự kiện onchange—-----------<br>
+次は、onchange の例についてです。＜input type="text" onchange="alert('Input changed!')" /＞<br>
+HTML ファイルでは、このように input タグを宣言します。inputのタイプがテキストです。<br>
+この input タグには、このように onchange イベントをつけて、このイベントにJavaScriptのコードを直接書くこともできます。<br>
+ファイルを保存して、ページをリロードして、このテキストボックスに新しい内容を入力して、外にクリックするか Enter キーを押すと、このようなアラートが表示されましたね。<br>
+というのは、onchange イベントが動いていることです。<br>
+または、他の値に変更してみて、外にクリックして、このアラートが表示されましたね。<br>
+じゃ、それは、HTML に直接イベントを付ける方法です。皆さんできましたか？<br>
+
                 </p>
               </div>
             </div>
@@ -1477,23 +1494,27 @@
               </div> -->
               <div class="tableContent mt-2">
                 <p>
-                  こんなふうにHTML に直接イベントを付ける方法以外に、 JavaScript
-                  では、よりモダンな方法として、このイベントを登録するメソッドもサポートされています。書き方は次のとおりです。<br />
-                  element1.addEventListener("click", function() {<br />
-                  console.log("Button clicked - addEventListener! 2");<br />
-                  });<br />
-                  HTMLファイルでは、もう１つのボタンを宣言します。IDがdemo３にします。<br />
-                  Javascriptファイルでは、１つの変数を作成して、IDでこのボタン要素を取得します。<br />
-                  次は、この変数を呼び出して、.addEventListenerを入力して、このカッコの中で、２つのパラメータを渡します。<br />
-                  パラメータ１は、イベント名です。ここでは、クリックのイベントです。もし、変更のイベントにしたい場合、ここでは、changeという文字を入力します。イベント名では、目的に応じて、該当するイベントを入力できます。<br />
-                  パラメータ２は、コールバック関数です。<br />
-                  つまり、私たちがこの関数を呼び出す必要がありません。ユーザーが「click」したときに、ブラウザが自動的にこの関数を呼び出して処理を実行します。<br />
-                  この関数の中では、関数の実行コードです。<br />
-                  ファイルを保存して、ページをリロードして、このボタンをクリックすると、ここでは、このテキストが出力されました。<br />
-                  このイベント「addEventListener() 」のメリットは、 HTML
-                  に直接イベントを書く必要がありません。つまり、この側で書く必要がありません。<br />
-                  同じ要素に対して、複数の「click」イベントを登録することができます。<br />
-                  「keyup」「mouseenter」「scroll」「submit」など、より多くの高度なイベントに対応しています。<br />
+                  //================giới thiệu addEventListener================ <br>
+で、続いて、HTML に直接イベントを付ける方法以外に、<br>
+JavaScript では、よりモダンな方法として、このイベントを登録するメソッドもサポートされています。実行する方法は、次のようになります。<br>
+＜button id="demo3"＞Click me 3＜/button＞. Chỉ vô HTML và nói câu sau:<br>
+まず、HTMLの方は、このように、ボタンを宣言します。IDがdemo３にします。<br>
+let element1 = document.getElementById("demo3");<br>
+element1.addEventListener("click", function() {<br>
+    console.log("Button clicked - addEventListener! 2");<br>
+});  /// Chỉ vô JS và nói câu sau: <br>
+次は、Javascriptファイルでは、この変数を作成して、ID demo3の要素を取得します。<br>
+次は、この変数を呼び出して、.addEventListenerを入力して、このカッコの中で、２つのパラメータを渡します。<br>
+パラメータ１は、イベント名です。ここでは、クリックのイベントです。もし、変更のイベントにしたい場合、ここでは、changeという文字を入力します。イベント名では、目的に応じて、該当するイベントを入力できます。<br>
+パラメータ２は、コールバック関数です。<br>
+つまり、私たちがこの関数を呼び出す必要がありません。ユーザーが「click」したときに、ブラウザが自動的にこの関数を呼び出して処理を実行します。<br>
+この関数の中では、この処理を実行します。<br>
+ファイルを保存して、ページをリロードして、このボタンをクリックすると、ここでは、このテキストが出力されました。<br>
+この部分をまとめると、この「addEventListener() 」のメリットは、<br>
+HTML に直接イベントを書く必要がありません。つまり、この側で書く必要がありません。<br>
+また、同じ要素に対して、複数の「click」イベントを登録することができます。<br>
+より多くの高度なイベントに対応しています。「keyup」「mouseenter」「scroll」「submit」など、
+
                 </p>
               </div>
             </div>
@@ -1504,25 +1525,38 @@
               </div> -->
               <div class="tableContent mt-2">
                 <p>
-                  今、同じ要素に対して、複数の「click」イベントを登録することの例を見てみましょう。<br />
-                  例えば、ここでは、もう１つのイベントリスナーをこのdemo３要素に追加して、つまり、この時、このdemo３には、２つのクリックイベントがありますよね。これとこれです。<br />
-                  ファイルを保存して、リロードして、これをクリックすると、2つのイベントが同時に発生して、ここに表示されます。<br />
-                  この2つの表示順も、イベントのコードを書いた順番に対応しています。<br />
-                  これは先に書かれているので、先に実行されて、ここに結果が表示されます。<br />
-                  一方、これは後から書かれているので、後に実行されて、ここに結果が表示されます。<br />
-                  //==========================================================
-                  <br />
-                  今、「change」イベントを登録することの例を見てみましょう。<br />
-                  例えば、HTMLファイルでは、このように、タイプがテキストで、IDがdemo4があるinput要素を宣言します。<br />
-                  JavaScriptの方は、このinput要素を取得するために１つの変数を宣言します。<br />
-                  ここでは、この変数を呼び出して、changeのイベントリスナーを登録します。<br />
-                  ファイルを保存して、ページをリロードして、実行してみます。<br />
-                  ここでは、このような値を入力して、Enterをして、<br />
-                  ここでは、このような内容が表示されました。つまり、この文字列と、これです。このバリューは、入力した値です。<br />
-                  このような
-                  addEventListenerを使うのは、実際のプロジェクトでよく使われます。<br />
-                  理由は、コードがシンプルで分かりやすく、HTML と JavaScript
-                  を明確に分けられるためです。<br />
+                  —Ví dụ về nhiều sự kiện onclick trên cùng 1 phần tử— <br>
+element1.addEventListener("click", function() {<br>
+    console.log("Button clicked - addEventListener!");<br>
+});<br>
+
+element1.addEventListener("click", function() {<br>
+    console.log("Button clicked - addEventListener! 2");<br>
+});<br>
+今、同じ要素に対して、複数の「click」イベントを登録することの例を見てみましょう。<br>
+例えば、ここでは、もう１つのEventListenerをこのdemo３要素に追加して、つまり、この時、このdemo３には、２つのクリックイベントがありますよね。これとこれです。<br>
+ファイルを保存して、リロードして、これをクリックすると、2つのイベントが同時に発生して、ここに表示されます。<br>
+この2つの表示順も、イベントのコードを書いた順番に対応しています。<br>
+これは先に書かれているので、先に実行されて、ここに結果が表示されます。<br>
+一方、これは後から書かれているので、後に実行されて、ここに結果が表示されます。<br>
+—---------Ví dụ về sự kiên onchange trên thẻ input—-----------------<br>
+今、「change」イベントを登録することの例を見てみましょう。<br>
+＜input type="text" id="demo4" /＞<br>
+例えば、HTMLファイルでは、このように、input要素を宣言します。idがdemo4にします。<br>
+let element2 = document.getElementById("demo4");<br>
+element2.addEventListener("change", function() {<br>
+    console.log("Input changed: ", element2.value);
+});<br>
+JavaScriptの方は、この変数を宣言して、このinput要素を取得します。<br>
+ここでは、この変数を呼び出して、changeのイベントリスナーを登録します。<br>
+次は、このchangeイベントを発生した関数を設定します。<br>
+ファイルを保存して、ページをリロードして、実行してみます。<br>
+ここでは、このような値を入力して、Enterをして、<br>
+ここでは、このような内容が表示されました。つまり、この文字列と、これです。このバリューは、入力した値です。<br>
+このような addEventListenerを使うのは、実際のプロジェクトでよく使われます。<br>
+理由は、コードがシンプルで分かりやすく、HTML と JavaScript を明確に分けられるためです。<br>
+ここまで皆さんできましたか？<br>
+
                 </p>
               </div>
             </div>
@@ -1536,84 +1570,60 @@
               </div> -->
               <div class="tableContent mt-2">
                 <p>
-                  次の部分は、Fetch APIについてです。<br />
-                  Fetch は、ブラウザからサーバーに HTTP
-                  リクエストを送信して、返ってきたデータを受け取るために使われます。<br />
-                  HTTP リクエストには、GET、POST、PUT、DELETE
-                  などがあります。<br />
-                  Fetch は非同期で動作して、Promise を使用します。<br />
-                  よく理解できるように、この例を見てみましょう。<br />
-                  HTMLでは、このように、Pタグを宣言します。<br />
-                  —------------giai đoạn 1: tạo biến, console
-                  log—-------------<br />
-                  JavaScriptの方は、このように変数を宣言します。<br />
-                  fetch は、インターネット上からデータを取得するために
-                  JavaScript に標準で用意されている関数です。<br />
-                  これは、データを取得したいURLです。テストAPIです。このデータは、この形状です。(chỉ
-                  vô data trên trang api test)<br />
-                  この宣言全体は、この変数を作成して、この変数は、fetch
-                  の戻り値を格納します。<br />
-                  これをコンソールログしてみると、fetch は、このURLへ
-                  GETリクエストを送信して、データをすぐに返すのではなく、このような
-                  Promise を返します。この [pending]
-                  の状態は、サーバーの返答を待っていることを意味します。<br />
-                  Fetch
-                  は非同期で動作されるため、データを取得できるように、非同期処理をする必要があります。<br />
-                  —--------------giai đoạn 2: thêm .then, console
-                  log—------------<br />
-                  まず、.thenを使う方法を紹介します。ここに .then
-                  を書くこともできますし、見やすくするために改行してここに書くこともできます。<br />
-                  この宣言とは、この行の処理を実行されてから、この.thenが実行されて、データが返ってきます。<br />
-                  これをコンソールログすると、返ってきたdata は、Response
-                  になります。このResponseの中には、さまざまな情報が含まれています。<br />
-                  そして、この Response
-                  は、まだ実際に取得したいデータではありません。<br />
-                  つまり、そのResponseは、まだこれになりません。(mở lại trang
-                  data api test và chỉ vào data).<br />
-                  そのため、JavaScript
-                  のコードでは、目的のデータを取得するために、もう一つ処理を行う必要があります。それは、.json()
-                  メソッドを使って、目的のデータを取得するためです。<br />
-                  —---------giai đoạn 3: .json—-------------<br />
-                  なぜ .json() を使うのかというと、この API は JSON
-                  形式でデータを返しているからです。そのため、データを読み取るために、このように書きます。response.json()
-                  <br />
-                  もし API が text や
-                  HTML、またはファイルなどの形式を返す場合は、返ってくるデータの形式に応じたメソッドを使って処理します。つまり、ここでは、response.text()
-                  や response.blob() などで書きます。<br />
-                  続いて、この.json() 自体も非同期なので、もう一度 .then
-                  を使う必要があります。<br />
-                  こうすることで、はじめて最終的なデータが返ってきます。つまり、このように書きます（chỉ
-                  vô cái dòng then có console lấy data）。<br />
-                  ファイルを保存して、ページをリロードして、戻ち値は、このようになっています。<br />
-                  この data は、API
-                  のテストページに表示されているデータと一致しています。<br />
-                  —--------------giai đoạn 3: sau khi lấy được data, thì ghi hàm
-                  xử lý tùy ý—--------<br />
-                  データが取得できた後は、必要に応じて処理を行います。<br />
-                  例えば、ここでは このように、showData
-                  という関数を定義します。<br />
-                  この関数の中では、次のような処理を行います。<br />
-                  このように content
-                  という変数を作成し、この変数には、data.title と data.bodyから
-                  このような２つのHTML要素を作成します。<br />
-                  この data.title について、ここでの data
-                  はこのオブジェクトのことです。(chỉ vào object trên tab
-                  console)<br />
-                  そして title
-                  は、このオブジェクトのキーになります。.titleとは、このオブジェクトのキーにアクセスする方法です。<br />
-                  そのため、data.titleとは、このtitleの値を取得するということです。<br />
-                  この下のコード行も同じです。<br />
-                  次は、このコードの処理は、IDがDemo５があるHTML要素を取得して、content変数
-                  の HTML をその中に挿入します。<br />
-                  この関数を定義した後、実行したい場合は、ここでまた .then
-                  を使って、このように宣言します。<br />
-                  ファイルを保存して、ページをリロードして、結果は、ブラウザでの表示は、このタイトルとBodyがID
-                  Demo５の要素に挿入されました。<br />
-                  HTMLの方は、ID
-                  Demo５の要素は、内容が無いHTMLタグだけですね。<br />
-                  要するに、Fetch API は、別の Web
-                  サイトのデータを取得して、自分の Web
-                  ページに表示するためのものです。
+                  次の部分は、Fetch APIについてです。<br>
+Fetch は、ブラウザからサーバーに HTTP リクエストを送信して、返ってきたデータを受け取るために使われます。<br>
+HTTP リクエストには、GET、POST、PUT、PATCH、DELETE などがあります。<br>
+Fetch は非同期で動作して、Promise を使用します。<br>
+よく理解できるように、この例を見てみましょう。<br>
+＜p id="demo5"＞＜/p＞→　HTMLでは、このように、Pタグを宣言します。<br>
+—------------giai đoạn 1: tạo biến, console log—-------------<br>
+let data = fetch("https://jsonplaceholder.typicode.com/posts/1")<br>
+console.log(data);<br>
+次は、JavaScriptの方は、このように変数を宣言します。<br>
+fetch は、インターネット上からデータを取得するために JavaScript に標準で用意されている関数です。<br>
+これは、データを取得したいURLです。テストAPIです。このAPIのデータは、この形状です。(chỉ vô data trên trang api test)<br>
+(chỉ vô dòng let data = )→ この宣言全体は、この変数を作成して、この変数は、fetch の戻り値を格納します。<br>
+これをコンソールログしてみると、fetch は、このURLへ GETリクエストを送信して、データをすぐに返すのではなく、このような Promise を返します。この [pending] の状態は、サーバーの返答を待っているということです。（返答＝へんとう）<br>
+Fetch は非同期で動作されるため、データを取得できるように、非同期を解決する必要があります。<br>
+—--------------giai đoạn 2: thêm .then, console log—------------<br>
+まず、.thenを使う方法を紹介します。ここに .then を書くこともできますし、見やすくするために改行してここに書くこともできます。<br>
+.then(response => console.log(response))→この宣言とは、この行の処理を実行されてから、この.thenが実行されて、データが返ってきます。<br>
+これをコンソールログすると、返ってきたdata は、Response になります。このResponseの中には、さまざまな情報が含まれています。<br>
+そして、この Response は、まだ実際に取得したいデータではありません。<br>
+つまり、そのResponseは、まだこれになりません。(mở lại trang data api test và chỉ vào data).<br>
+そのため、JavaScript のコードでは、目的のデータを取得するために、もう一つ処理を行う必要があります。それは、.json() メソッドを使って、目的のデータを取得するためです。<br>
+—---------giai đoạn 3: .json—-------------<br>
+なぜ .json() を使うのかというと、この API は JSON 形式でデータを返しているからです。そのため、データを読み取るために、このように書きます。response.json() <br>
+もし API が text や HTML、またはファイルなどの形式を返す場合は、返ってくるデータの形式に応じたメソッドを使って処理します。つまり、ここでは、response.text() や response.blob() などで書きます。<br>
+続いて、この.json() 自体も非同期なので、もう一度 .then を使う必要があります。<br>
+こうすることで、はじめて最終的なデータが返ってきます。つまり、このように書きます（chỉ vô cái dòng .then(content => console.log(content))）。<br>
+ファイルを保存して、ページをリロードして、戻ち値は、このようになっています。<br>
+この data は、API のテストページに表示されているデータと一致しています。<br>
+—--------------giai đoạn 3: sau khi lấy được data, thì ghi hàm xử lý tùy ý—--------<br>
+データが取得できた後は、必要に応じて処理を行います。<br>
+function showData(data) {<br>
+    let content = `<br>
+        ＜h2＞${data.title}＜/h2＞<br>
+        ＜p＞${data.body}＜/p＞<br>
+    `;<br>
+    document.getElementById("demo5").innerHTML = content;<br>
+}<br>
+例えば、ここでは このように、showData という関数を定義します。<br>
+この関数の中では、次のような処理を行います。<br>
+このように content という変数を作成し、この変数には、data.title と data.bodyから このような２つのHTML要素を作成します。<br>
+この data.title について、ここでの data はこのオブジェクトのことです。(chỉ vào object trên tab console)<br>
+そして title は、このオブジェクトのキーになります。.titleとは、このオブジェクトのキーにアクセスする方法です。<br>
+そのため、data.titleとは、このtitleの値を取得するということです。<br>
+この下のコード行も同じです。<br>
+次は、このコードの処理は、ID Demo５の要素を取得して、content変数 の HTML をその中に挿入します。<br>
+この関数を定義した後、実行したい場合は、ここでまた .then を使って、このように宣言します。（.then(content => showData(content))）<br>
+ファイルを保存して、ページをリロードして、結果は、ブラウザでの表示は、このタイトルとBodyがID Demo５の要素に挿入されました。<br>
+HTMLの方は、ID Demo５の要素は、内容が無いHTMLタグだけですね。<br>
+要するに、Fetch API は、別の Web サイトのデータを取得して、自分の Web ページに表示するためのものです。<br>
+===============================================================<br>
+このfetchは、別のURLからデータを取得すること以外に、テキストファイルからデータを取得することもできます。<br>
+===============================================================<br>
+
                 </p>
               </div>
             </div>
@@ -1674,45 +1684,45 @@
               </div> -->
               <div class="tableContent mt-2">
                 <p>
-                  １）一番目のメソッドは、GETです。GET
-                  はサーバーからクライアントへデータを取得するためのメソッドです。<br />
-                  例えば、ここでは、このような関数を宣言します。<br />
-                  ーーーーーーĐoạn 1: mới chỉ viết code như này và console log
-                  ra—------------ <br />
-                  async function getUser() {<br />
-                  // method GET là mặc định, không cần khai báo<br />
-                  const response = await
-                  fetch("https://jsonplaceholder.typicode.com/users/1");<br />
-                  console.log("Response: ", response);<br />
-                  }<br />
-                  getUser();<br />
-                  async/await について学んだとおり、fetch
-                  は非同期なので、このように fetch の前に await を付けます。<br />
-                  そして、await が使えるように、この
-                  functionというキーワードの前に async
-                  を付ける必要があります。<br />
-                  fetch 自体は Promise を返すため、await
-                  を使用することができます。<br />
-                  ここでは、GET メソッドを使って API を呼び出しています。<br />
-                  そして、GET は fetch のデフォルトのメソッドなので、この
-                  function ではメソッドを指定する必要はありません。<br />
-                  このコードを実行してみて、コンソールタブでは、このようなReponseが出力されました。<br />
-                  ーーーーーーĐoạn 2: sử dụng method .json() để get
-                  data—------------<br />
-                  async function getUser() {<br />
-                  // method GET là mặc định, không cần khai báo<br />
-                  const response = await
-                  fetch("https://jsonplaceholder.typicode.com/users/1");<br />
-                  const data = await response.json();<br />
+                  次は、HTTPメソッドについて紹介します。<br>
+１）一番目のメソッドは、GETです。GET はサーバーからクライアントへデータを取得するためのメソッドです。<br>
+例えば、ここでは、このような関数を宣言します。<br>
+ーーーーーーĐoạn 1: mới chỉ viết code như này và console log ra—------------<br>
+async function getUser() {<br>
+    // method GET là mặc định, không cần khai báo<br>
+    const response = await fetch("https://jsonplaceholder.typicode.com/users/1");<br>
+    console.log("Response: ", response);<br>
+}<br>
+getUser();<br>
+async/await について学んだとおり、fetch は非同期なので、このように fetch の前に await を付けます。<br>
+そして、await が使えるように、この functionというキーワードの前に async を付ける必要があります。<br>
+fetch 自体は Promise を返すため、await を使用することができます。<br>
+ここでは、GET メソッドを使って API を呼び出しています。<br>
+そして、GET は fetch のデフォルトのメソッドなので、この function ではメソッドを指定する必要はありません。<br>
+　　　　＊＊＊＊＊giới thiệu về api mình tự tạo＊＊＊＊＊<br>
+fetch の中には、データを取得したい API の URL が入っています。このAPIは、弊社が作成した実際の API です。<br>
+ドキュメントに記載されている API はテスト用の API です。今日のハンズオンでは、このテストAPIを使えば、皆さんには少しイメージしにくいと思います。<br>
+そのため、動きについてイメージしやすいように、この弊社が作成した実際の API を使用します。<br>
+ドキュメントに、弊社が作成したAPI を記載していない理由は、この API は使用できる期間が 1 年だけで、来年には使えないためです。<br>
+そのため、例えば来年に見返した場合は、アクセスできなくなってしまいます。<br>
+　　　　＊＊＊＊＊chạy code cho họ xem＊＊＊＊＊<br>
+このコードを実行してみて、コンソールタブでは、このようなReponseが出力されました。<br>
+ーーーーーーĐoạn 2: sử dụng method .json() để get data—------------<br>
+async function getUser() {<br>
+    // method GET là mặc định, không cần khai báo<br>
+    const response = await fetch("https://jsonplaceholder.typicode.com/users/1");<br>
+const data = await response.json();<br>
 
-                  console.log("Response: ", response);<br />
-                  console.log("Data: ", data);<br />
-                  }<br />
-                  getUser();<br />
-                  先ほどやったように、目的なデータを取得するには、.json()メソッドを使います。このように書きます。.json()自体も非同期なので、awaitを追加します。<br />
-                  ここでは、このデータをコンソールログします。ファイルを保存して、ページをリロードして、ここでは、このようなデータが出ました。<br />
-                  これは、さっきの fetch の書き方よりも早くてシンプルです。<br />
-                  データが取得できた後は、必要に応じて処理を行います。<br />
+
+    console.log("Response: ", response);<br>
+console.log("Data: ", data);
+}<br>
+getUser();<br>
+先ほどやったように、目的なデータを取得するには、.json()メソッドを使います。このように書きます。.json()自体も非同期なので、awaitを追加します。<br>
+ここでは、このデータをコンソールログします。ファイルを保存して、ページをリロードして、ここでは、このようなデータが出ました。<br>
+これは、さっきの fetch の書き方よりも早くてシンプルです。<br>
+データが取得できた後は、必要に応じて処理を行います。<br>
+
                 </p>
               </div>
             </div>
@@ -1823,38 +1833,38 @@
         <div class="tab-pane fade" id="page152">
           <div class="talkContent_text container">
             <p>
-              次の部分は、JavaScriptの
-              AJAXの部分です。先ほどのFetchAPIと同じに、AJAX
-              も、JavaScriptのサーバーと通信するための一つの方法です。<br />
-              ただし、AJAX は古い技術で、Fetch API
-              より前に出てきたものなので、Fetch API
-              ほど最適化されていなくて、書き方も結構ややこしくて長くなりがちです。<br />
-              そのため、JavaScript では Fetch
-              のほうがよく使われていて、コードがすっきりしていて直感的に書けますし、非同期解決の設計もより優れています。<br />
-              なので、ここでは、こういうものもあることを紹介だけにしておいて、<br />
-              実際の開発では、さっき使った Fetch を使うことが多いです。<br />
+              次の部分は、JavaScriptの AJAXの部分です。先ほどのFetchAPIと同じに、AJAX も、JavaScriptのサーバーと通信するための一つの方法です。<br>
+ただし、AJAX は古い技術で、Fetch API より前に出てきたものなので、Fetch API ほど最適化されていなくて、書き方も結構ややこしくて長くなりがちです。<br>
+そのため、JavaScript では Fetch のほうがよく使われていて、コードがすっきりしていて直感的に書けますし、非同期解決の設計もより優れています。<br>
+なので、ここでは、こういうものもあることを紹介だけにしておいて、<br>
+実際の開発では、さっき使った Fetch を使うことが多いです。<br>
 
-              例えば、このような例があります。<br />
-              function loadUser() {<br />
-              const xhttp = new XMLHttpRequest();<br />
+例えば、このような例があります。<br>
+function loadUser() {<br>
+    const xhttp = new XMLHttpRequest();<br>
 
-              console.log("xhttp", xhttp);<br />
 
-              xhttp.onload = function () {<br />
-              // console.log(this);<br />
+    console.log("xhttp", xhttp);<br>
 
-              let responseData = this.response;<br />
-              console.log("Response Data: ", responseData);<br />
-              console.log("User: ", JSON.parse(responseData));<br />
 
-              }<br />
-              // Call API endpoint<br />
-              xhttp.open("GET",
-              "https://jsonplaceholder.typicode.com/users/1");<br />
-              xhttp.send();<br />
-              } loadUser();<br />
+    xhttp.onload = function () {<br>
+        // console.log(this);<br>
 
-              このコードを説明いたします。<br>
+
+        let responseData = this.response;<br>
+        console.log("Response Data: ", responseData);<br>
+        console.log("User: ", JSON.parse(responseData));<br>
+   
+    }<br>
+    // Call API endpoint<br>
+    xhttp.open("GET", "https://jsonplaceholder.typicode.com/users/1");<br>
+    xhttp.send();<br>
+}
+
+
+loadUser();<br>
+
+このコードを説明いたします。<br>
 AJAX を使うには、この変数（xhttp）を宣言して、 new で初期化して、次は、これを書きます。XMLHttpRequest()<br>
     xhttp.open("GET", "https://jsonplaceholder.typicode.com/users/1");<br>
     xhttp.send();<br>
@@ -1863,6 +1873,7 @@ AJAX を使うには、この変数（xhttp）を宣言して、 new で初期�
 サーバーから返ってきたデータが this.response に代入されます。<br>
 サーバーから返ってきたデータは JSON の文字列なので、JavaScript のオブジェクトに変換するために、JSON.parse()のコードを書きます。<br>
 そうすると、このAPIからデータが取得できました。<br>
+それは、AJAXの部分です。
 
             </p>
           </div>
@@ -1901,9 +1912,240 @@ console.log("City: ", jsonObject.city);<br>
             </p>
           </div>
 
-          <div class="audioFix">
+          <!-- <div class="audioFix">
             <audio class="audio" controls loop src="./audio/152.mp3"></audio>
+          </div> -->
+        </div>
+        <div class="tab-pane fade" id="page160">
+          <div class="talkContent_text container">
+            <p>
+           次は、この部分です。この部分とは、jQuery を使って API へ AJAX リクエストを送り、返ってきたデータを受け取ることです。<br>
+—-------giới thiệu jquery—----------<br>
+まずは、jQuery について簡単に紹介します。<br>
+jQuery は JavaScript のライブラリで、昔の JavaScript の面倒なところを解決するために作られました。例えば、DOM 操作が長くて分かりにくかったり、AJAX が複雑だったり、ブラウザごとの挙動の違いによる不具合などを解決します。<br>
+しかし、現在では JavaScript 自体がかなり強力になり、<br>
+ブラウザ間の差もほぼ解消され、Vue や React などのモダンなフレームワークが従来のやり方に取って代わっています。<br>
+そのため、最近の新しいプロジェクトでは JavaScript だけで十分に対応できるようになっており、<br>
+現在では jQuery はほとんど使われなくなっています。<br>
+わざわざ jQuery を追加で読み込むとページが重くなるだけなので、今ではあまり使われなくなっています。<br>
+ただし、私たちのプロジェクトはかなり前から作られていて jQuery を使っているため、<br>
+ここでは、皆さんに知ってもらうために jQuery について簡単に紹介したいと思います。<br>
+—--------giới thiệu cách import nhanh jquery vào html—---<br>
+jQuery を使うには、まず Google で「jquery cdn」と検索して、cdnjs.com のページを選びます。<br>
+次に、使いたいバージョンを選んで、この Copy ボタンをクリックして、それを HTML の body のここに貼り付ければ完了です。<br>
+—---------html: khai button để chạy thử hàm jquery—--------<br>
+今、HTMLのファイルでは、このjQuery関数を実行するために１つのボタンを宣言します。<br>
+—------hàm jquery—----<br>
+今、このような jQuery のコードがあります。<br>
+$(document).ready( function() {<br>
+    $("#demo6").click( function() {<br>
+        $.ajax{<br>
+            url: "https://jsonplaceholder.typicode.com/users/1", // API endpoint<br>
+            method: "GET", // HTTP method<br>
+            success(data, textStatus, jqXHR)<br>
+               console.log("data", data);<br>
+               console.log("textStatus", textStatus);<br>
+               console.log("jqXHR", jqXHR);<br>
+            },<br>
+            error: function(){<br>
+                console.log("Error fetching data");<br>
+            }<br>
+        });<br>
+    });<br>
+;<br>
+
+*rê chuột giải thích*<br>
+1️⃣ $(document).ready(...)<br>
+この宣言とは、DOM 全体の読み込みが完了してから、中のコードを実行します。HTML の要素を確実に操作できるようにするためです。<br>
+2️⃣ $("#demo6").click(...)<br>
+宣言とは、id が demo6 の要素に click イベントを設定するという意味です。<br>
+ユーザーがこのボタンをクリックすると、AJAX が実行されます。<br>
+3️⃣ $.ajax({...})<br>
+これは、APIを呼び出すjQuery関数です。この関数の主な属性は、<br>
+・url:	    URLは、呼び出すAPIの URLです。<br>
+・method:  メソッドは、 HTTPメソッドのことです。 (GET/POST/PUT/DELETE…)<br>
+・success:  これは、API から正常にレスポンスが返ってきたときに実行されるコールバックという意味です。<br>
+・error: これは、API でエラーが発生したときに実行されるコールバックです。<br>
+
+successの関数では、３つのパラメータがあります。<br>
+data：API から返ってくるデータ（JSON、テキストなど）<br>
+
+
+textStatus：処理の状態（"success"、"error"、"timeout" など）<br>
+
+
+jqXHR：ステータスコードやヘッダーなどの情報を持つ XHR オブジェクト<br>
+
+success 関数の中では、必ずしもこのように 3 つのパラメータをすべて書く必要はありません。<br>
+1 つだけ書いても問題なく、例えばこのように書くこともできます。<br>
+success: function(data) {<br>
+    console.log(data);<br>
+}<br>
+つまり、返ってきたデータだけが必要な場合は、 data の1つだけで十分です。<br>
+今、実行してみて、APIからデータが取得できましたね。<br>
+これまで、皆さんは、できましたか？<br>
+
+
+            </p>
           </div>
+
+          <!-- <div class="audioFix">
+            <audio class="audio" controls loop src="./audio/152.mp3"></audio>
+          </div> -->
+        </div>
+        <div class="tab-pane fade" id="page164-165">
+          <div class="talkContent_text container">
+            <p>
+           次は、JavaScriptのClassのことです。<br>
+JavaScript の class は、クラス宣言（Class Declaration） または クラス式（Class Expression） として定義できます。function や let、const と同じに、構造を宣言するものに分類されます。<br>
+—--------ví dụ về instance methods—-----------<br>
+例えば、このようなコードがあります。<br>
+class Car {<br>
+    constructor(name, year) {<br>
+        this.name = name;<br>
+        this.year = year;<br>
+    }<br>
+
+    // Instance method<br>
+    getAge() {<br>
+        const age = new Date().getFullYear() - this.year;<br>
+        return `${this.name} is ${age} years old.`;<br>
+    }<br>
+
+}<br>
+クラスの作り方の構文については、ドキュメントの中でも、すでに説明されています。<br>
+つまり、Classというキーワードがあります。これは、クラス名です。次は、｛｝です。｛｝の中には、Classの処理です。<br>
+このconstructorがあり、このメソッド (getAge)があります。<br>
+constructorのコードとは、このクラスの対象を初期化するためです。name と year という 2 つのパラメータを受け取って、オブジェクトのプロパティに代入します。<br>
+getAge()とは、オブジェクトのメソッドです。インスタンスメソッドです。<br>
+このメソッドの機能は、現在の年と yearのパラメータ をもとに車の年齢を計算して、その車の年齢を表す文字列を返します。<br>
+new Date().getFullYear()　これは、現在の年を取得する構文ですね。これは、引き算ですね。<br>
+ return `${this.name} is ${age} years old.`;　これは、その車の年齢を返すコードです。<br>
+
+では、このクラスを実行するために、ここでは、このように、 2 つの対象変数を新しく初期化して、パラメータを渡します。<br>
+実行してみて、結果は、この行は、このコードのことですね。<br>
+この行は、このコードのことですね。<br>
+それは、インスタンスメソッドの例です。<br>
+
+—-----------ví dụ về static method—----------<br>
+class Car {<br>
+    constructor(name, year) {<br>
+        this.name = name;<br>
+        this.year = year;<br>
+    }<br>
+
+    // Instance method (phương thức của đối tượng)<br>
+    getAge() {<br>
+        const age = new Date().getFullYear() - this.year;<br>
+        return `${this.name} is ${age} years old.`;<br>
+    }<br>
+
+    static compareAge(car1, car2) {<br>
+        return car1.year - car2.year;<br>
+    }
+
+}
+
+const car1 = new Car("Toyota", 2015);<br>
+console.log(car1.getAge());<br>
+
+const car2 = new Car("Honda", 2013);<br>
+console.log(car2.getAge());<br>
+
+let comparison = Car.compareAge(car1, car2);<br>
+console.log("Comparison: ", comparison);<br>
+
+次は、次は、スタティック・メソッドの例です。このようなコードがあります。このコードも、先ほどのコードと同じですが、ここでは、static メソッド のコードが追加されています。<br>
+では、この static メソッドのコードは何を意味していて、なぜ書くのかというと、<br>
+static メソッドは クラスから作られたそれぞれのオブジェクトにはつけられないで、クラスに直接つけられる関数 です。<br>
+そのため、オブジェクトをとおして呼び出すのではなく、クラス名で直接呼び出します。<br>
+Car.compareAge(car1, car2);　これが static メソッドの呼び出し方で、つまりここでは car1 や car2 を通さずに、Carというクラス名 で直接呼べるので、簡単になります。<br>
+要するに、インスタンスメソッドは、それぞれのオブジェクトに使います。<br>
+スタティック・メソッドは、クラスに対して複数のオブジェクトを同時に処理するために使います。<br>
+
+それは、クラスのスタティック・メソッドの部分です。皆さんは、できましたか？<br>
+
+—----------ví dụ về kế thừa—-----------<br>
+次は、クラスの継承（Inheritance）の例を見てみましょう。（継承＝けいしょう）<br>
+このコードでは、Car クラスを拡張して、Model という新しいクラスを作成します。class Model extends Car、Model は、Car からこの構文で 継承されます。<br>
+Model クラスは、Car クラスのすべてのプロパティやメソッド（例えば、constructor、getAge()、 static メソッドなど）を継承します。<br>
+これにより、既存の内容を再度書く必要がなく、Model に必要な部分だけを追加すれば済みます。<br>
+例えば、Model クラスの中には、このmodelと、このsuper のコードと、 showInfo メソッドを追加しています。<br>
+super のコードとは、親クラスの constructor を呼び出して、親クラスに親クラスが持っているものを処理してもらうということです。<br>
+このshowInfo メソッドは、Model クラス専用のメソッドです。<br>
+
+この下のコードは、上の 2 つのクラスを呼び出して実行するためのものです。<br>
+これは、子クラスのメソッドを呼び出して、これは、親クラスのメソッドを呼び出しています。<br>
+実行した結果は、このようになります。<br>
+それは、クラスの継承です。皆さんできましたか？<br>
+
+            </p>
+          </div>
+
+          <!-- <div class="audioFix">
+            <audio class="audio" controls loop src="./audio/152.mp3"></audio>
+          </div> -->
+        </div>
+         <div class="tab-pane fade" id="page168-169">
+          <div class="talkContent_text container">
+            <p>
+           —--------giới thiệu regex, giới thiệu 2 cách viết—------- <br>
+次は、JavascriptのRegex部分です。つまり、正規表現（せいきひょうげん）の部分ですね。<br>
+Regex（正規表現）は、文字列の検索、確認、または置換を行うために使用されます。<br>
+実行するには、２つの書き方があります。<br>
+方法１は、このようです。let regex1 = /\d+/g;<br>
+この方法では、\d+の部分は、パータンと呼ばれます。gの部分は、フラグと呼ばれます。<br>
+各パータンと、各フラグの意味は、資料でも書いています。<br>
+
+２つ目の書き方は、このようにします。let regex2 = new RegExp("\\d+", "g"); <br>
+同じように、これは、パータンです。これは、フラグです。<br>
+
+そして、よく使われる方法は、方法１です。つまり、これです。理由は、読みやすくて理解しやすいためです。<br>
+
+—--------------ví dụ thực tế 1—-----------<br>
+let regex1 = /\d+/g;<br>
+let text = "Number phone: 0123-456-789";<br>
+console.log("Test regex1: ", text.match(regex1));<br>
+例えば、このような例があります。<br>
+この例のコンソールログの結果は、3つの値を持つ配列を返しています。<br>
+この結果になった理由について、<br>
+/\\d+/g この宣言とは、連続したすべての数字の文字列を検索するということです。<br>
+この .matchメソッドと組み合わせて、マッチすると、取得します。<br>
+そのため、この文字列では、左から右へ順番にスキャンします。これ（0123）を取得して、これに来ると、数字になっていないため、取得しません。そのように処理を続けて、文字列の最後まで行くまで、止まります。そのため、これらの３つを取得しました。<br>
+じゃ、それは、この例のことです。皆さんできましたか？<br>
+—--------------ví dụ thực tế 2—-----------<br>
+次に、他の例を見ていきましょう。<br>
+let regex3 = /[A-Z]+/g;<br>
+let text2 = "my name is JOHN DOE and I live in USA.";<br>
+console.log(text2.match(regex3));<br>
+
+この例では、このような結果になっています。<br>
+理由は、この宣言とは、文字列内にある連続したすべての大文字の単語を検索するということです。この .matchメソッドと組み合わせて、マッチすると、取得します。<br>
+そのため、この文字列全体を左から右へ順番にスキャンします。<br>
+そして、これ（JOHN）を取得しました。ここに来ると、大文字の単語になっていないで、スペースなので、取得しません。文字列の最後まで、そのように処理を続けて、それらの４つが取得できました。<br>
+
+—--------------ví dụ thực tế 3—-----------<br>
+次に、このような例があります。<br>
+let regex4= /hello/i;<br>
+let text3 = "Hello everyone!";<br>
+console.log(regex4.test(text3));<br>
+
+この例の結果は、このようになります。<br>
+理由は、<br>
+/hello/i このパターンは、文字列に「hello」が含まれているかどうかを確認するために使われます。<br>
+この i フラグは、大文字・小文字を区別しないということです。<br>
+この.test(text) メソッドは、テストするためのものです。<br>
+確認対象の文字列に「hello」が含まれているため、結果は true になります。<br>
+
+じゃ、それは、正規表現（せいきひょうげん）の部分です。<br>
+これまで、JavaScript の説明は終わりです。何かご質問はありますか？<br>
+
+            </p>
+          </div>
+
+          <!-- <div class="audioFix">
+            <audio class="audio" controls loop src="./audio/152.mp3"></audio>
+          </div> -->
         </div>
       </div>
     </section>
