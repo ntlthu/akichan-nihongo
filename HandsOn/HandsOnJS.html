@@ -230,63 +230,9 @@
         role="tablist"
         aria-orientation="vertical"
       >
-        <!-- <button
-          class="nav-link active"
-          data-bs-toggle="pill"
-          data-bs-target="#page80_82"
-        >
-          80
-        </button> -->
+       
         <button
           class="nav-link active"
-          data-bs-toggle="pill"
-          data-bs-target="#page83_84"
-        >
-          83
-        </button>
-        <button
-          class="nav-link"
-          data-bs-toggle="pill"
-          data-bs-target="#page85_87"
-        >
-          85
-        </button>
-        <button
-          class="nav-link"
-          data-bs-toggle="pill"
-          data-bs-target="#page88_89"
-        >
-          88
-        </button>
-        <button class="nav-link" data-bs-toggle="pill" data-bs-target="#page90">
-          90
-        </button>
-        <button class="nav-link" data-bs-toggle="pill" data-bs-target="#page93">
-          93
-        </button>
-        <button
-          class="nav-link"
-          data-bs-toggle="pill"
-          data-bs-target="#page98-101"
-        >
-          98
-        </button>
-        <button
-          class="nav-link"
-          data-bs-toggle="pill"
-          data-bs-target="#page104-106"
-        >
-          104
-        </button>
-        <button
-          class="nav-link"
-          data-bs-toggle="pill"
-          data-bs-target="#page109-112"
-        >
-          109
-        </button>
-        <button
-          class="nav-link"
           data-bs-toggle="pill"
           data-bs-target="#page119-121"
         >
@@ -350,814 +296,9 @@
         </button>
       </div>
       <div class="tab-content mt-2" id="v-pills-tabContent">
-        <!-- <div class="tab-pane fade show active" id="page80_82">
+
+        <div class="tab-pane fade show active" id="page119-121">
           <div class="talkContent_text container">
-            <div class="kaiwa table">
-              <div class="tableHeader">
-                <audio
-                  controls
-                  loop
-                  class="audio"
-                  src="./audio/80_82_p1.mp3"
-                ></audio>
-              </div>
-              <div class="tableContent mt-2">
-                <p>
-                  次に、JavaScript の非同期処理の部分です。（ひどうき
-                  しょり）<br />
-                  なぜ非同期処理が必要なのかを理解するために、この例を見てみましょう。<br />
-                  この例のコードもチャットでお送りします。<br />
-                  この例では、これらの２つの関数を宣言しています。<br />
-                  このコードを実行してみると、コンソールタブにはこのように表示されます。<br />
-                  このコードの実行の流れを説明いたします。<br />
-                </p>
-              </div>
-            </div>
-            <p>--------------------------------------------------</p>
-            <div class="kaiwa table">
-              <div class="tableHeader">
-                <audio
-                  controls
-                  loop
-                  class="audio"
-                  src="./audio/80_82_p2.mp3"
-                ></audio>
-              </div>
-              <div class="tableContent mt-2">
-                <p>
-                  まず、JavaScript は上から実行して、このような2
-                  つの関数があることを覚えておきます。<br />
-                  覚えておくだけで、この時点ではまだ何も処理していません。<br />
-                  <br />
-                  次に、この関数呼び出しの行に来ると、mainという関数を検索して、このmain関数に入って、また上から処理します。<br />
-                  具体的には、この行に来た時、この内容を出力します。console.log("Start
-                  fetching..."); ⇒ gặp console.log output ra Start fetching…<br />
-                  次は、この行に来ます（let data =
-                  fetchData();）。この行の宣言とは、fetchData関数を実行して、fetchData関数の値を取得して、このデータ変数に返すということですね。<br />
-                  そのため、この関数（fetchData）を検索して、fetchData関数に入って、また上から処理します。<br />
-                </p>
-              </div>
-            </div>
-            <p>--------------------------------------------------</p>
-            <div class="kaiwa table">
-              <div class="tableHeader">
-                <audio
-                  controls
-                  loop
-                  class="audio"
-                  src="./audio/80_82_p3.mp3"
-                ></audio>
-              </div>
-              <div class="tableContent mt-2">
-                <p>
-                  このfetchData関数には、まず、dataという変数を作成して、ヌールの値を代入します。<br />
-                  次は、このsetTimeoutのコードに来ると、ロジック上は、このコードを実行した後の結果が、この配列をこのdata変数に返して、次に、この文字列と、この配列を出力しますね。<br />
-                  しかし、ここでは待機時間（たいきじかん）を 2
-                  秒に設定しているため、このコードは 2
-                  秒後に実行されます。（にびょうご）<br />
-                  その間（そのあいだ）、JavaScript は setTimeout
-                  の処理が終わって結果が返ってくるまで待ちません。<br />
-                  その代わりに、この下の行に来て、先に実行します。 setTimeout
-                  の処理はバックグラウンドで実行されます。
-                </p>
-              </div>
-            </div>
-            <p>--------------------------------------------------</p>
-            <div class="kaiwa table">
-              <div class="tableHeader">
-                <audio
-                  controls
-                  loop
-                  class="audio"
-                  src="./audio/80-82_P4.mp3"
-                ></audio>
-              </div>
-              <div class="tableContent mt-2">
-                <p>
-                  そのため、この時点では、このdataのヌール値を取得して、この関数を呼び出した箇所に返します。つまり、この時点で、これの値がヌールですね。<br />
-                  次に、この行に来ます　console.log("Data:", data);。<br />
-                  この文字列と、このdataの値を出力します。つまり、この行です。Data:
-                  null <br />
-                  次に、この行に来て console.log("Done
-                  fetching.");、この文字列を出力します。Done fetching. <br />
-                  その後、2 秒経ってからこの setTimeout
-                  の中のコードが実行されるため、
-                  この時点で初めてここの行が下に出力されます。<br />
-                  この data という変数は fetchData
-                  関数の中だけで使われるもので、<br />
-                  その関数はすでにとっくに return してしまっています。<br />
-                  そのため、main() の中の data 変数は更新されません。<br />
-                  このsetTimeoutは、JavaScriptの非同期と呼ばれます。<br />
-                  本来なら、この部分は、コード内の順番によって、ここに表示されるはずですが、<br />
-                  非同期のため、下のほうに表示されてしまいました。<br />
-                  そのため、非同期処理をするために、つまり、コードの順番どおりに結果を返すようにプログラムに強制（きょうせい）するために、次のようにします。<br />
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="audioFix">
-            <audio
-              class="audio"
-              controls
-              loop
-              src="./audio/15,16,17_full.mp3"
-            ></audio>
-          </div>
-        </div> -->
-        <div class="tab-pane fade show active" id="page83_84">
-          <div class="talkContent_text container">
-            <div class="kaiwa table">
-              <div class="tableHeader">
-                <audio
-                  controls
-                  loop
-                  class="audio"
-                  src="./audio/83,84_p1.mp3"
-                ></audio>
-              </div>
-              <div class="tableContent mt-2">
-                <p>
-                  では、始めましょう。<br />
-                  時間が足りなくなるのが心配なので、スムーズに進めるために、各部分のコードは事前に用意しましたので、どの部分に来たら、その部分のコードをチャットで送って、説明していく方向で進めたいと思います。<br />
-                  --------------------------------------------------<br />
-                  先日は、非同期の現象を見ましたね。<br />
-                  今、非同期を解決するために、３つの方法があります。<br />
-                  方法１は、先週勉強したコールバックを使います。<br />
-                  このしかたは、このようにします。<br />
-                  ここでの出力結果を見ると、コードに書かれた順番どおりに出力されていますね。<br />
-                  このコードの実行の流れを説明いたします。<br />
-                  この行では、mainという関数を実行するコマンドがあるので、main関数の中に入って、上から処理します。<br />
-                  まず、これを処理します。そのため、この文字列をここで出力されます。<br />
-                  次に、この行に来ると、この時、fetchData関数を呼び出して、パラメータとして
-                  output を渡します。<br />
-                  このoutputは、この関数のことです。<br />
-                  つまり、この時点では、このoutput関数は、このcallbackになります。<br />
-                  次に、ここでは、fetchData関数を呼び出しているため、JSは、このfetchData関数に飛んで、この時、setTimeoutに来ます。<br />
-                  このsetTimeoutの中には、これらの処理がありますが、これらがまだすぐに実行しません。2
-                  秒待つ必要があります。
-                  ２秒経ってから、この処理をして、これの値を取得します。<br />
-                  次に、この行に来て、callbackを呼び出して、このcallbackは、このoutput関数のことなので、この時、JSは、このoutput関数を実行します。<br />
-                  この時、このデータは、このpersonのことなので、<br />
-                  このpersonは、ここに入れます。<br />
-                  次は、これを実行して、この文字列と、このpersonの値をここで出力します。<br />
-                  次は、この行に来て、この文字列を出力します。<br />
-                  これまで、みなさんは、できましたか？<br />
-                  —--------chạy lại cho họ xem để thấy chờ 2 giây mới ra kết
-                  quả—--------<br />
-                  2
-                  秒待ってから結果が出るのが分かるように、今、ページをリロードしますね。皆さん、一緒に見てください。<br />
-                  １，２秒、結果が出ました。<br />
-                </p>
-              </div>
-            </div>
-            <p>--------------------------------------------------</p>
-            <div class="kaiwa table">
-              <div class="tableHeader">
-                <audio
-                  controls
-                  loop
-                  class="audio"
-                  src="./audio/83,84_p2.mp3"
-                ></audio>
-              </div>
-              <div class="tableContent mt-2">
-                <p>
-                  —--------------------------------------------------------
-                  <br />
-                  cách viết ngắn gọn hơn: đưa thẳng function output vào main
-                  <br />
-                  それは、コールバックを使って非同期処理を行う方法の完全な書き方です。<br />
-                  実際のコードは、そのように書きません。そうすると、コードが長すぎるからです。もともと、このoutput関数は、このmain関数で動くだけです。<br />
-                  そのため、コードを短くするために、ここに直接関数を書きます。つまり、このように書きます。<br />
-                  この仕方は、この関数の中で置いているため、ここでは、先ほどのoutputという関数名が不要です。<br />
-                  この方法では、先ほどの書き方と同じ効果があります。<br />
-                  実行してみて、先ほどの結果と同じですね。<br />
-                  または、さらに短くするために、ここはアロー関数に置き換えることもできます。<br />
-                  アロー関数には、このように書きます。この時、functionというキーワードを削除して、代わりに、矢印にします。<br />
-                  それは、コールバックを使って非同期を解決する方法です。<br />
-                  皆さん、何か質問がありますか？<br />
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- <div class="audioFix">
-            <audio
-              class="audio"
-              controls
-              loop
-              src="./audio/15,16,17_full.mp3"
-            ></audio>
-          </div> -->
-        </div>
-        <div class="tab-pane fade" id="page85_87">
-          <div class="talkContent_text container">
-            <p>
-              次に、Promise（プロミス）を使って非同期を解決する方法です。<br />
-              Promise
-              は、コールバックの後に出た方法で、コールバックの欠点を解決するものです。<br />
-              例えば、コールバックの方法では、これらの欠点があります。(cầm chuột
-              và chỉ vào các nhược điểm của callback) trang 85.<br />
-              プロミスでは、これらの欠点を解決できます。<br />
-              よく理解できるように、このような例を見てみましょう。<br />
-              このコードの処理の流れは、次のようになります。<br />
-              この行に来ると、main関数を実行します。<br />
-              まず、これを実行して、この文字列をここで出力します（Start
-              fetching…）<br />
-              次に、fetchDataっていう関数を呼び出して、この時は、JSは、fetchData関数の中に入って、<br />
-              この時、fetchData関数は、すぐに Promise
-              （プロミス）を返します。<br />
-              このプロミスの中で、このような１つの関数があります。アロー関数ですね。２つのパラメータは、これとこれです。<br />
-              この関数は、すぐに実行されます。そのため、console.log(res)をすると、返ってきた結果は、これです。Promise
-              {pending}<br />
-              Promise {pending}　この結果になった理由は、<br />
-              この関数の中に入って、setTimeoutのコードがあります。<br />
-              setTimeoutの中にも、また、他の１つのアロー関数があります。<br />
-              この関数のコードは、これらの２つの処理があります。<br />
-              今、setTimeoutのコードになっているので、これらの２つの処理がまだ実行されていません。２秒経ってから、その処理が実行されます。<br />
-              そのため、コンソールログをすると、このように表示されます。<br />
-
-              次は、このコードを削除して、このように書きます。<br />
-              // fetchData()<br />
-              // .then(result)<br />
-              // .catch(showError)<br />
-              このように書ければ、２秒後、このようなオブジェクトを含む変数を作成して、その作成した変数の値を取得して、この関数のこのパラメータに返します。<br />
-              この時、このパラメータの値がここに渡されます。<br />
-              ルールとしては、このパラメータ (resolve)
-              の値は、ここに渡されます。(result)<br />
-              このパラメータ (reject) の値は、ここに渡されます。(showError)<br />
-              簡単に言うと、この.thenは、パラメータ１の値を取得します。<br />
-              この.catchは、パラメータ2の値を取得します。<br />
-              次に、このresultは、このresult関数のことです。そのため、この関数を実行して、まず、この行の処理をします。この時、このdataは、このpersonのことなので、このpersonは、ここに入れます。そのため、このような情報を出力しました。これまで、皆さん、できましたか？<br />
-              —----------trường hợp của reject—------------<br />
-              このrejectの場合は、手動で実行する時、ここでは、このように渡します。reject("Has
-              error").<br />
-              もし、このように渡せば、この時、.catchは、showError関数を呼び出して、そのため、この関数が実行されて、このエラーメッセージを出力しました。<br />
-              手動で実行しない場合、コードがシステムエラーなどで失敗した場合は、<br />
-              この showError 関数が自動的に実行されて、JavaScript
-              にエラー内容が出力されます。<br />
-              じゃ、それは、Promise（プロミス）のコードですね。<br />
-            </p>
-          </div>
-
-          <div class="audioFix">
-            <audio class="audio" controls loop src="./audio/85-87.mp3"></audio>
-          </div>
-        </div>
-        <div class="tab-pane fade" id="page88_89">
-          <div class="talkContent_text container">
-            <div class="kaiwa table">
-              <div class="tableHeader">
-                <audio
-                  controls
-                  loop
-                  class="audio"
-                  src="./audio/88-89_1.mp3"
-                ></audio>
-              </div>
-              <div class="tableContent mt-2">
-                <p>
-                  次は、このページの部分ですね。<br />
-                  Promise（プロミス）の方法では、コールバックのようにコードが何重（なんじゅう）にも入れ子になりません。<br />
-                  しかし、例えば、このresult関数の中にさらに非同期処理がある場合は、その時も、また
-                  .then や .catch を続けて書く必要があります。<br />
-                  そのため、その欠点を解決するために、このasync/awaitの方法が生まれました。<br />
-                  この方法は、JavaScriptの最も簡単で、分かりやすい非同期処理の方法です。<br />
-                  この方法の仕方は、このようになります。<br />
-                  例えば、このようなコードがあります。<br />
-                  この方法を有効にするためには、次の２条件が必要になります。<br />
-                  １つ目は、await を付ける関数の前に、async
-                  を宣言しておく必要があります。<br />
-                  ここでの await
-                  は、この関数の実行が終わるまで待ってから、この次の行を実行するという意味です。<br />
-                  ２つ目の条件は、await を使う関数は、必ず Promise
-                  を返す必要があります。<br />
-                  この関数では、Promiseを返していますね。そのため、条件を満たしています。<br />
-                  Promiseを返さない場合、このawaitは効果がありません。<br />
-                  例えば、このようになります。<br />
-                  この関数を実行して、この行が先に出力しました。<br />
-                  今は このコードを実行してみて、１，２秒、結果が出ました。<br />
-                  この方法は Promise をバージョンアップしたものです。<br />
-                  この方法のコードは、とても短く、何重にも入れ子になりません。<br />
-
-                  <br />
-                </p>
-              </div>
-            </div>
-            <p>----------------------------------------------------</p>
-            <div class="kaiwa table">
-              <div class="tableHeader">
-                <audio
-                  controls
-                  loop
-                  class="audio"
-                  src="./audio/88-89_2.mp3"
-                ></audio>
-              </div>
-              <div class="tableContent mt-2">
-                <p>
-                  もう一点です。それ（上）は、パラメータ１の場合です。つまり、resolve（リゾルブ）のパラメータの場合は、すぐに結果が受け取りました。<br />
-                  では、パラメータ２の場合は、つまり、rejectの場合は、どうすれば、いいのか、見てみましょう。<br />
-                  例えば、ここでは、reject(“Has
-                  error”)、このように宣言します。<br />
-                  この時、２つ目のパラメータなので、catchのコードに入って、このエラー内容が出ました。次に、この下のコードを実行して、この文字列がここで出ました。<br />
-                  じゃ、それは、async/awaitの部分です。皆さんできましたか？<br />
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- <div class="audioFix">
-            <audio
-              class="audio"
-              controls
-              loop
-              src="./audio/15,16,17_full.mp3"
-            ></audio>
-          </div> -->
-        </div>
-        <div class="tab-pane fade" id="page90">
-          <div class="talkContent_text container">
-            <p>
-              —------------ giới thiệu tác dụng của try…cacth <br />
-              次は、try…catchの部分です。<br />
-              通常、コードにエラーが発生すると、そこで処理が止まり、次の処理は、行われません。そのため、try...catch
-              を使うことで、実行中に発生したエラーをつかまえて、処理を続けることができます。<br />
-              —---------ví dụ hiện tượng lỗi khi chưa dùng try…catch—-------<br />
-              console.log("Start program");<br />
-              let user = null;<br />
-              console.log(user.name);<br />
-              console.log("Start program");<br />
-              なぜ try...catch
-              を使う必要があるのかを理解するために、この例を一緒に見てみましょう。<br />
-              このコードの場合、プログラムは、これ("Start
-              program");を実行して、ここで出力します。ここに来ると、user
-              という変数を null の値で作成します。<br />
-              ここに来ると、この変数の値がヌールになっているため、ネームが存在しないエラーが出て、プログラムが止まります。もう処理しません。<br />
-              そして、この下のコードの行は、処理されなくて出力されませんでした。<br />
-              そのため、ここでは、try…catchを使えば、そのエラーをつかまえて、次の処理も続けて実行されます。<br />
-              —---------ví dụ dùng try…catch, cách 1 nội dung lỗi do JS tự
-              tạo—-------------<br />
-              try...catchの書き方は、このようになります。<br />
-              tryの中には、エラーが発生する可能性があるコードを書きます。<br />
-              catchの中には、発生したエラーを受け取って処理するコードを書きます。<br />
-              もし try
-              の中でエラーが発生した場合、プログラムは、catchの中に飛んで、エラー処理を行います。プログラムが突然止まるのを防ぎます。(とつぜん
-              とまる の を ふせぎます)<br />
-              このコードでは、tryのコードがエラーになって、プログラムは、catchの中のコードを行います。そのため、ここでは、このようなエラー内容が表示されています。<br />
-              これは、ここで入力した文字列です。これは、JavaScript
-              が自動的に作成して返してくれるエラー内容です。このエラーは、構文エラーです。<br />
-              chỉ vô dòng cuối console.log("End
-              program")→そして、この行の処理は、実行されて、ここで出力しました。<br />
-              じゃ、それは JavaScript
-              が自動的にエラーを出力してくれる場合です。皆さんできましたか？<br />
-              —-----------trường hợp dùng throw để chủ động out ra
-              lỗi—-----------<br />
-              次は、例えば、自分で意図的にエラーを出力したいとき、開発者は、共通の書き方として「throw
-              new Error」（th-râu niu e-rờ）をよく使います。<br />
-              理由は、「th-râu niu
-              e-rờ」は、渡したエラーメッセージを出力するだけでなく、エラーになったファイル名とか、エラーになった行の位置も出力してくれます。<br />
-              　＊＊＊＊＊console.log("Error: ", error) chung＊＊＊＊＊＊<br />
-              今、このコードを実行してみて、結果は、このようになります。<br />
-              ここでは、これが渡したメッセージ内容です。<br />
-              これは、エラーが発生したファイル名です。これは、エラーが発生した行番号です。これとは、行の先頭から数えて、エラーが発生した文字の位置を示します。ここでは、11番目の文字です。<br />
-              ●メッセージの内容だけを取得したい場合は、ここに .message
-              を付けます。<br />
-              そうすると、ここでは、このメッセージだけを表示しています。<br />
-              ●また、ここでは、このように.stackを書けば、このように詳細がすべて出力されます。<br />
-              じゃ、それは、try…catchの部分です。これまで、皆さんできましたか？<br />
-            </p>
-          </div>
-
-          <div class="audioFix">
-            <audio class="audio" controls loop src="./audio/90.mp3"></audio>
-          </div>
-        </div>
-        <div class="tab-pane fade" id="page93">
-          <div class="talkContent_text container">
-            <p>
-              次は、JavaScript の this の部分です。this
-              の概念については資料の中でも説明しましたので、今はさっそくハンズオンに入っていきますね。<br />
-              —---------Trong global scope:—------------- <br />
-              例えば、このようにコンソールログしてみて、console.log(this);
-              <br />
-              つまり、この時、このthisは、関数の中に置いていません。<br />
-              そのため、この時のthisは、window
-              になります。で、この時の返した結果は、このようになります。その中では、windowのプロパティが入っています。<br />
-              JavaScript の window
-              は、ブラウザでコードが実行されるときのウェブページ全体のグローバルオブジェクトです。<br />
-              グローバル変数、グローバル関数、ドキュメント、コンソール、アラートなど、すべてのものがここに含まれています。<br />
-              —------------trong hàm bình thường—------------------------<br />
-              次に、他の例を見てみます。例えば、このような例があります。<br />
-              function testFunc() {<br />
-              console.log(this) }<br />
-              testFunc();<br />
-              この場合、this は通常の関数の中にあります。この時のthisも、window
-              になります。<br />
-              ただし、ストリクトモードを使用している場合、this は undefined
-              になります。<br />
-              例えば、この例（↓）の場合は、thisの返し結果がundefinedになります。
-              'use strict';これは、ストリクトモードのことです。<br />
-              function testFunc() { 'use strict'; console.log(this) }<br />
-              testFunc();<br />
-
-              *Start - nếu họ hỏi strict mode là gì thì trả lời như sau, còn
-              không hỏi thì thôi*<br />
-              Strict モードは、JavaScript における<ruby
-                >厳格<rt>げんかく</rt></ruby
-              >なモードで、"use strict";の行を書くことで有効になります。<br />
-              簡単に説明すると： JavaScript がエラーをより<ruby
-                >厳密<rt>げんみつ</rt></ruby
-              >に検出するようになり、<br />
-              不具合を引き起こしやすい<ruby>挙動<rt>きょどう</rt></ruby
-              >を防ぎます。例：宣言されていない変数の使用などです。<br />
-
-              コードの安全性と<ruby>可読性<rt>かどくせい</rt></ruby
-              >が<ruby>向上<rt>こうじょう</rt></ruby
-              >し、 通常の JavaScript では<ruby>許可<rt>きょか</rt></ruby
-              >されてしまう<ruby>非標準<rt>ひひょうじゅん</rt></ruby
-              >な書き方を避けることができます。<br />
-
-              Strict モードを有効にすると、 危険な動作や<ruby
-                >潜在的<rt>せんざいてき</rt></ruby
-              >なエラーがある挙動の一部は完全に禁止されます。<br />
-              —---------this nằm trong phương thức (method) của
-              object—------------<br />
-              次は、this が
-              オブジェクトのメソッドの中にある場合の例を見ていきましょう。<br />
-              例えば、このような例があります。<br />
-              const person = {<br />
-              name: "Alice",<br />
-              showName() {<br />
-              console.log(this.name);<br />
-              }<br />
-              }<br />
-              person.showName();<br />
-              これは、person
-              という名前がある定数を作成して、この定数の値は、このようなオブジェクトを入れます。<br />
-              このオブジェクトの中には、これらの値があります。１つ目は、このようなキーと値が入っています。<br />
-              ２つ目は、このようなメソッドが入っています。このメソッドの中には、この処理を実行します。<br />
-              「person.showName();」この行とは、このオブジェクトのキーにアクセスするということです。つまり、このメソッドを呼び出して実行することです。<br />
-              そのため、この処理を実行します。ここには、thisが入っています。この時、このthisとは、このオブジェクトのことです。<br />
-              そのため、this.nameは person.name
-              と同じ意味になり、このような結果が出ます。<br />
-              ●例えば、ここにこのようにキーと値のペアを１つ追加する場合、ここでは、このキーにアクセスするために、このように書きます。このthisは、このオブジェクトになるので、この値を取得して、ここで表示します。<br />
-              —----------ví dụ this nằm trong hàm xử lý sự
-              kiện—--------------<br />
-              他の例を見ていきましょう。<br />
-              例えば、this は、今このようなイベントハンドラーの中にあります。<br />
-              この値は、HTMLファイル側のボタンのIDです。<br />
-              このボタンをクリックしてみると、ここには、このように表示されています。<br />
-              この場合のthisは、onclick
-              イベントを設定したその要素自身になります。<br />
-              そのため、コンソールタブに出力すると、この id を持つ HTML
-              要素がそのまま表示されます。<br />
-              また、他の例を見てみましょう。<br />
-              document.getElementById("btn").onclick = function() {<br />
-              console.log(this)<br />
-              this.style.fontSize = "35px";<br />
-              }<br />
-              この時、このボタンをクリックすると、フォントサイズが大きくなります。<br />
-              要するに、this
-              は固定されたものではなく、状況によって値が変わります。<br />
-              —----------Giới thiệu về call({}) để gán this thủ công
-              —--------------<br />
-              他の例を見ていきましょう。<br />
-              function greet() {<br />
-              console.log("Hi ", this.name, this.age)<br />
-              } greet.call({name: "Bob", age: 30})<br />
-              この場合の this は、ここで渡したオブジェクト自体を指します。<br />
-              通常の greet() 関数はどのオブジェクトにも属していないため、this
-              には name や age はありません。<br />
-              greet.call({ name: "Bob", age: 30 })
-              のように呼び出すと、オブジェクトを関数の this
-              として渡しています。<br />
-              このthis.nameとは、このネームにアクセスするということです。<br />
-              このthis.ageとは、このエイジにアクセスするということです。<br />
-              そのため、表示結果は、このようになります。<br />
-            </p>
-          </div>
-
-          <div class="audioFix">
-            <audio
-              class="audio"
-              controls
-              loop
-              src="./audio/93_this.mp3"
-            ></audio>
-          </div>
-        </div>
-        <div class="tab-pane fade" id="page98-101">
-          <div class="talkContent_text container">
-            <p>
-              次は、JavaScript の if / else 条件文の部分になります。<br />
-              以下の例があります。まず、このような値で変数を作成します。<br />
-              これは、条件式になります。この変数の値がこの条件を満たしていますので、この処理が実行されて、結果がここでこのように出力しました。<br />
-              この変数の値が if の条件を満たさない場合は、else
-              の中のコードが実行されます。<br />
-              例えば、この変数の値をこのように変更してみて、実行して、<br />
-              この時、 if の条件を満たさないので、else
-              の中のコードが実行されましたので、出力した結果は、このようになります。<br />
-              —----------ví dụ khác—------------<br />
-              他の例を見ていきましょう。例えば、ここでは、このような変数を宣言します。<br />
-              次に、このように条件文を書きます。このコードでは、上から処理します。<br />
-              ifの条件に来ると、この変数の値をこの条件式と照らし合わせてチェックしますが、条件を満たさないため、処理は
-              else if の条件に飛んで、続けて判定を行います。<br />
-              この条件を満たしているので、この値が出力されて、処理がここで止まります。下の側のコードを実行しません。<br />
-              もしこの値をこれに変更してみて、この時、この変数の値は、この条件も満たせなくて、この条件も満たせなくて、またこの条件に飛んで、確認して、満たしているため、これを出力しました。<br />
-              じゃ、それは、if, else, else ifについての部分です。<br />
-            </p>
-          </div>
-
-          <div class="audioFix">
-            <audio class="audio" controls loop src="./audio/98-101.mp3"></audio>
-          </div>
-        </div>
-        <div class="tab-pane fade" id="page104-106">
-          <div class="talkContent_text container">
-            <p>
-              次は、switchの文についてです。 <br />
-              switch も if / else と同じ条件文ですが、 if や else if
-              をたくさん書くより、switchのほうが分かりやすく整理できます。<br />
-              このような例があります。この例を実行してみて、このような結果が取得できました。<br />
-              この例とは、このような変数を宣言します。<br />
-              次に、このようなswitch文を宣言します。このカッコの中には、この変数名を渡します。<br />
-              コードが上から処理します。もしこのcolorは、この値であれば、この処理が実行されて、この文字が出力されます。<br />
-              もし、この値でなければ、また上から続いて処理します。<br />
-              このケースに来ると、このcolorは、この値であれば、これを出力します。<br />
-              ここでは、条件が正しくなるので、この値を出力しました。ここで止まります。<br />
-              このBreakの役割は、一致したcaseのところでswitch文を終了させ、下の処理が実行されないようにするために使います。<br />
-              例えば、ここでのBreakを削除すると、ファイルを保存して、ページをリロードして、この時、この下側のgreenが出力されてしまいました。<br />
-              というのは、下側の条件は、間違っていても、まだ出力されます。<br />
-              なので、必ずこの break を入れる必要があります。<br />
-              —------------ví dụ của default—-------------- <br />
-              また、switch 文には default もあります。 <br />
-              すべての case が一致しない場合は、この default
-              のコードが実行されます。<br />
-              それは、switchの部分です。
-            </p>
-          </div>
-
-          <div class="audioFix">
-            <audio
-              class="audio"
-              controls
-              loop
-              src="./audio/104-106.mp3"
-            ></audio>
-          </div>
-        </div>
-        <div class="tab-pane fade" id="page109-112">
-          <div class="talkContent_text container">
-            <div class="kaiwa table">
-              <div class="tableHeader">
-                <audio
-                  controls
-                  loop
-                  class="audio"
-                  src="./audio/109-112_1.mp3"
-                ></audio>
-              </div>
-              <div class="tableContent mt-2">
-                <p>
-                  —--------------giới thiệu—-------------- <br />
-                  次は、JavaScriptのループです。<br />
-                  ループとは、同じ処理を何回も繰り返したいときに使うしくみです。<br />
-                  JavaScript には、いくつかの<ruby>
-                    代表的<rt>だいひょうてき</rt> </ruby
-                  >なループがあります。<br />
-                  例えば、for ループ、while ループ、そして for...of / for...in
-                  などがあります。<br />
-                  今、それぞれの<ruby> 特徴<rt>とくちょう</rt> </ruby
-                  >を簡単に見ていきましょう。<br />
-                </p>
-              </div>
-            </div>
-
-            <div class="kaiwa table">
-              <div class="tableHeader">
-                <audio
-                  controls
-                  loop
-                  class="audio"
-                  src="./audio/109-112_for.mp3"
-                ></audio>
-              </div>
-              <div class="tableContent mt-2">
-                <p>
-                  —-----------ví dụ về for loop—------------ <br />
-                  まず、forループです。<br />
-                  forループは、繰り返す回数が分かっているときに使います。<br />
-                  例えば、このようなforループがあります。<br />
-                  このコードを実行すると、このような結果が出ています。<br />
-                  で、このコードの処理の流れを説明していきます。<br />
-                  let i = 0 →
-                  これとは、i（アイ）というカウンタ変数を初期化して、値を0に代入します（つまり0から開始します）。<br />
-                  i ＜ 3 →
-                  これがループ条件です。各ループの前に、プログラムは以下のことをチェックします。i（アイ）が3未満であればループを続けます。そうでなければ停止します。<br />
-                  i++ → これとは、各ループ後に、i（アイ）変数が1増加します。<br />
-                  まず、i（アイ）が０になっているので、この条件を満たしています。<br />
-                  そのため、この文字列と、この時点のアイの値を出力します。つまり、これです。(chỉ
-                  chuột vào dòng i = 0 bên tab console)<br />
-                  これで最初のループが終了して、次に進みます。この時点で、これによって
-                  アイ が 1 増加して、つまり アイ の値は 1 になります。<br />
-                  また、この条件と確認して、満たしているため、この文字列と、この時点のアイの値を出力します。つまり、これです。<br />
-                  これで２つ目のループが終了して、次のループに進みます。この時点でアイがまた１増加して、つまり
-                  アイ の値は 2 になります。<br />
-                  また、この条件と確認して、満たしているため、この文字列と、この時点のアイの値を出力します。つまり、これです。<br />
-                  続いて、また１増加して、この時点で、アイ の値は
-                  3になります。この条件を満たせていないため、ループがここで終わります。<br />
-                  それは、forループの部分です。ここまで皆さんできましたか？<br />
-                </p>
-              </div>
-            </div>
-
-            <div class="kaiwa table">
-              <div class="tableHeader">
-                <audio
-                  controls
-                  loop
-                  class="audio"
-                  src="./audio/109_112_while.mp3"
-                ></audio>
-              </div>
-              <div class="tableContent mt-2">
-                <p>
-                  —-----------ví dụ về while loop—------------ <br />
-                  次は、whileループの例を見ていきましょう。<br />
-                  whileループは、繰り返す回数が分からず、ループ条件だけが分かっているときに使います。<br />
-                  この例を説明いたします。<br />
-                  let i =
-                  0;　→　ここでは、アイという変数を宣言して、初期値を0に代入します。<br />
-                  while (i ＜ 3)
-                  :　これがループ条件です。各ループの前に、JavaScriptは、アイの値がこの条件を満たすかどうかを確認します。<br />
-                  もし条件を満たしている場合、波カッコ内のコードを実行します。アイの値を出力します。<br />
-                  これは、Forループと同じに、各ループ後に、i（アイ）変数が1増加します。<br />
-                  このループの処理流れは、Forループの流れと同じです。つまり、最初のループでは、アイの値が０になっているため、この条件を満たしていて、この結果が出ました。<br />
-                  次は、アイの値を１増加して、この条件と確認して、満たして、この結果を出力しました。<br />
-                  そのようにずっと繰り返して、条件を満たさなくなるまで、ループが止まります。<br />
-                  ここでは、１つの注意点があります。<br />
-                  この条件がずっと正しいままだと、このループは止まらずに実行され続けます。<br />
-                  例えば、これ (i++)
-                  を削除すると、このループは無限に実行されてしまい、そのときこのページのプログレスバーはずっと回り続けます。<br />
-                  そのため、この状態を避けるために、これを必ず記述する必要があります。<br />
-                  それは、whileループです。ここまで、皆さんできましたか？ <br />
-                </p>
-              </div>
-            </div>
-
-            <div class="kaiwa table">
-              <div class="tableHeader">
-                <audio
-                  controls
-                  loop
-                  class="audio"
-                  src="./audio/109-112_do while.mp3"
-                ></audio>
-              </div>
-              <div class="tableContent mt-2">
-                <p>
-                  —-----------ví dụ về vòng lặp do…while—------------ <br />
-                  次は、do…whileループの例を見ていきましょう。<br />
-                  do…whileループは、whileループと似ていますが、whileループと比べて1つの違いがあります。それはdo...whileでは、条件が正しくない場合でも、波カッコ内のコードブロックが最初に実行され、その後でwhileの条件がチェックされるということです。<br />
-                  例えば、この例の場合は、この行の処理が実行されて、この時、アイの値は、0になっていて、このように出力します。<br />
-                  次は、アイの値を１増加して、この時点で、アイの値は、１になります。<br />
-                  その後、whileの条件を確認して、アイの値が１になっているため、この条件を満たしているため、この処理がまだ実行されて、このように出力します。<br />
-                  この時、またアイの値を１増加して、この時点で、アイの値は、2になります。<br />
-                  この時、またwhileの条件を確認して、２になっているため、満たしています。これを出力します。<br />
-                  またアイの値を１増加して、この時のアイの値は、３になって、whileの条件を確認して、この時のアイは、満たしていませんので、ループがここで終わります。<br />
-                  ●例えば、アイの値を５に変更してみて、実行すると、このコードは、最初の1回目はまだ実行されます。この結果が返します。<br />
-                  その後、while
-                  の条件をチェックし、条件を満たさないため、それ以降は実行されません。<br />
-                  それは、do…whileループです。ここまで、皆さんできましたか？<br />
-                </p>
-              </div>
-            </div>
-
-            <div class="kaiwa table">
-              <div class="tableHeader">
-                <audio
-                  controls
-                  loop
-                  class="audio"
-                  src="./audio/109-112_for of.mp3"
-                ></audio>
-              </div>
-              <div class="tableContent mt-2">
-                <p>
-                  —-----------vòng lặp for…of—------------- <br />
-                  次は、for…ofループの部分です。 この例を見ていきましょう。<br />
-                  ここでは、このような配列を宣言しています。const fruits =
-                  ["apple", "banana", "orange"]; <br />
-                  これは、for…ofループと呼ばれます。配列の各要素を順番に取り出すために使います。<br />
-                  １回目のループでは、配列から要素の「apple」が取り出されるので、１回目の
-                  a は「apple」になります。１回目のループが終わりです。<br />
-                  次に、２回目のループでは、配列から要素の「banana」が取り出されるので、２回目の
-                  a は「banana」になります。<br />
-                  続いて、３回目のループでは、配列から要素の「orange」が取り出されるので、３回目の
-                  a は「orange」になります。<br />
-                  それは、for…ofループです。ここまで、皆さんできましたか？
-                </p>
-              </div>
-            </div>
-
-            <div class="kaiwa table">
-              <div class="tableHeader">
-                <audio
-                  controls
-                  loop
-                  class="audio"
-                  src="./audio/109-112_for in.mp3"
-                ></audio>
-              </div>
-              <div class="tableContent mt-2">
-                <p>
-                  —-----------vòng lặp for…in—------------- <br />
-                  １）次は、for...in ループについて説明していきます。for...in
-                  は、オブジェクトのキーを順番に取り出すためによく使います。<br />
-                  例えば、このような例があります。<br />
-                  ここでは、このようなオブジェクトを宣言します。これは、for…inループと呼ばれます。<br />
-                  これは、このループのコードです。<br />
-                  for...in は、オブジェクトのキーを順番にループしますので、<br />
-                  １回目のループでは、このキーを取得してここで出力します。<br />
-                  ２回目は、このキーを取得して、３回目は、このキーを取得します。<br />
-                  ２）もし、そのキーの値を取得したい場合は、このように書きます。<br />
-                  person[a] というのは、そのキーに該当する値という意味です。<br />
-                  たとえば、１回目のループでは a が name になるので、person[a]
-                  は person["name"] のことです。<br />そのため、１回目は name
-                  の値が取り出されます。つまりこの値です。<br />
-                  次のループも同じように動きます。<br />
-                  もしこのように書けば、表示もこのようになります。つまり、キーを取得したあとに、その値が続けて表示されるということです。<br />
-                  それは、for...in
-                  ループです。以上がループに関する説明になりました。皆さんは、何か質問はありますか？<br />
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- <div class="audioFix">
-            <audio
-              class="audio"
-              controls
-              loop
-              src="./audio/15,16,17_full.mp3"
-            ></audio>
-          </div> -->
-        </div>
-        <div class="tab-pane fade" id="page119-121">
-          <div class="talkContent_text container">
-            <div class="kaiwa table">
-              <div class="tableHeader">
-                <audio
-                  controls
-                  loop
-                  class="audio"
-                  src="./audio/119-121_1.mp3"
-                ></audio>
-              </div>
-              <div class="tableContent mt-2">
-                <p>
-                  —-----------update nội dung html—--------------<br />
-                  次は、この部分です。最初の JavaScript
-                  のハンズオンでは、JavaScript を使って HTML
-                  の内容を更新したり変更したりする方法についても見ました。<br />
-                  なので、ここでその部分について、もう少し補足して説明します。<br />
-                  例えば、HTMLファイルの方は、このようなIDがある２つのP要素を宣言します。<br />
-                  この宣言のブラウザでの表示は、このようになっています。<br />
-
-                  JavaScriptファイルの方は、このような２つの変数を宣言します。<br />
-                  let element1 = document.getElementById("demo1");<br />
-                  let element2 = document.getElementById("demo2");<br />
-
-                  element1.innerText = "Hello DOM 1 Updated InnerText";<br />
-                  element2.innerHTML = "Hello DOM 2 Updated InnerText";<br />
-                  ファイルを保存してから、ブラウザでの表示は、このようになっています。<br />
-                  このコードを説明いたします。<br />
-                  これは、id で HTML
-                  の要素を取得して、その要素を変数の値として代入するための構文です。<br />
-                  前回は、この構文を使って HTML
-                  要素の内容を更新したり変更したりしました。<br />
-                  これ（element2）は、このことに該当します。document.getElementById("demo2");<br />
-                  今回、このように使えます。innerTextもHTML
-                  要素の内容を更新したり変更したりするために使用されます。<br />
-                  ただし、innerText と innerHTML
-                  の違いは、今コンソールタブに表示されている結果を見ると分かります。<br />
-                  innerText の場合、JavaScript
-                  は中身をすべてテキストとして処理します。<br />
-                  そのため、中に HTML
-                  タグが含まれていても、それを文字としてそのまま表示して、普通のテキストと同じように表示されます。<br />
-                  一方、innerHTML の場合は、JavaScript はその内容を HTML
-                  として処理します。<br />
-                  つまり、中に HTML タグがあると、それを文字としてではなく、HTML
-                  のタグとして読み取り、HTML
-                  の構造どおりに画面に表示します。innerText
-                  のように文字列としてそのまま表示されるわけではありません。<br />
-                  または、このタブで確認できます。これは、テキストとして表示されています。<br />
-                  一方、これは、HTMLタグとして表示されています。<br />
-                </p>
-              </div>
-            </div>
             <div class="kaiwa table">
               <div class="tableHeader">
                 <audio
@@ -1169,23 +310,25 @@
               </div>
               <div class="tableContent mt-2">
                 <p>
-                  —--------------------thay đổi style của thẻ—---------------
-                  <br />
-                  次に、これは、HTML要素のスタイルを変更する方法についての例です。<br />
-                  element2.style.color = "#bd0103";<br />
-                  element2.style.fontSize = "40px";<br />
-                  element2.style.backgroundColor = "gray";<br />
-                  element2→これは、このIDがあるHTML要素を呼び出すことです。<br />
-                  style →
-                  これは、HTML要素のスタイルを変更するためのプロパティです。<br />
-                  color / fontSize / backgroundColor →
-                  これは、変更したいスタイルの種類です。<br />
-                  .style.color は文字の色を変更するためです。<br />
-                  .style.fontSize はフォントサイズを調整するためです。<br />
-                  .style.backgroundColor は要素の背景色を変更するためです。<br />
-                  色を設定するには、こんなふうにカラーコードを指定することもできます。または、カラー名で指定することもできます。<br />
-                  じゃ、それは、HTML要素のスタイルを変更する方法です。その他のプロパティについては、資料を参考にしてください。<br />
-                  これまで、皆さんできましたか？
+                 —--------------------thay đổi style của thẻ—--------------- <br>
+では、始めましょう。先週編集したJSのソースを開きましょう。<br>
+次に、これは、HTML要素のスタイルを変更する方法についての例です。<br>
+皆さん、一緒にコードを書いてください。<br>
+できるところまでで大丈夫です。<br>
+説明が終わったら、皆さんが自分でやってみる時間を取ります。<br>
+element2.style.color = "#bd0103";<br>
+element2.style.fontSize = "40px";<br>
+element2.style.backgroundColor = "gray";<br>
+element2→これは、ID demo2があるHTML要素を呼び出すことです。<br>
+style → これは、HTML要素のスタイルを変更するためのプロパティです。<br>
+color / fontSize / backgroundColor → これらは、変更したいスタイルの種類です。<br>
+.style.color は文字の色を変更するためです。<br>
+.style.fontSize はフォントサイズを調整するためです。<br>
+.style.backgroundColor は要素の背景色を変更するためです。<br>
+色を設定するには、こんなふうにカラーコードを指定することもできます。または、カラー名で指定することもできます。<br>
+じゃ、それは、HTML要素のスタイルを変更する方法です。その他のプロパティについては、資料を参考にしてください。<br>
+皆さん、この例をやってみてください。<br>
+
                 </p>
               </div>
             </div>
@@ -1201,72 +344,34 @@
               </div>
               <div class="tableContent mt-2">
                 <p>
-                  —---------------------getElementsByClassName—-----------
-                  <br />
-                  先ほどは ID を使って HTML
-                  要素を取得する方法をハンズオンしましたが、次はクラスを使って
-                  HTML 要素を取得する方法を見ていきます。<br />
-                  例えば、HTMLの方は、これらの２つのP要素があります。<br />
-                  ブラウザでの表示は、このようになっています。<br />
-                  JavaScriptの方は、同じクラスを持つすべての要素を取得するには、この構文を使います。<br />
-                  let notes = document.getElementsByClassName("note");<br />
-                  この構文では、このElementsには、Sという文字があります。IDの構文では、ElementにSがありません。<br />理由は、id
-                  は 1 つだけですが、class は複数あるので、ここでは s
-                  が付いています。<br />
-                  ただし、この時点では notes
-                  という変数を作って、このクラス名があるHTML
-                  要素をすべて取得しただけで、まだ JavaScript
-                  で何か処理をしていません。<br />
-                  例えば、ここでは、このようにコンソールログをすると、返ってきた結果は
-                  1 つの要素ではなく、HTML
-                  Collection（コレクション）です。つまり各要素の一覧を返します。各要素は
-                  0 から順番に番号が付けられています。<br />
-                  この HTML
-                  Collection（コレクション）は見た目は配列のように見えますが、実際には本当の配列ではありません。<br />
-                  length: 2　これとは、note というクラスを持つ要素が 2
-                  つあるという意味です。<br />
-                  *************Sự khác nhau giữa mảng và
-                  HTMLCollection*************<br />
-                  配列と HTMLCollection の違い点は次のとおりです。<br />
-                  Array（JavaScript の配列）：<br />
-                  配列は、JavaScript の「標準的な」配列です。<br />
-                  forEach、map、filter、reduce
-                  など、ほとんどの配列メソッドが使えます。<br />
-                  要素の追加・削除・変更を柔軟に行えます。<br />
-                  DOM とは関係なく、単なる通常のデータ構造です。<br />
-                  HTMLCollection<br />
-                  HTMLCollectionは、見た目は配列のように見えますが、本当の配列ではありません。<br />
-                  配列のメソッドは使えません。<br />
-                  これは「ライブコレクション」で、HTML が変更されると
-                  HTMLCollection もすぐに自動更新されます。<br />
-                  簡単に言えば、Array
-                  は本当の配列で、機能が多く、さまざまなメソッドが使えます。<br />
-                  一方、HTMLCollection
-                  は配列ではないためメソッドは使えませんが、DOM
-                  が変更されると自動的に更新されます。<br />
-                  ******************************************************************************<br />
-                  次は、HTMLCollection
-                  の各要素には、インデックスを使って、このようにアクセスできます。<br />
-                  notes[0].style.color = "blue";<br />
-                  notes[0] は、この notes
-                  という変数の中にある最初の要素にアクセスするという意味です。<br />
-                  style.colorとは、この変数の中にある最初の要素の色を変更するという意味です。<br />
-                  そのため、結果は、この最初のノートだけは、色が変更されました。<br />
-                  もし、ノート２に色を変更したい場合、ここでは、１に変更します。notes[1]。<br />
-                  —-------dùng vòng lặp áp dụng style cho all phần tử—-----<br />
-                  for(let i = 0; i ＜ notes.length; i++) {<br />
-                  notes[i].style.color = "blue";<br />
-                  }<br />
-                  また、すべての要素にスタイルを適用したい場合は、このコードのように、for
-                  ループを使って一覧全体を順番に処理して、各要素の文字色を変更することができます。<br />
-                  この方法を使うと、複数の要素をまとめて操作でき、すっきりして管理もしやすくなります。<br />
-                  notes.length とは、note クラスを持つ要素の数量のことです。<br />
-                  notes[i] は、notes という変数の一覧の中にある i
-                  番目の要素のことです。<br />
-                  このループは、最初の要素から最後の要素まで、1
-                  つずつ順番に処理していきます。<br />
-                  それは、クラスを使って HTML
-                  要素を取得する方法です。ここまで、皆さんは、何か質問がありますか？<br />
+                 —---------------------getElementsByClassName—----------- <br>
+先ほどは ID を使って HTML 要素を取得する方法をハンズオンしましたが、次はクラスを使って HTML 要素を取得する方法を見ていきましょう。<br>
+例えば、HTMLの方は、これらの２つのP要素があります。<br>
+ブラウザでの表示は、このようになっています。<br>
+JavaScriptの方は、同じクラスを持つすべての要素を取得するには、この構文を使います。<br>
+let notes = document.getElementsByClassName("note");<br>
+この構文では、このElementsには、Sという文字があります。IDの構文では、ElementにSがありません。理由は、id は 1 つだけですが、class は複数あるので、ここでは s が付いています。<br>
+ただし、この時点では notes という変数を作って、このクラス名があるHTML 要素をすべて取得しただけで、まだ JavaScript で何か処理をしていません。<br>
+例えば、ここでは、このようにコンソールログをすると、返ってきた結果は 1 つの要素ではなく、HTML Collection（コレクション）です。つまり各要素の一覧を返します。各要素は 0 から順番に番号が付けられています。<br>
+この HTML Collection（コレクション）は見た目は配列のように見えますが、実際には本当の配列ではありません。<br>
+length: 2　これとは、note というクラスを持つ要素が 2 つあるという意味です。<br>
+           —-------ví dụ về lấy phần tử theo index—-------------<br>
+次は、HTMLCollection の各要素には、インデックスを使って、このようにアクセスできます。<br>
+notes[0].style.color = "blue";<br>
+notes[0] は、この notes という変数の中にある最初の要素にアクセスするという意味です。<br>
+style.colorとは、この変数の中にある最初の要素の色を変更するという意味です。<br>
+そのため、結果は、この最初のノートだけは、色が変更されました。<br>
+もし、ノート２に色を変更したい場合、ここでは、１に変更します。notes[1]。<br>
+     —-------dùng vòng lặp áp dụng style cho all phần tử—-----<br>
+for(let i = 0; i ＜ notes.length; i++) {<br>
+    notes[i].style.color = "blue";<br>
+}<br>
+また、すべての要素にスタイルを適用したい場合は、このコードのように、for ループを使って一覧全体を順番に処理して、各要素の文字色を変更することができます。<br>
+この方法を使うと、複数の要素をまとめて操作できて、すっきりして管理もしやすくなります。<br>
+notes.length とは、note クラスを持つ要素の数量のことです。<br>
+notes[i] は、notes という変数の一覧の中にある i 番目の要素のことです。<br>
+このループは、最初の要素から最後の要素まで、1 つずつ順番に処理していきます。<br>
+それは、クラスを使って HTML 要素を取得する方法です。皆さんは、やってみてください。何か質問があれば、聞いてください。<br>
                 </p>
               </div>
             </div>
@@ -1282,19 +387,16 @@
               </div>
               <div class="tableContent mt-2">
                 <p>
-                  —---------------------getElementsByTagName—----------- <br />
-                  IDやクラスで取得する方法以外に、タグ名を使って HTML
-                  要素を取得することもできます。<br />
-                  この例を見てみましょう。<br />
-                  ここの構文は、この部分をタグ名（TagName）に置き換えて使います。<br />
-                  このようにすると、すべてのPタグを取得しています。<br />
-                  ここで返した結果も、HTMLCollectionになります。<br />
-                  class
-                  の場合と同じに、タグ名を使った場合も、インデックスで各要素にアクセスして、指定したタグのスタイルを変更することができます。<br />
-                  例えばこのように、これは最初の p
-                  タグの文字色を変更しています。<br />
-                  または、class
-                  の場合と同じように、Forループを使うこともできます。<br />
+                  —---------------------getElementsByTagName—----------- <br>
+IDやクラスで取得する方法以外に、タグ名を使って HTML 要素を取得することもできます。<br>
+この例を見てみましょう。<br>
+これは、HTML要素をタグ名で取得する構文です。<br>
+このようにすると、すべてのPタグを取得しています。<br>
+コンソールログすると、ここで返した結果も、HTMLコレクションになります。<br>
+class の場合と同じに、タグ名を使った場合も、インデックスで各要素にアクセスして、指定したタグのスタイルを変更することができます。<br>
+例えばこのように、これは最初の p タグの文字色を変更しています。そのため、この要素の色は、このようになります。<br>
+または、class の場合と同じように、Forループを使うこともできます。<br>
+
                 </p>
               </div>
             </div>
@@ -1305,28 +407,19 @@
               </div> -->
               <div class="tableContent mt-2">
                 <p>
-                  —----------------querySelector—---------------- <br />
-                  次は、クエリセレクターの部分をハンズオンしていきましょう。(nói
-                  luôn trong lúc Thảo đang ghi ví dụ) <br />
-                  (sau khi ghi ví dụ xong)
-                  先ほど紹介した方法以外にも、このように querySelector
-                  を使うこともできます。<br />
-                  querySelector は、CSS
-                  と同じ構文を使えるため、最も柔軟に要素を選択できる方法です。<br />
-                  この構文は、ここでは、このように、querySelectorを入力して、このカッコの中には、もしクラスであれば、このように.を使います。もし、ＩＤであれば、この記号を使います。<br />
-                  let selectorClass =
-                  document.querySelector(".note");　この宣言の意味は、note
-                  というクラスを持つ最初の要素を選択する、ということです。<br />
-                  document.querySelector("#demo1") この宣言の意味は、demo1
-                  という id を持つ要素を選択する、ということです。<br />
-                  ここでマウスを合わせると、その要素にフォーカスします。<br />
-                  対象要素を取得したあと、こんなふうに、その要素に直接操作して更新することができます。selectorId.style.color
-                  = "green" <br />
-                  次の例を見てみましょう。<br />
-                  この例では、このカッコの中には class や id だけでなく、p や
-                  div
-                  などのタグ名を直接書いて、そのセレクターに一致する最初の要素を取得することもできます。<br />
-                  例えば、このように書けば、最初のPを取得します。これの使い方も、上記部分と同じです。<br />
+                  —----------------querySelector—---------------- <br>
+次は、クエリセレクターの部分をハンズオンしていきましょう。(nói luôn trong lúc Thảo đang ghi ví dụ)<br>
+(sau khi ghi ví dụ xong) 先ほど紹介した方法以外にも、このように querySelector を使うこともできます。<br>
+querySelector は、CSS と同じ構文を使えるため、最も柔軟に要素を選択できる方法です。<br>
+この構文は、ここでは、このように、querySelectorを入力して、このカッコの中には、もしクラスであれば、このように.を使います。もし、ＩＤであれば、この記号を使います。<br>
+let selectorClass = document.querySelector(".note");　この宣言の意味は、note というクラスを持つ最初の要素を選択する、ということです。<br>
+document.querySelector("#demo1") この宣言の意味は、demo1 という id を持つ要素を選択する、ということです。<br>
+ここでマウスを合わせると、その要素にフォーカスします。<br>
+対象要素を取得したあと、こんなふうに、その要素に直接操作して更新することができます。selectorId.style.color = "green"<br>
+次の例を見てみましょう。<br>
+この例では、このカッコの中には class や id だけでなく、p や div などのタグ名を直接書いて、そのセレクターに一致する最初の要素を取得することもできます。<br>
+例えば、このように書けば、最初のPを取得します。これの使い方も、上記部分と同じです。<br>
+
                 </p>
               </div>
             </div>
@@ -1342,31 +435,54 @@
               </div>
               <div class="tableContent mt-2">
                 <p>
-                  —----------------querySelectorAll—---------------- <br />
-                  次の部分は、querySelectorAllの部分です。<br />
-                  これらの例を見てみましょう。このコードを実行すると、返ってきた結果は、このようになります。この下の
-                  3 行ですね。<br />
-                  querySelectorAll を使うと、結果として NodeList
-                  が返されます。<br />
-                  NodeList
-                  も配列のように見えますが、本当の配列ではありません。<br />
-                  インデックスでアクセスできますし、for や
-                  forEachループを使って順番に処理することもできます。<br />
-                  NodeList と HTMLCollection の違い点は次のとおりです。<br />
-                  多くの場合、NodeList
-                  は「静的（static）」で、ページが変更されても自動的には更新されません。<br />
-                  一方、HTMLCollection は、HTML
-                  が変更されるとすぐに自動更新されます。<br />
-                  querySelectorAll(".note") →これとはnote
-                  というクラスを持つすべての要素を取得します。HTMLの方は、note
-                  というクラスを持つ要素が２つあります。で、ここでは、この 2
-                  つの要素がすべて取得されています。<br />
-                  querySelectorAll("#demo1") → この宣言は、その id を持つ要素が
-                  1 つしかなくても、結果はリストとして返ってきます。<br />
-                  querySelectorAll("p") →
-                  ページ上にあるすべてのPタグを取得します。<br />
-                  querySelectorAllには、インデックスでアクセスするには、このように、します。<br />
-                  結果としては、ブラウザでの表示は、このようになります。<br />
+                  —----------------querySelectorAll—---------------- <br>
+次の部分は、querySelectorAllの部分です。<br>
+これらの例を見てみましょう。このコードを実行すると、返ってきた結果は、このようになります。<br>
+querySelectorAll を使うと、結果として NodeList が返されます。<br>
+NodeList も配列のように見えますが、本当の配列ではありません。<br>
+インデックスでアクセスできますし、for や forEachループを使って順番に処理することもできます。<br>
+querySelectorAll(".note") →これとはnote というクラスを持つすべての要素を取得します。HTMLの方は、note というクラスを持つ要素が２つあります。で、ここでは、この 2 つの要素がすべて取得されています。<br>
+querySelectorAll("#demo1") → この宣言は、その id を持つ要素が 1 つしかなくても、結果はリストとして返ってきます。<br>
+querySelectorAll("p") → ページ上にあるすべてのPタグを取得します。<br>
+querySelectorAllには、インデックスでアクセスするには、このように、します。<br>
+結果としては、ブラウザでの表示は、このようになります。<br>
+ここまで、皆さんできましたか？何か質問がありますか？<br>
+
+                </p>
+              </div>
+            </div>
+            <div class="kaiwa table">
+              <div class="tableHeader">
+                <audio
+                  controls
+                  loop
+                  class="audio"
+                  src="./audio/119-121_6.mp3"
+                ></audio>
+              </div>
+              <div class="tableContent mt-2">
+                <p>
+                 *************Sự khác nhau giữa mảng và HTMLCollection************* <br>
+配列と HTMLCollection の違いは次のとおりです。<br>
+Array（JavaScript の配列）：<br>
+配列は、JavaScript の「標準的な」配列です。<br>
+forEach、map、filter、reduce などの<br>
+ほとんどの配列メソッドが使えます。<br>
+要素の追加・削除・変更を柔軟に行えます。<br>
+DOM とは関係なく、単なる通常のデータ構造です。<br>
+HTMLCollection<br>
+HTMLCollectionは、見た目は配列のように見えますが、<br>
+本当の配列ではありません。<br>
+配列のメソッドは使えません。<br>
+これは「ライブコレクション」で、HTML が変更されると HTMLCollection もすぐに自動更新されます。<br>
+簡単に言えば、Array は本当の配列で、機能が多く、さまざまなメソッドが使えます。<br>
+一方、HTMLCollection は配列ではないためメソッドは使えませんが、DOM が変更されると自動的に更新されます。<br>
+******************************************************************************<br>
+NodeList と HTMLCollection の違い点は次のとおりです。<br>
+多くの場合、NodeList は「静的（static）」で、ページが変更されても自動的には更新されません。<br>
+一方、HTMLCollection は、HTML が変更されるとすぐに自動更新されます。<br>
+
+
                 </p>
               </div>
             </div>
@@ -1389,40 +505,28 @@
               </div> -->
               <div class="tableContent mt-2">
                 <p>
-                  次は、この部分です。この部分は、.classList を使って CSS
-                  クラスを管理する部分です。<br />
-                  ( chỉ vào class highligh bên HTML. ) →　まず、HTML
-                  ファイルの中で、このように 1
-                  つのクラスを定義します。これは、インラインCSSです。<br />
-                  (cho họ xem display trên browser ) →
-                  今、ブラウザでの表示は、このようになっていますね。CSSが無い状態です。<br />
-                  —--------------ví dụ về add class—---------------- <br />
-                  (qua file JS ) →次は、JavaScriptの方は、この構文で、ID demo1
-                  の要素を取得します。<br />
-                  let element1 = document.getElementById("demo1");<br />
-                  次は、クラスをID demo1
-                  の要素に追加するには、このように書きます。↓<br />
-                  element1.classList.add("highlight");　<br />
-                  (chỉ vào đoạn code trên và giải thích) →
-                  element1：これは、この変数を呼び出します。<br />
-                  classList.add("highlight");　これは、クラスを要素に追加する構文です。<br />
-                  ファイルを保存して、ページをリロードして、今の状態では、このID
-                  demo1の要素は、このクラスのCSSが適用されましたね。<br />
-                  この方法は、 たくさんの style
-                  プロパティを設定する方法に比べて、ずっとすっきりしていて、コードも管理しやすくなります。<br />
-                  —---------------ví dụ về xóa class—--------------<br />
-                  また、クラスを要素に追加するだけでなく、要素からクラスを削除することもできます。<br />
-                  (HTML thêm class highligh vào demo1)
-                  →例えば、今、HTMLファイルの方は、このクラスをこの要素に追加します。<br />
-                  (cho họ thấy display html hiện tại)
-                  →今、ブラウザでの表示は、このようになっていますね。<br />
-                  (qua file JS )
-                  →次は、JavaScriptの方は、削除する構文はこのように書きます。<br />
-                  ファイルを保存して、ページをリロードすると、この要素では、このクラス（highlight）のコードが消しましたね。<br />
-                  HTML 側にはその class が残っていますが、JavaScript
-                  側ですでに削除しているため、HTML 側のその class
-                  は機能しません。<br />
-                  じゃ、それは、クラスを要素に追加して削除する方法です。皆さんできましたか？<br />
+                  次は、この部分です。この部分は、.classList を使って CSS クラスを管理する部分です。<br>
+( chỉ vào class highligh bên HTML. ) →　まず、HTML ファイルの中で、このように 1 つのクラスを定義します。これは、インラインCSSです。<br>
+(cho họ xem display trên browser ) → 今、ブラウザでの表示は、このようになっていますね。どの部分にもCSSが無い状態です。<br>
+—--------------ví dụ về add class—----------------<br>
+(qua file JS ) →次は、JavaScriptの方は、この構文で、ID demo1 の要素を取得します。<br>
+let element1 = document.getElementById("demo1");<br>
+次は、クラスをID demo1 の要素に追加するには、このように書きます。↓<br>
+element1.classList.add("highlight");　<br>
+(chỉ vào đoạn code trên và giải thích) → element1：これは、この変数を呼び出します。<br>
+classList.add("highlight");　これは、クラスを要素に追加する構文です。<br>
+ファイルを保存して、ページをリロードして、今の状態では、このID demo1の要素は、このクラスのCSSが適用されましたね。<br>
+この方法は、 たくさんの style プロパティを設定する方法に比べて、ずっとすっきりしていて、コードも管理しやすくなります。<br>
+それは、クラスを要素に追加する部分です。みなさん、この例をやってみていください。終わったら、教えてください。<br>
+—---------------ví dụ về xóa class—--------------<br>
+また、クラスを要素に追加するだけでなく、要素からクラスを削除することもできます。<br>
+(HTML thêm class highligh vào demo1) →例えば、今、HTMLファイルの方は、このクラスをこの要素に追加します。<br>
+(cho họ thấy display html hiện tại) →今、ブラウザでの表示は、このようになっていますね。<br>
+(qua file JS ) →次は、JavaScriptの方は、削除する構文はこのように書きます。ファイルを保存して、ページをリロードすると、この要素では、このクラス（highlight）のコードが消しましたね。<br>
+エレメントタブにも確認できます。ここでは、そのクラスは、削除されましたね。<br>
+HTML 側にはその class が残っていますが、JavaScript 側ですでに削除しているため、HTML 側のその class は機能しません。<br>
+じゃ、それは、クラスを要素に追加して削除する方法です。皆さん、何か質問がありますか？<br>
+
                 </p>
               </div>
             </div>
@@ -1819,24 +923,48 @@ const data = await response.json();<br>
               </div> -->
               <div class="tableContent mt-2">
                 <p>
-                  ３）3つ目は、PUTのメッソドです。PUTの動きもPOSTと似て、サーバーへデータを送信するメソッドです。違い点は、目的だけです。<br />
-                  先ほど言った通りに、POSTは、新しいレコードを作成するために使用します。<br />
-                  PUTは、既存のレコード全体を更新するために使用します（つまり、データをすべて上書きします）<br />
-                  これは、PUTのコードです。このコードの中には、ここのレコードをすべて更新したいため（chỉ
-                  vô 4 dòng data của const data）、method には PUT
-                  を指定しています。<br />
-                  このコードを実行すると、戻った結果は、このようになります。(chỉ
-                  bên tab console)<br />
-                  ４）次は、４つ目は、PATCHのメソッドです。PATCHもかなりPUTと似ていますが、以下の違いがあります。<br />
-                  PUT
-                  はレコード全体を更新するため、すべてのデータを送信する必要があります。<br />
-                  一方、PATCH
-                  はレコードの一部だけを更新するため、修正したいフィールドのみを送信します。<br />
-                  例えば、これは、PATCHのコードです。<br />
-                  このコードの中には、更新するのはこれだけで十分なので、この内容だけを渡しています。そして、ここでのメソッドは、Patchにします。<br />
-                  このコードを実行すると、結果は、この内容だけが更新されましたね。他の内容は、旧内容のままです。<br />
-                  それは、ＰＡＴＣＨの部分です。<br />
-                  5）次のメソッドは、DELETEです。<br />
+                  ３）3つ目は、PUTのメッソドです。PUTの動きも、POSTと同じです。サーバーへデータを送信するメソッドです。違い点は、目的だけです。<br>
+先ほど言った通りに、POSTは、新しいレコードを作成するために使用します。<br>
+PUTは、既存の１つのレコードを更新するために使用します。<br>
+これは、PUTのコードです。このコードの中には、ここのレコードをすべて更新したいため（chỉ vô 4 dòng data của const data）、method には PUT を指定しています。<br>
+この時、fetchのAPI URLとは、このPostsテープルに入って、IDが１の行の情報を更新するということです。<br>
+この状態は、更新前の状態です。(làm sao đó chỉ cho họ để ý chỗ chưa update)<br>
+このコードを実行すると、コンソールタブに返ってきた結果は、このようになります。(chỉ bên tab console)<br>
+今、先ほどのウェブで確認すると、これは、更新前の情報ですね。ページをRefreshボタンをすると、じゃ、今、１行目の情報が変わりましたね。この情報は、更新日時です。<br>
+４）次は、４つ目は、PATCHのメソッドです。PATCHもかなりPUTと似ていますが、以下の違いがあります。<br>
+PUT は１つのレコードを更新するため、すべてのデータを送信する必要があります。<br>
+一方、PATCH はレコードの一部だけを更新するため、修正したいものだけを送信します。<br>
+例えば、これは、PATCHのコードです。<br>
+このコードの中には、更新するのは、TITLEだけので、これだけで渡せば、十分です。そして、ここでのメソッドは、Patchにします。<br>
+このコードを実行すると、結果は、この内容だけが更新されましたね。他の内容は、旧内容のままです。<br>
+それは、ＰＡＴＣＨの部分です。<br>
+5）次のメソッドは、DELETEです。<br>
+このコードのURLとは、PostsテープルのIDが１の行を削除するということですね。<br>
+このコードを実行すると、コンソールタブには、削除ステータスは、200です。というのは、削除に成功しました。<br>
+このウェブでは、１行目は、削除されました。<br>
+
+                </p>
+              </div>
+            </div>
+            <div class="kaiwa table">
+              <!-- <div class="tableHeader">
+                <audio
+                  controls
+                  loop
+                  class="audio"
+                  src=""
+                ></audio>
+              </div> -->
+              <div class="tableContent mt-2">
+                <p>
+                  ===================tổng kết, điểm chú ý=========================<br>
+この部分をまとめると、１つの注意点があります。<br>
+GET・POST・PUT・PATCH・DELETE などの HTTP メソッドは、RESTful API （レストフル・エーピーアイ）の設計に従ってはじめて本来の意味があるんです。<br>
+つまり、これらのメソッドが本来の意味どおりに機能するかどうかは、サーバー側の API 設計に完全に依存します。<br>
+もしバックエンドが RESTful の仕様に従っていない場合、HTTP メソッドの意味があいまいになります。<br>
+例えば、RESTful の仕様には、GETがサーバーから取得するためですね。<br>
+API のデザインがRESTful に従っていない場合、例えば、POSTメソッドしますが、バックエンド側では、データを削除するようにしていれば、この時、この関数を実行しても、データを更新することではなく、削除してしまいました。<br>
+
                 </p>
               </div>
             </div>
@@ -1845,18 +973,14 @@ const data = await response.json();<br>
         <div class="tab-pane fade" id="page152">
           <div class="talkContent_text container">
             <p>
-              次の部分は、JavaScriptの
-              AJAXの部分です。先ほどのFetchAPIと同じに、AJAX
-              も、JavaScriptのサーバーと通信するための一つの方法です。<br />
-              ただし、AJAX は古い技術で、Fetch API
-              より前に出てきたものなので、Fetch API
-              ほど最適化されていなくて、書き方も結構ややこしくて長くなりがちです。<br />
-              そのため、JavaScript では Fetch
-              のほうがよく使われていて、コードがすっきりしていて直感的に書けますし、非同期解決の設計もより優れています。<br />
-              なので、ここでは、こういうものもあることを紹介だけにしておいて、<br />
-              実際の開発では、さっき使った Fetch を使うことが多いです。<br />
+              次の部分は、JavaScriptの AJAX（エイジャックス）の部分です。先ほどのFetchAPIと同じに、AJAX も、JavaScriptのサーバーと通信するための一つの方法です。<br />
+ただし、AJAX は古い技術で、Fetch API より前に出てきたものなので、Fetch API ほど最適化（さいてきか）されていなくて、書き方も結構ややこしくて長くなりがちです。<br />
+そのため、JavaScript では Fetch のほうがよく使われていて、コードがすっきりしていて直感的（ちょっかんてき）に書けますし、非同期解決の設計もより優れています。（すぐれています）<br />
+なので、ここでは、こういうものもあることを紹介だけにしておいて、<br />
+実際の開発では、さっき使った Fetch を使うことが多いです。<br />
 
-              例えば、このような例があります。<br />
+例えば、このような例があります。
+<br />
               function loadUser() {<br />
               const xhttp = new XMLHttpRequest();<br />
 
