@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Matome</title>
+    <title>Học Tiếng Nhật Qua Phim</title>
 
     <link
       rel="stylesheet"
@@ -15,51 +15,19 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./DulichVietNam/tuvung.css" />
+    <link rel="stylesheet" href="../hocQuaPhim/hocQuaPhim.css" />
   </head>
 
   <body>
     <header class="container pt-3 pb-3">
       <ul class="nav nav-pills">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/index.html"
-            >Home</a
-          >
+          <a class="nav-link" aria-current="page" href="/index.html">Home</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link" href="./luyen phong van/自己紹介.html">面接</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link" href="./HandsOn/HandsOnJS.html">Hands-on</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link" href="./TuVung/Tuvungtonghop/tuvungtonghop.html"
+          <a class="nav-link" href="/TuVung/Tuvungtonghop/tuvungtonghop.html"
             >Từ vựng</a
           >
-        </li>
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle"
-            data-bs-toggle="dropdown"
-            href="#"
-            role="button"
-            aria-expanded="false"
-            >EN_JP Speaking</a
-          >
-          <ul class="dropdown-menu">
-            <li>
-              <a class="dropdown-item" href="./EnJpSpeaking/speakingTopic.html"
-                >IELTS Speaking</a
-              >
-            </li>
-            <li>
-              <a
-                class="dropdown-item"
-                href="./EnJpSpeaking/tuVungIeltsmoingay.html"
-                >Mỗi ngày 1 từ vựng IELTS</a
-              >
-            </li>
-          </ul>
         </li>
         <li class="nav-item dropdown">
           <a
@@ -97,7 +65,7 @@
         </li>
         <li class="nav-item dropdown">
           <a
-            class="nav-link dropdown-toggle"
+            class="nav-link dropdown-toggle active"
             data-bs-toggle="dropdown"
             href="#"
             role="button"
@@ -105,11 +73,6 @@
             >Luyện Nghe</a
           >
           <ul class="dropdown-menu">
-            <li>
-              <a class="dropdown-item" href="./Listening/videophim/video.html"
-                >Video phim</a
-              >
-            </li>
             <li>
               <a
                 class="dropdown-item"
@@ -188,7 +151,7 @@
           >
           <ul class="dropdown-menu">
             <li>
-              <a class="dropdown-item" href="/English/html/EngBreaking.html"
+              <a class="dropdown-item" href="/English/html/GiaoTiepEng.html"
                 >Những câu giao tiếp English</a
               >
             </li>
@@ -197,34 +160,62 @@
                 >English Presentations</a
               >
             </li>
-            <li>
-              <a class="dropdown-item" href="/English/html/CumDongTu.html"
-                >Cụm động từ</a
-              >
-            </li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle"
-            data-bs-toggle="dropdown"
-            href="#"
-            role="button"
-            aria-expanded="false"
-            >Góc tri thức</a
-          >
-          <ul class="dropdown-menu">
-            <li>
-              <a
-                class="dropdown-item"
-                href="/Akichan_Channel/html/ThucPhamKyHop.html"
-                >Các loại thực phẩm kỵ hợp</a
-              >
-            </li>
           </ul>
         </li>
       </ul>
     </header>
+    <!-- blog breadcrumbs -->
+    <nav id="breadcrumbs" class="breadcrumbs">
+      <div class="container page-wrapper">
+        <a href="/index.html">Home</a> »
+        <span class="breadcrumb_last" aria-current="page">Luyện Nghe</span> »
+        <a href="#" class="breadcrumb_last" aria-current="page">Video Phim</a>
+      </div>
+    </nav>
+
+    <!-- Content -->
+    <section class="">
+      <div
+        class="nav nav-pills container"
+        id="v-pills-tab"
+        role="tablist"
+        aria-orientation="vertical"
+      >
+        <button
+          class="nav-link active"
+          data-bs-toggle="pill"
+          data-bs-target="#LoveinTokyo01"
+        >
+          LoveinTokyo01
+        </button>
+        <button
+          class="nav-link"
+          data-bs-toggle="pill"
+          data-bs-target="#luyenPhim07"
+        >
+          LoveinTokyo02
+        </button>
+      </div>
+      <div class="tab-content mt-2" id="v-pills-tabContent">
+        <div class="tab-pane fade show active talkContent" id="LoveinTokyo01">
+          <div class="talkContent_text container">
+            <video src="./srcvideo/Love in Tokyo_P1_T1.mp4" controls></video>
+          </div>
+          <!-- <div class="audioFix">
+            <audio
+              class="audio"
+              loop
+              controls
+              src="./fileAudio/OhMyBoss/OMB01_Full.mp3"
+            ></audio>
+          </div> -->
+        </div>
+        <!-- ------------------------------ -->
+        <div class="tab-pane fade talkContent" id="luyenPhim07">
+          <div class="talkContent_text container"></div>
+        </div>
+      </div>
+    </section>
 
     <!-- BS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
