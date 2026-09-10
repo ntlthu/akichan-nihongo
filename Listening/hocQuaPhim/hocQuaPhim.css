@@ -283,24 +283,36 @@ ruby rt {
 }
 .talkContent {
   width: 100%;
-    position:relative;
-    overflow:auto;
-    /* height:500px; */
-    /* border:1px solid #dc4f72; */
-    /* padding-top:30px; */
-    /* padding-bottom: 30px; */
+  position: relative;
+  overflow: auto;
+  /* height:500px; */
+  /* border:1px solid #dc4f72; */
+  /* padding-top:30px; */
+  /* padding-bottom: 30px; */
 }
 
 .audioFix {
-    position:fixed;
-    /* margin-top:-30px; */
-    bottom: 0;
-    display:block;
-    background-color: #dc4f72;
-    color:white;
-    width: 100%;
+  position: fixed;
+  /* margin-top:-30px; */
+  bottom: 0;
+  display: block;
+  background-color: #dc4f72;
+  color: white;
+  width: 100%;
 }
 
 .talkContent_text {
   margin-bottom: 100px;
+}
+
+.video-container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.video-container iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
 }
